@@ -1,0 +1,385 @@
+Week 1 Working with Words (Bag of Words)
+We will look at how we find and analyse documents with words on it.
+Tokenization: Refers to the process of breaking text, such as a sentence into smaller units called tokens, which are usually words, phrases or sub words.
+The tokens will serve as the basic units for indexing and searching.
+ We will explain the below concepts with the help of a dataset of movie reviews from IMDB. IMDB is a website where users can leave comments about movies. We will use the reviews to conduct a sentiment analysis which means that we will analyse just using the words in the reviews if the movie was liked or disliked.
+Bag of Words
+ Bag of Words Model: Is a filling system which numerically represents text and transforms the documents into word frequency vectors.
+We first scan all the documents and extract all unique words and store them in a reference ledger which is a large vector.
+For each document we create a vector of the same length as the reference ledger, if a word appears in the document then we record its count in the corresponding position.
+So each vector for each document will have a lot of zeros everywhere.
+Lets look at an example suppose that we have two sentences:
+Sentence 1: 'the cat sat on the hat'
+Sentence 2: 'the dog ate the cat and the hat'
+In these two sentences we have 8 unique words, these are:
+'and, ate, cat, dog, hat, on, sat, the'
+The corresponding bag of word vectors are:
+Sentence 1: [0,0,1,0,1,1,1,2]
+Sentence 2: [1,1,1,1,1,0,0,3]
+One review is one document which we will then split into tokens, and observe how many unique tokens we have in the text.
+We have 25,000 documents, which are the movie reviews themselves and we obtain 111,725 unique tokens, which are unique words in the dataset. In total we have about 7,065,338 words in all the documents.
+Below you can find a table with the relevant information of a bag of words model. It acts as a summary table, and has the following components:
+Token: Is a unit of text, a word or a punctuation.
+Corpus: Are all the reviews.
+Corpus Frequency: Is the number of times the word appears over all the reviews.
+Term Frequency (In a Document): Is the number of times the word appears in one review.
+Document Frequency: Is the number of reviews the word appears in.
+Lets generalize the above.
+Token: Is a unit of text, a word or a punctuation.
+Corpus: Is the entire collection of documents.
+Corpus Frequency: Is the total number of times a word appears across the entire corpus.
+Term Frequency: Is the number of times a word appears in a single document.
+Document Frequency: Is the number of documents a word appears in.
+ TF-IDF: Is an adaptation of the bag of words method used to evaluate the importance of a word in a document relative to the collection of documents (Corpus).
+Similar to the bag of words we first scan all documents and extract all unique words to a reference ledger. This again is a long vector.
+We then create a same size vector for each document, where for each word in the reference ledger that is also in the document we calculate the TF-IDF and place it in the corresponding place.
+A High Value TF-IDF: A word that appears in the document, but not a lot in the corpus.
+A Low Value TF-IDF: A word that appears in the document, but also in a lot of other documents in the corpus.
+The formula is:
+	TF	The Number of Times the Word Appears in the Document
+	TF-IDF =	=
+	DF	The Number of Documents in which the Word Appears in the Whole Corpus
+Text Processing
+Below we will discuss methods which help us clean up our data.
+Stopping: Refers to the process of removing stop words in text processing.
+Stop words are common in natural language but they do not contribute anything meaningful to text classification tasks. These are words such as the, a, an, my, I, am.
+The stopping words are predefined in a pre-established list.
+ Filtering by Pattern: Refers to the process of removing tokens (words) that do not adhere to certain rules.
+An example of this could be a filtering pattern of just letters, this would mean that we would remove tokens such as: 'jeff123', '2023', 'ack_+'.
+Or if we only want words with letters of at least three characters then we remove tokens such as: 'en', 'b'.
+A commonly used filtering method is the Regular Expression (Regex) Filter which helps clean text data by keeping only useful words.
+ Stemming: Refers to the process of reducing words to their root or base by removing suffixes.
+This reduces the number of unique words in the dataset and improves search and text analysis.
+So a couple of examples would be stemming would be:
+Running will become Run.
+Happily will become Happi.
+Studies will become Studi.
+Caring will become Car.
+It is important to note that stemming does not always produce real words.
+ Lemmatizing: Refers to the process of reducing words to their base form, also known as a lemma.
+Lemmatizing uses linguistic rules and dictionaries too reduce words, this is slower then stemming since it requires a dictionary look up.
+Lemmatizing always gives a word that exists.
+Lets look at a couple of examples of lemmatizing:
+Running will become Run.
+Happily will become Happy.
+Studies will become Study.
+Caring will become Care.
+ Filtering By Document Frequencies: Is a technique which is used to remove words that appear too often or too rarely across documents.
+If a word appears in many documents, it is too common to be useful.
+If a word appears in only one document, it is too rare and instead might be a typo or an irrelevant one off word.
+ N Gram: An N Gram is a sequence of N consecutive words or characters from a given text.
+We use N Grams to analyse patterns in text by grouping words together.
+Lets showcase an example of how to use N Grams.
+Suppose we have the sentence 'I Love Machine Learning', then:
+	•	Gram: 'I' 'love' 'machine' 'learning'
+	•	Gram: 'I love' 'love machine' 'machine learning'
+	•	Gram: 'I love machine' 'love machine learning'
+N Grams preserve word order, while Bag of Words do not.
+Week 2 Working with Words
+ Part of Speech (POS) Tagging: Is the process of assigning grammatical categories to words in a sentence based on a predefined tag set.
+A tag-set is a predefined list of possible word categories. Each language has a different tag set.
+In terms of lexical methods 1 token is 1 tag. So a word will have a grammatical category which itself will be a token.
+This means that each word in a sentence is assigned a grammatical category, so for example the sentence: 'The quick fox jumps over the lazy dog' would have the following POS tagging.
+'quick' would be an adjective
+'fox' would be an noun
+'jumps' would be an verb.
+ Constituency Parsing: Is an evolvement of POS tagging where instead of words the process breaks down a sentence into hierarchical phases showing how words group into phrases.
+This would mean that we would have a grouping of words that would be called a noun phrase or a verb phrase.
+Lets explore the verb and noun phrase in terms of the following sentence:
+'The quick fox jumps over the lazy dog'
+A noun phrase would be a phrase that acts as a noun. In the above sentence that would be 'The quick fox'
+A verb phrase is a phrase that contains a verb and its modifiers. In terms of the above sentence that would be: 'jumps over the lazy dog'
+We can showcase constituency parsing using a graph based representation, where we represent sentence structure as a graph.
+Each sentence will be 1 graph,
+Each word (token) will be 1 node
+Each edge between the nodes will be a grammatical dependency.
+The graph based representation for the sentence 'Bell, based in Los Angels, makes and distributes electronic, computer and building products' looks like this:
+Named Entity Recognition (NER): Is a technique in NLP that identifies specific types of names and values in text and classifies them into predefined categories.
+So it identifies named entities and classifies them into categories.
+NER labelling is highly context dependent, so there may be misclassification of words into categories.
+Meaning that 'Van Gogh' in these two sentences will be classified differently.
+'I flew to New York to admire the painting Starry Night from Van Goth'
+'I flew to New York to admire the painting Starry Night by Van Goth'
+In the first sentence NER classifies 'Van Goth' as not a person, but in the second sentence it classifies it as a person.
+Some examples of these categories could be:
+Names: Julien, James T Kirk
+Location: Paris, Amsterdam
+Money: 1million USD, 45.28$
+The categories are not generic, we need to adapt them to the domain of our interest. So if we are analysing medical documents we will have categories like; Drugs, Body Parts, etc
+Training Material: To train a model to successfully apply NER we need to train the model with human classified labels. So we provide annotated samples of some extracts.
+ Entity Linking: Is the process of connecting named entity from the NER and connecting it to a real world knowledge base entry.
+These knowledge based entries can be Wikipedia, Wikidata or any database.
+Week 3 & 4 Embeddings & Transformers
+In this section if a point does not have a bullet point then it is not exam material, it simply tries to give more context to the exam material point.
+Word Embeddings
+Word embeddings are dense vector representations of words that capture their meanings. They transform words into numerical vectors such that the words with similar meanings are closer together in this space.
+ Word Embeddings: Convert words into vectors. Embeddings do not treat words as isolated tokens, they allow us too find similarities between words based on the cosine similarity.
+Maximum Similarity Method: We use cosine similarity to monitor if similar words have similar vector representations. A high cosine represents similar words and a low cosine represents different words.
+The maximum similarity method then wants too find a word w that maximizes the cosine similarity with b − a + c, we can depict it with this equation.
+→ w = argmaxx{cos(b − a→ + c→,x→)}
+So it will answer the question of a is to b as c is to .......
+In terms of a real sentence it will answer too:
+'Athens is to Greece as Berlin is to ....' the missing word is Germany  Word2vec: Is a specific method for generating word embeddings.
+Input: Word2vec needs three things:
+A corpus as training material.
+A window size so it knows the surrounding words to consider.
+A vector size to control how much meaning can be stored in each word embedding.
+Main Idea: Given a word it builds a vector representation for it that captures the probability distribution of words that appear around it in a given corpus.
+Each word gets a unique vector representation.
+Word2vec understands word meanings from the corpus by analysing the context in which they appear.
+Words that appear in similar context will have similar vector representations.
+We know that words have meanings by the sentence they are described in. So a word which we do not know, such as Aktarok, can be understood by the context of the sentence that it is in.
+For example if we say; 'A bottle of Aktarok was on the table and the drunks were rolling on the ground.' We can deduce that Aktarok is an alcohol.
+We now want to convert this into a computer representation.
+ Context Window: So we have a sentence that we want to understand. We can understand the context of the word using the window size with the following:
+Window Size: A window size of 2 means that the model looks two words before and two words after the target word (centre word).
+Implementing Word Context: So for example if we have the sentence 'precise but admirably balanced mind'. If 'admirably' is the target word, then the left context is the 2 words to the left of the target word, in this case 'precise' and 'but'. The right context are the 2 words to the right of the target word, in this case that is 'balanced' and 'mind'.
+In this case we have a 5 gram word.
+What we are trying to say above can be graphically showcased as the following:
+
+We can then take the word context, which we extract using the window size and take note of it using a word co occurrence matrix.
+ Word Co-Occurrence Matrix: Is a matrix representation of how often words appear together in a given context window within a text. So it is based on the window size.
+The column represents the context word, which would be the part of the window that is not the target word.
+The row represents the target word.
+A cell represents the number of times the context word appears in the window of the target word.
+Example: Lets build a word co-occurrence matrix with the sentence 'Cats chase mice in the garden'. Suppose we have a window size of 1. The word co-occurrence matrix is:
+ Target Word → / Context Word ↓
+ Cats 
+ Chase 
+ Mice 
+ In 
+ The 
+ Garden 
+ Cats 
+0
+1
+0
+0
+0
+0
+ Chase 
+1
+0
+1
+0
+0
+0
+ Mice 
+0
+1
+0
+1
+0
+0
+ In 
+0
+0
+1
+0
+1
+0
+ The 
+0
+0
+0
+1
+0
+1
+ Garden 
+0
+0
+0
+0
+1
+0
+Suppose that we are interested in the topic or category of a specific document. Once we have a specific topic then we can deduce some keywords that articles on this topic use.
+So for example the topic of health will have the keywords of: flu, tired, bloated. The topic of fashion will have the keywords of dress, shoes and top. The topic of cooking will have the key words of cake, oven, dinner.
+ Topic Modelling: Is a technique that identifies topics in a collection of documents.
+So given a collection of documents and given a number of topics.
+There is a distribution of topics in documents, such as 10% football, 50% finance and so on. There also is a distribution of words in each topic.
+Mathematical Representation: Given a number of topics K and give a document D. There is a distribution of topics in the document where the sum of all topic probabilities for a document is 1.
+→
+D ∈ RK = (t1,t2,…,tK)
+∑ti = 1
+BERTopic is an advanced topic modelling technique that creates topic representations for data.
+Suppose we have a corpus of documents. A large collection of documents.
+We then use a encoder model to transform each document into a vector. So it becomes a feature matrix where one sample is one row of the matrix. The vectors all have same sizes.
+→
+	 Encoder: 	d = encoder(d) ∈ Rn1
+After that we do dimensionality reduction and clustering. We reduce dimensions to obtain a lower dimension representation of the feature matrix. We then h
+→
+	 Dimensionality Reduction: 	d′ ∈ Rn2
+n1 > n2
+	 Clustering: 	K - Clustering of Rn2 : {C1,C2,…,CK}
+To then figure out which words are important in each topic we will use word weights.
+So suppose that BERTopic has 6 clusters, where each cluster represents a topic containing multiple documents.
+BERTopic then merges all text from the clusters into a single text representation. This super document becomes the Cluster Based Corpus (CBC).
+We then use TF-IDF to rank the words by importance within the CBC, ensuring that the most representative words for each topic are identified.
+Exam Review Addition:
+Apparently the number of dimensions in a document vector is equal to the number of topics found by BERTopic.
+So if BERTopic finds 120 topics then each document will be represented as a 120 dimensional vector.
+It is important to know that the vector dimension of 120 is different then the initial vector that was embedded into the encoder model, so this 120 is meant after the dimensionality reduction. The initial vector may have had a dimension of 720.
+Foreplay
+Both the RNN and the transformers act as encoders meaning they transform an input into a meaningful numerical vector representation.
+An encoder works like the following, it first takes an input sequence such as a sentence. It then process it using a neural network, such as RNN or an transformer. It then outputs a numerical vector representation.
+Transformers
+ Transformers: Are deep learning models designed for natural language processing tasks.
+Not exam material
+ Basic Structure of Transformers: Transformed are made up of classes and weights.
+The architecture of transformer models is implemented as classes in python.
+The transformer model is trained on tasks and it updates the weights.
+RNN
+ Recurrent Neural Network (RNN): Is a type of neural network designed for processing sequential data by maintaining a memory of previous inputs.
+Not Exam Material
+ Encoder Architecture:
+The encoder processes a sequence of inputs xt, such as words in a sentence or tokens in a document one at a time using RNN.
+Each input xt is fed into the RNN which updates its state.
+The final state is a vector c that captures the entire document's meaning in a document embedding.
+So the final results of encoding a document is vector or vectors meaning that.  Encoder (doc) = vector(s)
+The process is summarized using this picture:
+
+Fine Tuning
+ Fine Tuning: Pre-trained models can be fined tuned to adapt to specific tasks achieving a high efficiency and performance with minimal training.
+What is fine tuning?
+A pre-trained model is a machine learning model that has already been trained on a large dataset for a general task, such as GPT or BERT.
+The slide then emphasizes that instead of training a model from scratch we reuse this model and fine tune it on specific tasks.
+We fine tune a model by updating the models weights in the pre trained model but also in the new classifier layer together.
+The fine tuned model is dedicated to a specific task and trained on a specific dataset.
+How we fine tune?
+The whole training network looks like the following:
+We first have the Language Model Training (pre-training) where the model is trained on a massive dataset in a self supervised way meaning that the model generates its own annotations. It uses billions of example to be trained.
+We then have the Fine Tuning (Task Specific Training) we fine tune the model on a smaller dataset and involves supervised learning which means that human-labelled data is used for training. A new classifier layer is added to the model and trained along with the pre-trained weights. It takes only thousands of examples to be trained.
+Week 5 & 6 Generative AI
+ What is a Language Model?: A language model computes the probability of a sequence of words appearing together in a natural language.
+Suppose we have the text A 'eat cheese cat mouse' since this does not follow natural language structure it gets a low probability of P(TEXT A) = 0.0000002.
+Suppose we have text B such as 'one plus one is equal to two'. This is a coherent and true sentence hence it gets a high probability of P(TEXT B) = 0.000345 Language Model Size and Performance:
+A small model = random performance
+A larger model + More Data = Performance
+ N-Gram Language Model: Is a probabilistic model that predicts the next word in a sequence based on the previous (N − 1) words.
+An N-Gram is a sequence of N consecutive words in a text.
+The N-Gram model calculates the probability of a word given the previous (n − 1) words.
+Each (N-1) Gram has a unique probability distribution over the vocabulary.
+The higher the n the more context and the better predictions.
+Example of (N-1): So a 3 Gram Model would work like the following. Suppose we want to know what word is likely to follow after 'A strange cat' in a text? Since it is a 3 gram model we will look at the last 2 words, which in this case are strange cat. The language model then has a probability distribution for 'strange cat' and it may look like the following:
+Pr[ "hello"] = 0.0000000001
+Pr[ " is " ] = 0.6
+Pr[ "traded"] = 0.001
+So the main take away is that a n gram model looks at the last (N − 1) words.
+Example of Counting Probabilities: If we have a 3 gram model and we have the following phrases then we can calculate the corresponding probabilities. Lets look at these two phrases:
+'His own delicate' and 'His own high-power'. Since we have a 3 gram model then we use the first 2 words of 'his own' to predict the next word.
+To do that the model counts how often different words appear after 'his own'. We conclude that both 'delicate' and 'high-power' appears once meaning that:
+ count["his","own"]["delicate"] = 1
+ count["his", "own"]["high - power"] = 1
+Since both words appear equally often after 'his own' their probabilities are computed as:
+P( "delicate" ∣ ”his own" ) =  = 0.5 P( "high-power" ∣ "his own" ) =  = 0.5
+Lets talk about how we can generate text.
+ Greedy Generation: Is a text generation method of a language model which chooses the word with the highest probability at each step.
+ Prompt Completion: Is a text generation method of a language model which generates text token by token based on a given prompt. Each predicted token is influenced by the prompt and previously generated tokens.
+So the first token is based on prompt.
+The second token is based on prompt and the first token.
+The third token is based on prompt and the first token and the second token.
+ Controlling Text Generation: We control text generation in language models using Top-K Sampling and Temperature Setting.
+Top-K Sampling: Restricts the selection to only the K most probable words instead of always picking the highest probability.
+So if K = 5 then the model will only consider the 5 most probable words, and sample from them instead of picking from the entire vocabulary.
+Temperature Setting: The temperature T controls the degree of randomness in the output.
+A Lower Temperature (T<1) focuses on the most likely words making the text more predictable and deterministic.
+A Higher Temperature (T>1) samples from low probability words, making the text more creative but less predictable.
+Low T: Makes the text more predictable and less creative.
+High T: Makes the text less predictable and more creative.
+Lets now talk about an improvement to an AI model which is the RAG. The Retrieval Augmented Generation (RAG) combines information retrieval with text generation to improve the accuracy and relevance of responses. So RAG retrieves external documents and uses them to generate fact based up to date responses.
+ Retrieval Augmented Generation (RAG): Subsidises a AI language models capacity by not only relying on the language model's pre trained knowledge, but actively retrieving documents and using the documents to generate up to date responses.
+To use RAG we need to use a embedding model and then we use a vector database.
+We first use a embeddings model to convert all documents into vectors. We then store these vectors in a vector database for efficient retrieval. These are the documents that will subsidize the models pre trained knowledge.
+When a user makes a query it is processed through the same embeddings model to convert in into a vector. The system searches the vector database for the most similar vectors to query (Nearest Neighbour Search). The Top-K most relevant documents are retrieved based on vector similarity scores.
+The retrieved documents are then passed to a LLM which uses these documents as context to generate a response.
+ LANGCHAIN See notebook LLM. The last question on the practice exam has something to do with the exam.
+Langchain is a framework that helps developers build applications on top of LLM's.
+We can think of LLM as the engine and Langchain as the framework that helps us create prompts, store memory, call API's, etc.
+ Chat Based LLM Setup: Lets look at what needs to be defined in a chat LLM. More precisely in Langchain.
+Once we have a LLM we can use Langchain to define the interface with the LLM
+What we need to define is a System Message a User Message and a AI Message:
+System Message: Is a message which gives the LLM instructions and rules and sometimes context like schemas.
+A schema is a structured description of the data, typically in the form of a database. It tells the LLM what tables exist, what fields are in each column, what data are we handling.
+An example of a system message in a LLM chat bot in which we need to help people generate a SQL query is the following:
+You are helping people to obtain information from an SQL database. This is the schema of the SQL database:
+Table: Sales
+id (integer) field_month (string) field_year (string) field_amount (float)
+country_id (integer, foreign key to Countries.id)
+Table: Countries
+id (integer) name (string)
+The user will ask a question from which you will generate a SQL query based on this schema.
+User Message: Is a natural input from the end user, such as a question, prompt or a task request.
+An example of a user message could be 'amount of sales in Denmark for 2025' AI Message: Is the model's output based on the system message and user message.
+An example of an AI message would be:
+The user asked for user message which obtained the result from the database of SQL query output.
+Practice Exam
+
+Question 1:
+
+The correct answer is 9,500, since we have 500 stopping words in the 10,000 words. So if we remove 500 words out of 10,000 words, we obtain 9,500 words in total.
+
+The correct answer is '5000 words appear in 2 or less documents'. Since document frequency is defined as the number of documents a word appears in.
+Question 3
+
+The book is the corpus, where the sentences are the documents. We can ignore the part where it talk about the vocabulary being 1 gram and 2 gram.
+A high TF-IDF means that the word appears a lot in this particular document but not a lot in the corpus. That is because the TF-IDF is the term frequency divided by the document frequency.
+The term frequency describes how often a word appears in a particular document. The document frequency describes in how many documents this word appears.
+
+In an N gram model the probability of the next word is based on the previous N-1 words. It has a unique probability distribution.
+
+
+Word embeddings are vector representations of words. Word2Vec is a specific method for generating word embeddings.
+Word2Vec needs a corpus as training material a window size to know which surrounding words to consider and a vector size to control how much meaning will be in the word embedding.
+
+We use the cosine similarity to monitor if similar words have similar vector representations, a high cosine similarity represents similar words and a low cosine similarity represents different words.
+To use a 'neural network language model from the family of transformers as an encoder' it means that we are just using some type of neural network model that uses encoder architecture.
+The maximal sequence length is the maximum number of tokens that a transformer model can process at once.
+So in the case the model can only process 1024 tokens at once, if the text has 2000 tokens then it must be split into two parts.
+The output dimension is the size of the vector representation of words (word embeddings) that the model produces after processing an input sequence.
+So if the output dimension is 2048 this means that each document is encoded into a 2048 dimensional representation. So for example if we submit a 1024 token into this model then the meaning of the entire document will be compressed into a single vector of 2048 numbers.
+
+The answer is the first one since in topic modelling each document has a distribution over multiple topics. The weights represent how much of each topic is present in the document. So if the topic has a weight of 0.6 then 60% of the article is based on that topic.
+
+The number of topics BERTopic finds will be the dimensions of the vector. So in this case we have 120 topics which means that each document will be represented by a 120 dimensional vector.
+Each value in the vector will represent the weight of the document that belongs to each topic.
+The values of the vector sum to one.
+BERT is a pre-trained model which we can fine tune.
+Question 11:
+Question 11:
+The answer is the first one but it is worded incorrectly. Instead of pre-training it should say fine tuning. This is because BERT is already pre-trained we just need to fine tune it.
+
+But to pre-train a model we would need billions of academic papers, it is trained in a self supervised way.
+To fine tune a model we need thousands of examples to be trained, it is trained on human labelled data.
+Question 12:
+Question 12:
+Greedy text generation results in choosing the most probable token at each step.
+Question 13:
+
+Documents with similar meanings are encoded into similar vectors. In the word embeddings section this is the section which talks about cosine similarity and that words with similar context and meaning will have similar vector representations.
+It is named entity recognition.
+Question 14:
+It is named entity recognition.
+Question 14:
+Entity linking refers to joining NER to actual knowledge bases.
+POS tagging refers to when we tag parts of a sentence to a predefined tag set with grammatical categories.
+Constituency parsing is similar to POS tagging but instead we are categorizing phrases of a sentence into grammatical categories
+Question 15:
+Question 15:
+Named entity recognition is highly context dependent
+
+
+The correct answer is constituency parsing since constituency parsing analyses sentence structure. If part of speech tagging POS was one of the options then it would be a strong contender but POS only assigns word categories such as nouns or verbs while constituency parsing analyses phrases, which is what we need.
+
+The correct answer is to use an encoder to transform chunks of texts from documents into vectors.
+Well the above is only partially true since we actually encode each document into a vector, but in practice we can break up the document into chunks if it's too long, and encode the chunks.
+A low temperature setting of T makes the text more predictable and less creative.
+Question 19:
+Question 19:
+LLM's can not think and reason like humans they are trained to generate text. So 'reasoning' in LLM's would just be an output of step by step explanations.
+
+Question 20:
+Question 21:
+Question 20:
+Question 21:
+
+See part on Chat Based LLM Setup

@@ -1,0 +1,355 @@
+Lecture 1
+·       Data structures are needed to translate what we have in real life into the comp
+·       Algorithm: work on data structures to get what you want
+·       complexity of algorithm: How well it works with more data
+·       programming language
+ 
+·       knuth's characterization 
+-              input specified; what do we work 
+-              output specified! what do we deliver 
+-              definiteness: know what to do at each step
+-              effectiveness: deliver promised result
+-              finiteness: always finish
+** if you make a mistake in your code, it won't affect on definiteness as it's still clear what you’re trying to do. It might affect effectiveness or Finiteness **might ask which one of the five is found in the algorithm
+·       Algorithm nesting: call a function inside a function
+·       data structures: how data is stored for efficient search and retrieval. It stores data in a way it makes sense
+ 
+·       data structure;
+-              data stored in computer Memory as numbers
+-              data stored as objects of programming language
+-              data is manipulated through functions or object methods
+-              data is organized by objects relations
+ 
+·       Data structures in python: create a class then a method
+ 
+·       Complexity: how many instructions you need to do to execute the function or method, etc
+-              find a simple relationship between time and size of data
+-              Big O notation "how well an algorithm performs as input size grows"
+-              O (N)
+o   O: order of complexity
+o   N: number of inputs 
+**the faster the result grows after each step, the worse the algorithm performs
+·      
+ when you go to infinity, the first function is then some multiple of the other function                                                  ⇒ focus on what matters for big numbers
+ 
+-              Example:
+o   for polynomials use the highest degree 
+o   constants do not matter
+o  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+*simplify to the fastest growing multi-variables O tough to formalize
+·       Memory
+-              Any algorithm uses memory even if it's temporary
+ 
+·       Space complexity, measures link between size of data and memory usage
+* Algorithm= instructions/ recipes function Data structure data organization=class Complexity= how long with 10 a data
+ Lecture 2
+·       you must identify what operations you actually do on the data, which tells you which data structure is the best for your case
+·       Stacks:
+-              Sequence of objects only first can be added or removed
+-              Add object as new first, before old first
+·       sequence: enumerated collection of objects where repetition is allowed and order matters
+-              collection: one sequence contains many objects
+-              Enumerated: each object has a positive integer index
+-              Repetition: the same object may appear multiple times
+-              Order: there is a first object, a second, a third, ...
+ 
+·       A list is a sequence
+·       If O(1) it has a constant time: whatever the number of elements in the list, it takes a bounded time
+·       If O(n) it has a linear time 
+·       Pop gives the item that has been removed
+·       In algorithm for undo, we saved N strings so O(N), the more you save the slower it gets
+·       Limitations of list
+-              Inserting and deleting at the state is the worst-case scenario for a python list
+-              This is because the remaining elements must be shifted to accommodate the change
+ 
+·       A deque is a double ended queue 
+-              Sequence optimized for operations at start/end of sequence 
+-              So we don’t need to shift the elements 
+-              Though it uses more memory
+-              The complexity is that all operations except remove have a constant time 
+·       Now for the undo algorithm has a complexity of O(1) so it never gets slower
+ 
+·       There is always a trade off between memory and time 
+ 
+·       Data structure and algorithms are entangled
+·       Choose data structure by usage 
+·       Based on algorithm actions 
+·       Actions should correspond to optimized operations of the data structure 
+ 
+·       Do you delete items the same order that they are inserted? 
+-              First in first out
+·       Does it delete items in the opposite order they are inserted? 
+-              First come = bottom of stack = last lifted 
+-              last in first out 
+·       queue is a sequence 
+·       optimized for 
+-              insertion at the end
+-              removal at the start
+·       for queues, its first in first out 
+·       implemented with deque 
+ 
+·       stack is a sequence
+·       optimized for:
+-              insertion at the start (push)
+-              removal at the start(pop)
+·       so for stacks, its last in first out (actually never mind)
+·       implemented with deque
+ 
+·       it is faster to represent matrices with NumPy
+·       you represent a matrix using a list of lists to save memory
+·       in NumPy arrays are stored at one continuous place in memory so one after each other, it is not scattered around the computers memory unlike lists 
+·       therefore processing data in NumPy array is faster as they access data faster if it’s all the the same are in computer memory
+**
+·       Data structure/algorithm interdependent:
+-              cant have the algorithm complexity if you don’t have know the data structure operation complexity 
+-              you invent data structure to make algorithms faster or efficient using less memory
+·       identify the sequence data structure based on usage
+-              add/remove at start: stack
+-              add at end/ remove at start: queue
+-              add and remove always at start/end: deque
+·       storing numbers for linear algebra: numpy arrays 
+ 
+lecture 3
+·       use insert(0,1) for lists and appendleft(1) for deques to add an object at the beginning of the list
+·       for inserting at the end its all the same
+ 
+·       guess and check
+-              you have a way to check that the potential solution is the solution to the problem 
+-              you have a list of potential solutions and try every potential solution until you find one 
+-              so if you find a root, if there are not roots, u can uses p(a) * p(b) < 0 (IVT theorem) to check if there are roots in between 
+·      
+
+                                                      -> complexity is the degree of the polynomial
+·       N is the number of guesses so O(Nm)
+-              If the number of guesses is the same:
+o   O(m): its linear on the degree since N is a fixed value
+-              If the degree of the polynomial is the same: 
+o   O(N): linear on the number of guesses 
+-              Trying 10*m guesses on polynomial with degree m:
+o   O(m**2) quadratic on degree
+·       Guess and check iterates through half the search space
+·       Size of data 
+-              Number of samples
+-              Degree of polynomial
+-              Precision as power of 10
+ 
+·       Bisection
+-              Have a sorted list of potential solution. So like in guess and check you dont know the order of you pages but if you order them neatly 
+-              Can check if a potential solution is a solution
+-              So can tell if the solution is more than or less than the potential solution
+-              Algorithm: guess & check + remove guesses 
+·       How many times can you split N guesses in 2 halves? Log2(N)
+-              O(m*log(N))
+-              Log2, Log3, log10, etc is the same because logn = constant + loge, so in big ) since we dont care about constants, it is the same 
+·       Can only do bisection if:
+-              We can sort guesses
+-              Can decide at each step to remove guesses below or above 
+·       Depends on the nature of the problem
+·       Excellent fit for zeros of continuous real valued functions and finding a number in a sorted list
+·       Bisection is a convenient way to approximate a function roots but the answer is one of our original guesses and we have no control over precision 
+·       Finding zeroes of a function is useful for max or min
+ 
+·       Approximation:
+-              Evaluate the distance between a potential and ideal situation ||x||
+-             
+Approx. Algorithm finds approximate solution x such that ||x|| <    (target distance)
+·       There is a 0 of f in [a.b] because f is continuous
+·       We can always find an interval where f is smaller than epsilon
+·       Approximation is the same as guess and check but instead of working on a limited number of guesses your creating your own guesses in a way that converges and getting closer to the solution
+·       Approximation algorithm = alogorithmic changes/creates its own search space 
+·       x, y in zip(guesses, guesses[1:]): #consecutive points
+ 
+**
+-              Guess and check: try possibilities
+-              Bisection: same but reduces number of possibilities quickly
+-              Approximation: uses bisection, searches in-between the possibilities
+ 
+Lecture 4
+·       3 sorting algorithms:
+-              Selection sort: one of the worst
+-              Pigeonhole: best for integers
+-              Quicksort: one of the best
+·       Sorting:
+-              Given a sequence of comparable objects
+-              Create a sequence
+o   Containing the same objects
+o   Ordered so that Si+1 >= Si
+-              Can only sort things you can compare and can compare things if a<b and b<c then a<c and a>=b and b<=a is a=b
+-              Numbers and strings are naturally comparable
+·       Sorting is important 
+-              Must process by priority, size, alphabetical order
+-              To search in list O(N), bisection in sorted list O(log(N))
+-              Spend time to sort once instead of spending little time to search many times
+·       Can only sort in python if a<=b
+ 
+·       Selection sort: (never use it)
+-             
+
+Create a list L, then copy it C, then put the minimum value in C in a new list S then remove it from C. After k rounds, C has N-k elements so 
+ 
+·       Pigeonhole sort: 
+-              So you have a list, count how many of that number you have, then you build a list by saying the sorted list starts with this many 1s, this many 2s, etc
+-              How it works:
+o   list of +int L: [1,5,4,4] 
+o   find min and max in L for range: min=1, max=5 -> O(len(L))
+o   create list P with min-max+1 zeros: P=[0,0,0,0,0] -> O(max-min)
+o   for every element in L add 1 to element P at index element-min -> O(1)
+P[1-1]+=1 since L[0]=1
+P[5-1]+=1 since L[1]=5
+P[4-1]+=1 since L[2]=4
+P = [1,0,0,2,1]
+o   create list S
+o   S.append([index+1]*P[index]) -> O(value)=O(len(L)/max-min))
+S.append([0+1]*1)
+S.append([1+1]*0)
+S.append([2+1]*0) etc
+S=[1,4,4,5]
+-              Complexity= O(N)+O(m)+N*O(1)+m*O(N/m) = O(N+m) 
+·       Pigeonhole is efficient for integer lists especially long lists of short-range integers or short lists of long-range integers
+ 
+·       Quicksort: 
+-              take element as pivot, make a list that’s smaller than this pivot or greater than 
+
+-              complexity is constant time and len(GREATER) = L/2
+-             
+
+complexity to sort a list
+ 
+ 
+ 
+ 
+-              best case: always split in 2:
+O(N*log(N))
+Solution of C(N) = 2* C(N/2) + O(N)
+-              worst case: the pivot is always the greatest or smallest (Quicksorting a list already sorted)
+O(N**2)
+Solution of C(N) = C(0) + C(N-1) + O(N)
+-              Average case: split the list 90%/10%
+O(N*log(N))
+Solution of C(N) = C(N/10)+C(9N/10)+O(N )
+**
+Use info about data: different complexities, very costly to sort a sorted list
+Quicksort is faster than selection sort: N*log(N) << N**2
+Match data to algorithm, data is not always in the best case and mo guarantee its in the average case
+ 
+When you write field(init=False) you dont need to write it as an argument and can assign a value to it later 
+Instead of always converting to lowercase everytime you compare songs, _sort_basis does it once 
+ 
+Lecture 9
+·       UvA has to hold N exams in one day and can take place in any room 
+·       Each exam is scheduled from a starting time to an end time 
+·       Use graph coloring and assign each node a color where adjacent nodes have different colors 
+·       For the scheduling exam the time complexity is N^2-n/2 so O(N^2)
+·       For nested loops like for i in (1, N) and the for j in (i, N) the complexity becomes N(N-1)/2
+·       Recursive coloring: solution for the graph = safely color a node + solution for the graph without this node
+·       The pseudo code:
+-              Start with N=0, so you color the first node
+-              If N not in G return OK, this is because you have successfully colored all nodes and went beyond number of nodes
+-              If N is colored return process (N+1), colors N then moves on to the next node
+-              For each safe color C in K: iterate through all available colors K and check ig it can be safely assigned to current node N and doesn’t conflict with colors of adjacent nodes
+-              Return no solution: if no safe coloring can be found for node N and must backtrack to a different color
+·       Best case: after coloring a node, subproblem is solved without backtracking = process called once per node; complexity = O(V+E)
+·       Worst case: subproblems are all solved by backtracking from last node = process (N+1) called Safe(N) times for node N; O(phi**V)
+Lecture 10
+·       Wed pages contain hyperlinks to other pages 
+·       Some nodes have high-in degree
+·       Some nodes are linked by authoritative nodes 
+ 
+·       Drop a walker on a random node
+·       Walker uses edges at random and the walker is teleported 
+·       Walker will follow links at random and will get bored and goes somewhere else 
+·       Repeat k times and take notes if node visits so you might end up at the same place many times 
+·       High pagerank = authoritative pages
+·       Each node transmits a part of its own importance to its neighbors which increases the neighbors importance
+·       U: page you want the rank for
+·       C: probability user will continue following links
+·       Bu: x in a set of pages that have links to u
+·       Nv: number of links from page v so if v has many links to other pages the influence on u is smaller
+·       *pagrank of a node is calculated by the sum of Pageranks to the node divided by 
+ 
+·       Start with initial rank vector R0
+·      
+
+                   If there is a link from u to v
+·      
+
+             If there is no link
+-              A represents the transition matrix of a random walker where the walker moves between nodes based on their links and corresponding probabilities
+·      
+
+                         -> recursive formula that updates pagerank vector Rk where A^t is transpose of A. Process continues until convergence 
+·      
+
+                   Convergence = stationary (eigenvalues)
+·      
+
+To account for probability alpha for random surfer to jump to random page 
+Lecture 11
+·       Want to buy a network in-between offices
+·       Check monthly costs of each pair of connected offices – depends on distance
+·       No need to interconnect each pair as they’re relayed through offices 
+·      
+
+Total cost of selecting S a subset of all edges 
+·       This minimizes cost and there’s always a path 
+·       Minimum spanning tree
+ 
+·       Given G = (V, E) connected undirected graph with weighted edges
+·      
+
+
+T= V  =V and E   E: 
+·       So T is a spanning tree when all the vertices are included and the edges are a subset of edges in G
+·       T is a tree: connects all the nodes by using the fewest number of edges
+·       Minimum spanning tree: minimizes total weight of edges. 
+·       A minimum spanning tree is a subset of a graph that connects all vertices with the minimum possible total edge weight without creating cycles
+ 
+·       T = (V, E) undirected graph is a tree
+·       T has no cycle and |E|=|V|-1 (undirected graph with no cycle and theres a constraint on number of edges)
+·       T is connected and |E|=|V|-1
+·       T is connected and each edge is a bridge 
+·       Unique path between 2 nodes
+·       T has no cycle and new edges creates one cycle
+ 
+·       Root: one node no parent (not necessarily needs to have a root)
+·       Inner nodes: one parents many children
+·       Leaves: one parent, no children
+·       Siblings: children of the same parent
+·       Depth first in order traversal * not in test
+·       Kruskal algorithm
+·       
+·       Time complexity : O(ElogE) (quicksort) + O(E)*(O()+O(1))
+·       If they’re all integers we can use pigeonhole and TC will be O(E)
+·       It depends on how fast we can assert whether adding an edge will create a cycle 
+·       To check for a cycle you check if more than one path leads to the node so cannot add edge in the same tree
+·       When you add an edge, you create a cycle. 
+·       Disjoint set
+-              Start: each node is its own tree
+-              Find: identify in which tree is a node 
+-              Merge: delete disjoint sets and keep merged set 

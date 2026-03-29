@@ -1,0 +1,561 @@
+1.1 
+		Rules and laws are necessary to organize just behavior and prevent chaos
+		Substantive law is composed of legal rules that defines the content of just behavior
+	⁃	What to do and what not to do 
+	⁃	Driving on the right side of the road 
+		If there are no consequences when substantive law is violated, we depend on the people’s good will to follow laws
+		Formal law are legal rules to maintain substantive law
+		Substantive law organizes behavior 
+		Formal law maintains intended behavior 
+
+		Formal and substantive law regulates public and private law
+		Public law: law that regulates relation between a government and its citizens 
+	⁃	When citizens violate substantive law, the state interferes and punishes the citizen according to appropriate formal rules 
+		Private law: law that regulates relation between citizens or those who act as citizens 
+	⁃	Companies are considered equivalent to individuals in terms of capacity to legally act 
+		Commits theft with the intent to deprive the other of the right to the property or benefit of the property or appropriate the property as their own use 
+		The illegal driving itself Is a public law and claiming damage compensation is private law
+		Legal rules that settle disputed between citizens in private and public law are formal laws 
+1.2
+		Just implies a balance between the values ‘justice’, ‘opportuness’, and ‘legal certainty’
+		Justice is a moral conviction of a given society expressed in law
+		Justice is an expression of society’s conviction
+		Some laws and moral conviction may be controversial and may not be shared with all citizens of the country like death penalty or same sex marriage 
+		Opportuness is the expression of effectiveness by a given society. Used to regulate something in society rather than used for a moral conviction
+	⁃	Regulates law in an effective and practical POV while it’s considered unjust
+		Legal certainty is the expression of legality in a given society 
+	⁃	It means that everyone should know the legal consequences of their actions beforehand 
+	⁃	Law must be predictable 
+	⁃	Can’t be punished for something that was not forbidden at the time of the action
+1.3
+		Natural law: assumed laws emerged from nature 
+	⁃	Such laws include human rights as people have them just because they were born 
+	⁃	Human rights are inherent to mankind, so they don’t have to be recognized on paper 
+	⁃	Applied cause its reasonable to do so 
+	⁃	Drawback is that people believe they have monopoly on the correct understanding of natural law like Germans regarding Jews 
+		Positivist law approach assumed that law comes forth from codification
+	⁃	Law Is only law when it is written down first 
+	⁃	Advantage is that they know beforehand what the rules of the game are 
+	⁃	Protects people against the extreme understandings of natural law 
+	⁃	Drawback is that its two steps behind reality 
+	⁃	Can lead to over formalizing relations in society 
+1.4
+		In codified standards there is naturally a strong emphasis on legal positivism 
+		In legal principles there’s a strong emphasis on natural law which suggests that certain principles are universally true and guide moral reasoning. These principles serve as foundational ideas in law.
+		Written standards need a certain flexibility so that it can be applied in many cases and leave room for natural law 
+		Legal principle is too broad and imprecise to apply it to a real case 
+		Codified standards are flexible due to general wordings
+		Principles from natural law are now formalized and fine-tuned for specific cases
+		Codified standards are written rules produced by a legislature 
+
+		A treaty is a written contract between two or more states who consider themselves bound to its content relative to each other 
+	⁃	Other words include covenant, convention, pact, agreement, protocol
+		Bilateral treaty is a treaty to which two states are party 
+	⁃	Might need this type of treaty for rivers between countries or exact state boundaries 
+		 Multilateral treaty is a treaty to which more than two states are party  
+		Treaties can be used for trade, human rights, access of territories 
+		The signature of a treaty implies consent of the responsible negotiator on behalf of the state to the treaty 
+		It is drafted during a negotiation process of the involved states represented by an authorized negotiator, depending on the significance of the treaty 
+		The ratification of a treaty implies consent of the responsible legislator on behalf of the state to the treaty 
+		When legislator consents, it is approved by the state, and it’s bounded to the treaty
+		Government negotiates and signs while the parliament ratify
+
+		Monism: approach in law in which it is assumed that the content of the signed and ratified treaty is automatically part of the domestic legal order
+		Dualism: approach on law in which it Is assumed that a signed and ratified treaty needs to be transformed into domestic legal law before it forms part of the domestic legal order
+
+		A legal standard will always be some sort of generalization of the context of the case and the applicator will provide a certain explanation
+		Judiciary is responsible for applying the law in cases of disputed regarding specific meanings 
+		Case law is a chain of authoritative legal rulings in which the same reasoning pattern of the court is applied in similar cases 
+		In some legal systems such a chain of rulings is called a precedent 
+		When courts apply the same reasoning, the unity of judiciary is preserved and serves as legal certainty 
+		Stare decisis is a legal principle in which courts must follow the legal reasoning as applied in previous cases
+	⁃	Lower courts can’t rule in contradiction with higher courts in a similar legal matter 
+	⁃	Case law is a consistent source of law 
+		Case law is the collection of past court decisions, while stare decisis is the principle that courts should generally follow those past decisions when deciding similar cases in the future
+
+		The administration is the branch in the public sector that executes the law within the boundaries of its competences 
+	⁃	Within the limits of their authority and jurisdiction
+	⁃	They’re in service of the public sector and are entrusted to execute law in situations
+		Margin of discretion is the room allowed for administrations to execute law at their own discretion
+	⁃	Law must be executed for the benefit of common good 
+	⁃	Must apply policy rules consistently to make it predictable 
+		The military is a political power with constitutional competencies. They’re authorized to apply the law 
+		Legal writings and teachings can be a legal source on its own right
+		A non-secular state is a state in which governance and religion are mixed 
+		Secular state is a state in which governance and religion are separate 
+	⁃	Must treat all religions equally
+	⁃	The state and holding public office must not dictate religious belief 
+	⁃	Not prefer in advance any religion
+	⁃	No person shall assert religious belief as a legal reason to disregard laws
+
+		A custom is an established and accepted legal practice 
+	⁃	Finds its origin from the interaction between people and not written standard
+	⁃	Must be an established practice (usus). Must be consistent and predictable
+	⁃	Must be an accepted practice by its users (opinion iuris sive necessitates)
+		Before applying a customary rule, judges must check is it contradicts other elements of applicable law 
+		A custom may be adopted as part of the law governing a particular set of circumstances if it can be judicially noticed or can be proven to exist by evidence. So it can be used as evidence if it was accepted by higher courts
+
+		Legal principle is a founding principle in law that may not be violated
+		It’s a general value that applies in law 
+		Ius cogens are universally binding principles
+	⁃	Usually vague and understood differently around the world and will depend on the application of these principles in the context 
+
+
+
+
+2.1
+		Comparative law has 5 purpose 
+	1.	Gaining of knowledge
+	⁃	If someone looks further than their own legal system, they will learn more
+	1.	Evaluating the better law 
+	⁃	In gaining knowledge the researcher has a neutral attitude towards the data and concludes the best law in a situation
+	1.	Substantiate the application of law 
+	⁃	Before applying the law, courts administration or military compare the law first to make sure they apply the law correctly 
+	1.	Improve legal education
+	⁃	Broadens the view of students on law 
+	1.	The unification of law
+	⁃	Mainly so that market players don’t encounter many legal differences 
+	⁃	One example Is cosmetics in the EU in which they must fall under specific regulations and that a responsible person for cosmetics in circulation and they must guarantee that these products are sold according to the regulation.
+2.2
+		Macro comparison is the activity in which the main characteristics of legal systems is compared 
+	⁃	Insight to how legal systems work and how similar they are
+		Legal system is a coherent collective of rules in which the same hierarchy of rule apply mostly determined by boundaries of state. 
+		Cannot assume that a legal system I usually a legal system of a state like Hong Kong and China
+		A legal family is a group of legal systems that share the same basic characteristics in law including hierarchy of legal rules
+		‘family’ limit law to the boundaries of states nor the concept to a given time in history
+		Since law changes over time, it is a flexible study subject 
+
+		Common law is driven from case law and predominantly driven by judges 
+	⁃	common law I the system and case law is the evidence that the system was used in previous cases
+	⁃	purpose of common law is to provide practical solutions on actual cases 
+		solicitor advises clients on legal matters in general and represents them in lower courts 
+		Example: country gradually tarted to function as courts after there was a dispute regarding tax payment and overtime, a court system was established to settle other disputes 
+
+		civil law system is driven by codified standards
+	⁃	a society can be organized in a coherent way by adopting codified standards
+		a legislature can't make rules applicable for all cases, so Courts apply the codified standards to the case 
+		law is academic discourse while common law is applied science 
+		judges need to interpret laws and could do so by looking at previous cases that are similar 
+		Example: French civil code came after revolution which was really important as it is widely used. It drew from roman law and customary law they informally followed in France. Then napolean enforced the civil code and spread it across countries
+
+		socialist law is driven by administration
+	⁃	law is produced by the state on behalf of all its citizens to create a society based on socialist principles 
+	⁃	admin is the main source of law 
+		socialist system 
+	⁃	no role for private law 
+	⁃	government by one powerful political party which has monopoly on decision making 
+	⁃	law is used to realize a political agenda 
+	⁃	court rulings hardly settle disputes in private relations 
+		on of the principles is that everything is state owned 
+		state is the only official political party 
+		law is limited to public law
+		if disputes over private relations were to occur law is not an appropriate mean to settle it 
+		legislator is a counsel of state and administration consists of a council of ministers 
+		court rulings contribute to the bigger picture of creating a socialist state rather than settle disputes 
+		Example: In cuba, the legal system is driven by the political party and the emphasis is to preserve the integrity of their society rather than the integrity of each individual. The president is the head of both the legislative council and the administration and because of that he has total power. And while there is a court system in cuba it doesent really involve itself with normal disputes and rather focuses on the bigger picture of protecting integrity of socialist state
+
+		religious law system is driven by religious rules
+	⁃	it is non-scalar
+		some countries may have that secular and non-secular law co-exist
+		law does not change according to societal progress; rather the opposite 
+		igma is when the Islamic world reaches a consense on the interpretation of the Qur’an
+		qiyas I when a judge finds analogous cases in the past to solve cases 
+		shari’a law is a set of religious principles and rules that guide the lives of Muslims. It's based on the teachings of the Quran. 
+		Example: Saudi arabia 
+
+		traditional law is derived by customary law 
+	⁃	there are particular laws 
+
+		mixed system contains two or more elements of other families in one legal system
+	⁃	when Japan opened its markets to the rest of the world, trade disputes could hardly be governed by Chinese oriented concepts of customary law and hence imported concepts of French and German law 
+	⁃	Japan is a mixture of Chinese cutomary law, French and german civil law and American common law 
+2.3 
+		Micro comparison compares legal solution to a social problem in legal systems
+		When a social problem is solved by law 
+		Tertium comparationis is the shared social problem to which the compared legal solutions answer 
+		Praesumptio similtudinis Is the assumption that each society faces the same social problems 
+		Legal solution to a social problem is the particular legal concept within a given legal system that solved the involved social problem 
+		Legal solutions to a similar social problem are functionally equivalent 
+		The choice of the legal systems depends on the agenda of the researcher 
+		If the researcher cannot find a solution using law they would find a solution in legal practice (custom) rather than codified standards 
+		Rules of thumb in micro comparison
+	⁃	Determine in which legal family the legal system belongs and what particular characteristics are important in this legal system
+	⁃	Determine how legal sources are used by those who live in that legal system 
+	o	When a legal source exits it doesn’t mean it is effectively used 
+	⁃	Don’t study law in books only but also the law in practice 
+	o	When a legal source doesn’t exist, it doesn’t mean that there is no legal solution
+	⁃	Study the sources in the original form preferably in the original language 
+	⁃	 A legal solution may respond to more than one social problem 
+	o	Helpful to understand the broader concept as legal concepts answer to more than one social problem 
+
+3.1
+		Constitutional law regulates and restricts the attribution of power within a state 
+		Done by three types of rule
+	⁃	First type defines the states
+	⁃	Second attributes powers to state institutions and limits these powers to a certain margin 
+	⁃	Third recognized rights of the citizens of that state that can be invoked when power is abused 
+		A constitution doesn’t necessarily consist of codified standards 
+		It is important to check to what extent the constitution works according to plan and take law in action into consideration
+		In Chile, legislature is the congress consisting of chamber of deputies and senate.
+		Judiciary consists of several specialized courts of first instance, courts of appeal and supreme court
+
+		In constitutional law, there is always a certain struggle between authority and individual
+		When power is used by the institution of the state one interferes in the life of citizens 
+		A social contract has been an example for organizing states. Individuals give up their sovereignty to the authority in exchange for a peaceful and secure society
+		Negative freedom: one is free to do whatever they want without any interference
+		Positive freedom means that because of interference on could better give directions to his life 
+		How a state uses concepts of positive and negative freedom illustrates how it is governed 
+
+		The best way to reduce power abuse is to separate power in three branches
+	⁃	Legislature: law making 
+	⁃	executive branch: executing law in practice 
+	⁃	judiciary: settle legal disputes 
+		trias politica is the organization of a state by separating legislative, executive and judicial powers 
+		the concept rules out state forms that are governed by one central institution 
+3.2
+		the state structure is the way power is distributed amongst entities of a state 
+		two most used state forms are federation and unity state
+		a federation is a state that unifies federated areas that are self-governing within the boundary set by the federation
+	⁃	example: the US states have common federated entities within that state enjoy a certain level of autonomy in legislation 
+		a unitary state is a centrally organized state in which all power is vested in national political institutions 
+	⁃	in a unitary state, legislature, executive branch and judiciary are centrally focused and have ultimate power 
+
+		government system is the way in which power is distributed amongst the political institutions of a state 
+		a monarchy is a state in which the highest power is assigned and distributed from one person or a group of persons 
+		a republic is a state in which that highest power is attributed to political bodies that rule within the boundaries of a constitution and is headed by a president 
+	⁃	led by a president 
+		democracy is a form of government in which the highest power is vested in the people that are governed 
+	⁃	people decide who represents them in the decision-making process
+		a monarchy is expected to be undemocratic as they hold the most power. However sometimes the monarch could merely be a ceremonial function
+		Republic is expected to be democratic. However, its possible for it not to be
+
+		The exact power vested in head of state differs so its interesting to know which branch they belong to 
+
+		Bi-cameral system when the legislative branch is composed of upper and lower house 
+
+		The executive branch must act in compliance with the law of the legislature with some margin of discretion 
+
+		Executive branch is the government of the country 
+		There are some principles of good governance the executive should follow 
+		Only when the executive pushes their discretion too far that the legislature interferes 
+
+		Judiciary is organized in several layers: 
+	⁃	Courts of instance for civivl and criminal law
+	⁃	Intermediate courts to appeal decisions
+	⁃	Supreme court is last ninstance 
+
+
+7.1
+		European law: a field of law in its own right that’s applicable in domestic lagal orders of its member states
+		European law is supranational law
+	⁃	Its directly applicable in its member states
+	⁃	European law is superior to domestic law. So domestic laws that are not in compliance with European law may not be applied 
+		Example: Van Gen Loos had to pay an import tariff but according to European law member states do not pay custom duty and because the law is directly applicable, even though the Dutch government didn’t implement the European rules, they had to pay them back 
+		Example 2: Costa vs Enel case: the Italian government nationalized the electricity sector. Costa disagreed as he owned shares in a small private security that is now a state-owned company. He argued that nationalization is against European law but is not against Italian law. Since European law is supranational 
+7.2
+		European union, the concept of free trade is organized in three main areas
+		The four freedoms 
+	⁃	Common markets where there’s free movement of goods, labor, services and capital
+
+		Free movement of goods 
+	⁃	Built around fiscal and quantitative restrictions 
+	⁃	Law is that there are no import or export duties, all charges having an equal effect should be prohibited.
+	⁃	The only exception is the cost required to cover the fee of importing and exporting 
+	⁃	Internal national taxation can’t be abused to discriminate against foreign products 
+	⁃	Quantitative restrictions include quotas 
+	⁃	A measure of having equivalent effect is a domestic rule that has the same effect as a quantitative restriction and therefore a discriminatory effect. This could include inspections or more commercial rules that hinder trade 
+	⁃	Example: Belgian brother wanted to buy Scottish whiskey from the French however couldn’t acquire certificate of origin as the French do not need one. Which created a trade barrier 
+	⁃	Principle of recognition: if a product is sold in one member state it must be allowed to be sold in other member state under the same conditions
+	⁃	Rule of reason doctrine: principle of mutual recognitions doesn’t apply when a member state may evoke a reason 
+	⁃	Example 2: German company import French liquor however could not be legally sold as liquor due to its low %. Government claims that min % creates fair competition and protects human health
+	⁃	Sales modality: trade rule about the circumstances under which a product can be sold
+	⁃	Example: opening hours, dumping, advertisement rules 
+	⁃	MEE rules that are indistinctively applicable but relate to sales modality is not in violation of Article 34.
+	⁃	Example: the French supermarkets were selling their products below the cost price in France. However, this was not in violation of article 34 as all market as all market participants are equally affected, therefore, a member state can uphold laws that indirectly discriminate as long as the law says something about the circumstances in which the product is being sold rather than the product itself 
+	⁃	Exception example include imported British meat as they were infected 
+
+		Free movement of persons
+	⁃	Free market economy
+	⁃	Eu citizens have the right to move and reside freely within the territory of member states 
+	⁃	The right to move applies to all EU citizens and not only (potential) workers pr self employed people and non-EU citizens who are a family member 
+	⁃	For the first 3 months of residence the host cant reject the right of residence unless they become an unreasonable burden on the host Member state
+	⁃	More than three month to 5 years: only if they work, has healthcare and sufficient resources for them or is a student 
+	⁃	Five years or more: can permanently reside in host country 
+	⁃	Schegan area facilitates free movement of persons by abolishing common border controls 
+	⁃	Free movement of workers prohibits discrimination in the access to employment and while being employed 
+	⁃	A self-worker might need to set up the necessary infrastructure in another EU member state to participate in economic activities 
+	⁃	Freedom of establishment includes the right to have access to self-employment in host country and the right to exercise this right once established in host country 
+	⁃	Law of host country regarding self-employment should not hinder access to that market 
+	⁃	Example: a German wants to set up an office in Italy and uses the word solicitor however he was suspended since in Italy he must be registered at the bar before using that title. The Italian rule violated the freedom of establishment as it hindered the lawyers access to the market
+	⁃	Equal access to markets in other EU states through establishment and equal treatment once established 
+
+		Movement of services 
+	⁃	Difference between freedom of movement of services and freedom of establishemtn is that in establishments a service provider crosses the border and establishes himself on a more permanent basis. While for services, they cross border to provide service 
+	⁃	There’s freedom to provide and receive services in EU 
+	⁃	Only accept barrier to trade when measure is proportionate and needed to protect public interest 
+	⁃	Example: in Germany an insurance must be established and authorized in Germany to provide insurance, therefore Germany had advantage over EU member states. However, its necessary to supervise insurance companies that operate in German market
+
+		Movement of capital 
+	⁃	No restrictions on mortgages, investments in real property and purchases of shares 
+	⁃	Results in monetary policies being harmonized and creation of monetary union 
+	⁃	Trade barriers can be justified when proportionate to realize legitimate goal in the protection of public interest 
+
+		Harmonization of law:
+	⁃	European laws and policies on economics have been harmonized to ban trade laws 
+	⁃	Primary legislation are the treaties signed and ratified by the EU member states 
+	⁃	Secondary legislation are the laws produced by European legislature based on and authorized by the primary legislation
+	⁃	Regulation is a legislation that applies within the European union without the interference of national parliaments. The country has no say in how the state should comply with the regulation 
+	⁃	Directive is legislation in which a certain goal or principle is adopted that should be implemented by the EU Member states when they see fit 
+	⁃	European legislature sets a goal a target or expresses a principle in a directive and then member states have a margin of discretion as to how to implement the directive 
+	⁃	Example: ex-employees not awarded salary after bankruptcy however European directive states that a minimum level of protection was recognized for employees as bankruptcy. Therefore, they sued the Italian government as they would have gotten their money on time if they implemented the directive and the European court of justice decided that the directive was specific enough for direct application
+	⁃	A decision is a legislation that only applies to an individual case 
+	⁃	There are legally non-binding recommendations and opinions 
+
+		Competition law 
+	⁃	To realize a free economy member states should act in compliance with its principles and companies should behave themselves and live up to free trade
+	⁃	Secondary legislation: establish prohibition of cartels, prohibition to abuse a dominant position and rules concentrations
+		Prohibition of cartels
+	1.	Clarity distortion of competition 
+	⁃	fix the purchasing or selling prices
+	⁃	limit or control production
+	⁃	share markets or sources of supply
+	⁃	apply dissimilar conditions to the same transactions with other trading parties
+	⁃	force the other party to accept contractual terms with obligations that are not related to the actual contract 
+	1.	specify the form of a cartel
+	⁃	Cartel is an agreement between economic entities in which willingly consent to distort fair competition through joint action 
+	1.	Establish who can violate prohibition of cartels 
+	⁃	All entities in society that at some point employ economic activity have to comply with article 101 (prohibition of cartels)
+	1.	Exemptions to prohibition of cartels
+	⁃	When they improve the production or distribution of goods and contribute to technical or economic progress
+	⁃	Benefits the consumer
+	⁃	Cartel must be indispensable to realize the intended goals 
+	⁃	Cartel must not distort competition substantially 
+	⁃	Example: limit products of synthetic fibre due to overcapacity so that companies could invest in strengths and product innovation
+	⁃	Cartels whose impact on the market is insignificant 
+		Abuse of a dominant position
+	1.	What does abuse mean 
+	⁃	Abuse follows the same conditions as competition distortion; however the difference is that abuse stems from a strong power position on the market rather than agreements or behaviors between competitors 
+	1.	What is a dominant person
+	⁃	When an undertaking could independently act on a market. Meaning they can autonomously regulate prices, supply, and other trading conditions 
+	⁃	Have a market share of 50%
+	1.	Know the relevant market
+	⁃	Two important aspects: geographical or product
+	⁃	Product market is defined whether product has substitute products in the market  
+	⁃	Test it using increase in price test. If increasing one product increase price its substitute it is a wide market scope than the first product
+	⁃	Geographical market also depends on the size of the market. May include tv shows 
+	⁃	Example: Michelin tyres was accused of abusing dominant market position. Main conflict was determining the market. Michelin claimed they operate on the tyre market in general however the market for retreated and replacement tyres are different 
+	⁃	Concentration is the result of two or more economic entities merge into one, distorting free competition
+	⁃	Can be a merger, takeover or joint venture 
+	⁃	Merger: independent undertakings merge
+	⁃	Takeover: one undertaking purchases another
+	⁃	Joint venture: two or more undertakings cooperate on a lasting basis and in fact function as an autonomous economic entity. Only those that are long lasting and function as an undertaking 
+	⁃	If the organization has community dimension, if concentration cross border trade between EU and its Member state, you need to inform European commission prior to its realization 
+	⁃	If there’s cross border effect a community dimension exists when 
+Combined worldwide turnover of all undertakings involved exceeds 5000 million euros
+Turnover within the EU of at least two involved undertakings exceeds 250 million euros 
+	⁃	Review depends on market size, relevant market, expected impact on market and remaining competition
+
+		Hypernorms: fundamental human rights and basic prescriptions common to most major religions 
+		Consistent norms: they are more culturally specific but are consistent with hypernorms and other legitimate norms 
+		Moral free space they are inconsistent with some legitimate norms however exist in many economic cultures 
+		Illegitimate norms do not act in compliance with hypernorms  
+		
+8.1
+		A contract is an agreement between two parties in which the contracting parties promise to do something in exchange or for something in return 
+		Two legal actions: offer and accept 
+		A valid contract is a promise clarified by law and should be specific enough to consent to 
+		In the negotiation process an offer is not specific enough. Its an invitation to do business 
+		Characteristics of a contract include common law and civil law approach
+		Common law: consideration, legal value, principal of promissory estoppel 
+	⁃	A contract should comply with doctrine of consideration
+	⁃	Consideration is the principle that in a contract something of legal value must be exchanged for something else of legal value 
+	⁃	There must be something in it for both parties 
+	⁃	Promise should represent something legal value like money property ownership etc
+	⁃	The value itself doesn’t need to be fair or in balance with the counter promise 
+	⁃	Bargain theory implies that consideration exists when the promise and return promise are bargained for. So, when one promise is bargained for another 
+	⁃	The two parties in a contract must psychologically consider one promise as a counter performance for the other. Agree to exchange something before-hand 
+	⁃	The principle of promissory estoppel implies a one sided promise is enforceable when the promiser should reasonably expect the promiser to rely on the promise 
+	⁃	In other words, when the promise relies on a promise and acts differently than he would if the promise was not made 
+		Civil law 
+	⁃	Contractual intention or willingness of the contracting parties to be bound to an agreement 
+	⁃	A valid contract is the result of two parties expressing their will to be bound by their promises so intention and expression of intention must be the same 
+	⁃	Cannot claim to have communicated something else than intended. A party should reasonably expect the declaration to be in conformity with the will of the other party
+	⁃	Example: Suzy made a typo and sold her bike for 10 rather than 100, due to the significant difference in price winny cannot assume suzy’s declaration was an accurate description of her will
+	⁃	Principle of reasonableness is a core issue in civil law but not in common law 
+		It is important to know the time an offer can be revoked without consequences 
+		Important to learn when an acceptance is legally binding
+		3 approach in law to regulate this
+	1.	Anglo/American model
+	⁃	Widely applied in common law
+	⁃	Offer is revocable until accepted and the receiver may accept the offer once the offer arrived until it transpires
+	1.	Romanistic model
+	⁃	Offer is revocable until accepted however if the offeror revokes the offer before it expires the other party may claim compensation 
+	⁃	An agreement is valid once acceptance is received
+	1.	Germanic model
+	⁃	The offer is irrevocable. So, offer can’t be revoked until it transpires
+	⁃	An offer has legal effect when received by the other party 
+8.2
+		Although contracting parties are in principle free to choose whatever they agree on, contractual freedom is never completely unlimited. Exemptions include
+	⁃	Consumers are additionally protected as they are considered the weaker party
+	⁃	General terms mustered by business should be reasonable 
+	⁃	A contract may never have the aim of violating law
+		Contracting parties can choose the content of their contract with some exceptions 
+		Freedom of contract include
+	⁃	Freedom to enter a contract
+	⁃	Freedom to choose the contracting party
+	⁃	Freedom to determine the content of the contract 
+		Exmpetions include 
+	⁃	public contracts where the selling party is a professional organization whose core activities are to sell products or services, i.e. a retailer 
+	⁃	standard form of contract (contract of affiliation) take it or leave it 
+	⁃	contract cannot violate a law 
+8.3
+		contractual freedom may also include its form, i.e. oral written or any other form
+		oral contracts have the same legal weight as written contracts
+		oral contracts include taxis, ordering food, buying gorceries, etc
+		sales for immovable properties, sales contract larger than 500$ and suretyship are written contracts
+		oral contracts are valid indefinitely while written is valid for the agreed period
+		there’s a difference between legal requirement of the form and practical desirability 
+8.4
+		contracts are invalid when there are special circumstances of unfairness 
+		internal factors occurs when the unfairness Is created by something that happens in the sphere of the disadvantaged party 
+		external factor: unfairness is created by something external to the disadvantaged party 
+		null and void means that a contract never existed by law because of a factor affecting the validity of a contract 
+		both parties will have to undo al they have done so far in fulfilling the obligations of a contract 
+		voidability means that a contract that is lawfully concluded can be rescinded by the disadvantaged party due to a factor affecting the validity of a contract
+		same thing as null and void but here the contract did exist, but its legal effect is reversed 
+		rescissible: one party must be disadvantaged to be able to rescind a contract. E.g: contract concluded on someone’s behalf which led to losses
+		voidable: not necessary that a part be disadvantaged but they can annul the contract. E.g: mentally ill person signing a contract 
+		unenforceable: contract is prevented from having legal any legal effect beforehand. E.g: two mentally ill people
+		inexistent: null and void. E.g: violates law  
+		internal factors affecting contracts
+	⁃	capacity to conclude a contract is restricted. Like minors should not be part of contracts unless they engage in unrealistic or surprising transactions
+	⁃	unilateral mistake where one of the two contracting parties makes an error in the interpretation or understanding of the contract
+	⁃	accept unilateral mistakes when it is obvious that the disadvantaged party made a mistake 
+	⁃	the power of an individual or company to conclude legal contracts may be restricted by or statues of the company.
+	⁃	Statues of a company specify to what extent its representative will have the power to bind company to contracts. When they exceed their power, contract is invalid if the other party knew or should have known 
+	⁃	Ostensible authority: powers of the representative reasonably appear in circumstance
+		External factors
+	⁃	Include bilateral mistake, misrepresentation, or duress 
+	⁃	Bilateral mistakes occurs when both members of a contract are mistaken regarding the nature or content of the contract 
+	⁃	Common mistake occurs when both contracting parties are mistaken in similar way 
+	⁃	mutual mistake when contracting parties are mistaken in different ways
+	⁃	bilateral mistake is found in common law 
+	⁃	misrepresentation occurs when the disadvantaged party is mistaken regarding the scope of a contract while this is caused by the action of another party 
+	⁃	fraudulent misrepresentation misrepresenting party is dishonest on purpose
+	⁃	negligent misrepresentation: negligent in providing information rather than dishonest
+	⁃	innocent misrepresentation: misrepresenting party provides false information
+	⁃	duress: situation in which a party consents to a contract under stress 
+	⁃	undue influence: when a person abuses their power over the other in the conclusion of a contract.
+	⁃	abuse of circumstances occurs when someone knows or should have known that another person might be induced to perform a judicial act because they are under the influence of particular circumstances
+8.5
+		principle of good faith: contracting parties have the responsibility to deal with one another in an honest and fair way 
+		in case of non-payment, it is possible to request authorities to size and sell property of the debtor to settle the payment 
+		in civil law countries it is possible to enforce obligations through courts 
+		if the product involved has limited durability like a wedding venue the product itself will not lead to fulfillment of contractual obligations but will rather be awarded compensation
+		common law: prefer to grant compensation immediately instead of enforcing a particular contractual obligation 
+8.6
+		several initiatives are made to unify contract law
+		done with regard to the content of international contract law like UNIDROIT
+		done with regard to the form of international contracts like ICC contracts 
+
+11.1
+		the choice of legal form helps determine how the business is established and who is liable
+		an unincorporated company is composed of natural person and has no legal separate identity 
+	⁃	these natural people are the company and have unlimited liability
+		an incorporated company is composed of shared owned by natural or legal persons and has its own legal identity
+	⁃	people can own an incorporated company by buying shares so owners have limited liability
+		unincorporated companies exist as long as trade exists and have always been regulated in the sphere of normal contract laws
+		incorporated companies are a product of industrial revolution
+		personal liability: individuals of which the company is composed are unrestrictedly liable for any company debt 
+		liability reaches beyond the scope of what is invested in a company
+
+		unincorporated companies:
+	⁃	sole proprietorship: legal form of an unincorporated business that is composed of one individual who’s personally liable for the company’s debt 
+	o	easy to set up; few prerequisites 
+	o	example: citizens of Sri Lanka can set up if name of business is different than the name of the owner
+	o	all income earned is considered income tax 
+	o	disadvantage: fully liable for the business and its debts 
+	o	the entrepreneur running a sole proprietorship may hire employees
+	⁃	partnership: legal form of an unincorporated business that is composed of more than one individual who are personally liable for the company’s debt 
+	o	general partnership: medium or small companies in which partners play a very active role in the organization of the company
+	o	in south korea the nature of the business doesn’t matter but in Germany there’s a distinction between professional and commercial partnership 
+	o	in partnership contracts authority may be limited to some partners and their scope of authority is specified 
+	o	the internal affairs are usually regulated in a partnership contract, including rules of spending and representation on behalf of partnership
+	o	when one party exceeds competency, and this cannot be reasonably known by the third part the legal consequences must be borne by all partners 
+	o	in the case of damage or debt all partners are liable 
+	o	third party who suffers the damage may claim dull damage compensation from any of the partners 
+	o	when the company’s assets aren’t enough to cover the debt partners must use their private means 
+	o	limited partnership: next to normal partners there may be partners with limited liability that are not involved in the management of the company but contribute financially 
+
+		incorporated companies:
+	⁃	a company has a legal personality and has the same rights and duties as a natural person
+	⁃	there is limited liability; they may at most lose their investments from the company 
+	⁃	transferable share: shareholders may sell their shares in the company to someone else
+	⁃	centralized board of directors who govern the company on behalf of the shareholders
+	⁃	ownership of the company is shared amongst the shareholders in proportion to the number of shares 
+
+	⁃	a limited company has its own managing board that operates separately from their shareholders 
+	⁃	in private companies shareholders might appoint themselves as management board but not in public companies 
+	⁃	financing of company comes from shareholders
+	⁃	private limited company shares are privately owned and are funded by private means 
+	o	also referred to as limited liability company
+	o	shares are not easily transferable
+	o	Korea it is a hybrid company where they find middle ground between partnership and limited company. Shareholders are involved in daily affais of the company, contrary to spain
+	o	Foreigners set up S.R.L as it is easier than private limited company 
+	⁃	Public limited company:
+	o	Legal form used by bigger companies which are finance by public means 
+	o	Shareholder could appoint or dismiss a management board 
+	o	Shares are publicly transferred through stock exchanges 
+		Special legal forms 
+	⁃	A foundation is to realize a social goal that doesn’t necessarily relate to profit.
+	o	Doesn’t have shareholders
+	o	Controllers of foundation are not legally liable as it’s a sperate legal entity
+	o	Can make profit however it is funded through donations and gifts 
+	⁃	Company limited by guarantee can be used for social purposes and the shareholders agree to be liable for a certain sum in case of bankruptcy instead of investing 
+	⁃	Societas Europaea is a European public limited company 
+	o	Companies I different legal systems can run their affairs under the wings of on singly European company form 
+	⁃	Joint venture: when two or more business cooperate 
+	o	Can be used for research purposes 
+	o	Involved companies might sign a joint venture agreement when a company wants to set up business in another country. They would keep their own legal form and allocate part of their resources to the joint venture
+		Holding company: when a company owning more companies 
+		Concern: the chain 
+	⁃	Example: Ahold owns albert heijn, bol.com, etos, and gall&gall 
+11.2
+		Different grades of flexibility in company law leads to regulatory competition
+		Mailbox companies: companies registers in a country but doesn’t employ business activities in that country 
+		Offshore company: limit business activities by doing business without a permanent physical establishment 
+		When an entrepreneur wants to set up a business om another country, he may have to act in compliance with additional rules and regulations. Most likely, the entrepreneur will have to use an incorporated legal form 
+
+Separate patrimony: assets of the owners of the firm are separate from the assets of the firm 
+Entity shielding: firms assets are unavailable for the owner’s personal creditors 
+2 rules of law 
+Priority rule: a claim on the companies assets is prior to the claim of the claims of the personal creditors of the companies owners 
+Claim on companies assets must be paid before claims of personal creditors to the company’s owners
+Liquidation protection: individual owners of the firm cannot withdraw their share of the firm at will; and personal creditors cannot foreclose on the owners’ share of the firm at will
+Owners of the cpmpany cannot just take out their share whenever they feel like it and personal creditors cannot just takeover the owener’s share of the company whenever they feel like it 
+
+Authority – delegated management: who has authority in the corporation to buy assets and sell assets in the name of the firm
+Procedures: corporations are subject to lawsuits not the individual owners
+Corporate law reduces the cost of doing business and create common expectations on potential creditors
+
+BOD
+Separate from decisions that don’t need shareholder approval
+Elected by shareholders and as such responsive of the firm’s owners
+Formally distinct from the shareholder and all but fundamental decisions have to be approved by shareholders
+multiple persons facilitate mutual monitoring  
+
+investor ownwershio: 
+right to control the firm
+right to recieve the firm’s earnings 
+proportional to amount of capital contributed 
+
+corporation’s charter: basic terms of relationship among the shareholders and between the shareholders and the firms directors and other managers. They can also become part of the contract between the employees and creditors
+charter term may become obsolete or outdated with time because of changes in economic and legal environment 
+place of corporation where a corporation can choose their any states of foreign country, regardless of where the firm is located at is governed by 
+the country where its officially registered as a legal entity 
+real seat doctrine means that a company must follow the set of rules of the country or state where it operates 
+
+hypernorm fundamental human rights and basic prescriptions in all religions
+cultural norms more culturally specifc but still consistent with 
+morla free space norms are inconsistent 
+

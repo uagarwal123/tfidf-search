@@ -1,0 +1,1253 @@
+Lecture 1
+	•	Machine learning is about extracting knowledge from data.
+	•	It is used in recommendation or social media apps
+	•	Earlier, they used hand coded rules to make decisions but
+	•	Logic required for decisions is specific to a single domain and task, so changing a small thing might require a rewrite of the whole system
+	•	Designing rules requires a deep understanding of how a decision should be made by a human expert
+
+	•	Supervised learning: user provides algorithm with pairs of inputs and desired outputs then the algorithm finds a way to produce the desired output from a given input without human help
+	•	Learns from past experience
+	•	x1,x2,.. are features and Y is the target variable or outcome
+	•	Examples: categorizing photos on phone (object detection) or crowd control 
+	•	Unsupervised learning: only input data is known and no known output data is given to the algorithm
+	•	Does not have target variable
+	•	Examples: summarize data, segmenting customers into groups with similar preferences, detect abnormal patterns to a website
+	•	Reinforcement learning: problem faced by agent that must learn behavior through trial-and-error interactions with a dynamic environment
+	•	So it takes actions from environment, receives feedback in the form of penalties and rewards, and adjusts strategy to maximize cumulative rewards
+
+	•	Always have a representation of your input data that computer can understand like tables
+	•	Data points (Rows) are samples and properties describing data points are features (columns)
+	•	Must understand the data and how it relates to the task you are trying to solve
+
+	•	What type of prediction task to find target variable?
+	•	Classification: Y is discrete
+	•	Regression: Y is continuous 
+	•	To distinguish classification and regression tasks ask whether there is some kind of continuity in the output
+
+	•	Machine learning: use data to make a model on data you haven’t seen so you are extending and making a generalization
+	•	Statistics: check data then draw your model to make an inference or find the relationship  
+Lecture 2
+	•	Visualization is good for large datasets
+	•	How to present data to communicate the right information – the 5 principles:
+	•	Dimension reduction: reduce data to see and communicate patterns in data
+	•	Use of spatial variables to represent key differences in data: the place the data is being represented at gives clues about the data 
+	•	Discovery through interaction: ask questions, zooming in, etc
+	•	Discovery through structure: how data was composed or recorded to find underlying structure in data 
+	•	Minimalism 
+	•	Can distinguish pattern in data using size, value, texture, color, orientation, shape and motion
+	•	Visual channels capture patterns more easily from the 5 principles
+	•	Position is only about x-y so we have a limited ability to differentiate data; like larger picture, density, minimize number of dots
+	•	So, if you want to include multiple patterns in the data, we could use color
+
+	•	The choice of colormap depends on the type of data, like water map for risk of flooding so higher intensity of color the greater the chances of flooding  
+	•	Cannot always see order in color maps 
+	•	Edge problems when using gradients as transitions; can’t know the exact edge creating different interpretations
+
+	•	Use scatter plots to understand patterns in your data 
+	•	Use histograms to see if data follows specific distributions 
+Lecture 3
+	•	Parametric model: assume that the data follows a certain distribution 
+	•	Number of parameters (degrees of freedom) independent of data
+	•	Fixed number of parameters
+	•	Non-parametric model: can’t know how distribution will look like
+	•	Degree of freedom increase with more data
+
+	•	In supervised learning, you build a model on training data and then make prediction on new and unseen data 
+	•	Accurate predictions mean you were able to generalize from training to test set
+	•	A model too simple causes underfitting as you don’t capture all features
+	•	A model too complex causes overfitting as it works too well on the training set but can’t generalize on new data 
+	•	The more features you use to build a model the better you explain the actual behavior of one individual point but you’re sacrificing the ability to generalize 
+	•	Therefore, you should find the “sweet spot”
+	•	** trade-off between complexity and generalization
+
+	•	Complexity is tied to variation; the larger the variation the more complex your model can be without overfitting
+	•	Larger datasets allow building complex models
+	•	Bias is an error caused by approximating a real-world problem with a simplified one. 
+high bias  strong assumptions  simple model  underfitting 
+	•	Variation: error caused by the model’s sensitivity to small fluctuations in the training data sets 
+High variance  high flexibility/sensitivity  complex model  overfitting
+	•	High variance means low bias, vice versa *not always hand in hand 
+
+	•	K-nearest neighbors: to make a prediction for new data point by finding the closest data points in the training dataset
+	•	The simplest version only takes 1 NN which is the closest training point to the point we want to make a prediction for 
+	•	Few neighbors  high model complexity, vice versa
+	•	More neighbors or features determines time complexity
+	•	Extreme case is that the number of neighbors = number of data points in training set so each test point would have the same neighbors, and the predictions will all be the same; class that’s more frequent 
+	•	Advantage: easy to understand, gives reasonable performance without a lot of adjustments, reasonably fast
+	•	Drawbacks: slow with large datasets, can’t handle many features 
+
+	•	Nearest centroid algorithm finds the center of gravity of all the data points of one class. So can draw the decision boundary based on these centroids and check which centroid the new data point is closest to
+	•	Allows to calculate it once for all coordinates rather than every data point and don’t use all the data anymore
+	•	Nearest shrunken centroid shrinks each class centroid towards the overall centroid to find the important features that help distinguish between classes or clusters 
+	•	How? (Extra) calculates the distance between class centroid and general centroid. The distances tell us how much a feature helps distinguish between classes, so a large distance says that it plays an important role. Any feature with a small distance is shrunk towards the overall centroid, dampening its effect. In the end, only features with large distances remain distinct from overall centroid
+
+	•	When finding the right parameter setting, we are running the analysis many times so you’re reusing the test data and picking the best model on the test set and so can’t assess if the model is good, leading to overfitting 
+	•	3-fold split:
+	•	a validation set that’s taken out of the training set to build the model and find the right parameter setting
+	•	The test set now validates the model’s performance and check if it is true 
+	•	Pro: fast and simple
+	•	Con: high variance, bad use of data
+
+	•	Cross validation: data is split repeatedly, and multiple models are trained 
+	•	Common version is k-fold cross validation; usually 5-10
+	•	Data is split into k parts (folds) then the model is trained on k-1 folds and tested on remaining fold, each time using a different fold. Take the average result to find cross validation accuracy
+
+	•	Pro: more stable and more data, multiple splits give information on sensitivity,  
+	•	Con: k times slower
+	•	High variance in accuracy between folds could imply that the model is very dependent on folds in training but could be a consequence of small dataset
+	•	** cross-validation doesn’t build a model it evaluates how well a given algorithm will generalize when trained on a specific dataset
+
+	•	Splitting data set in k folds starting with first 1/kth of data set might not always work so you should use stratified k-fold cross validation in which you split data such that proportions between classes are the same in each fold as the dataset 
+	•	leave one out cross validation: #of folds=#data points, using a single point as test set, slow and high variance
+	•	repeated Kfold: apply Kfold or stratified fold multiple times with shuffled data; lower variance
+	•	shuffle split cross validation: randomly shuffle and split. It is flexible but no guarantee that points are tested once
+	•	hard to keep track of shuffling and use some data multiple times
+	•	nested cross validation
+	•	outer loop: for each group train the model with the optimal parameters from the inner loop and then estimate of generalization performance across test folds
+	•	within each fold of the outer loop, the inner loop is used to perform hyperparameter tuning, evaluate performance on validation fold and then choose the hyperparameters of the best model
+	•	cross validation with groups (Group KFold): data is split such that samples belonging to the same group are either all in the training set or all in the test set
+	•	time series cross validation: first split data in training and testing then for each subsequent split expand training set to include more recent data 
+	•	example: split 1: train jan-feb, test march, split 2: train jan-march, text April, etc
+
+
+	•	must tune parameters to improve model’s generalization performance 
+	•	to find values of the important parameters of a model you can use grid search 
+	•	grid search: used for hyperparameter tuning; it exhaustively tries every combination of hyperparameters provided to find the best model
+	•	hyperparameters are set before training and are tuned manually while parameters are learned from data during training and are optimized automatically
+Lecture 4
+	•	linear models for regression are regression models for which the prediction is a line for a feature, plane for two, hyperplane for higher dimensions
+	•	if you have more features than training data, you can perfectly fit a linear model into training set
+	•	 so target value is a LC of features
+	•	Weights or coefficients (w) are slope parameters
+	•	The offset it the intercept b
+
+	•	In normal regression you would integrate the equation but now you have vectors because we have many features
+	•	Simplest linear method is ordinary least squares which finds parameters w and b that minimizes MSE between prediction and true regression targets
+ coefficients estimates rely on independence of features
+	•	if you have data set where # rows < # features it tells us ability what can be learned from data set; like DNA
+
+	•	Linear regression has no parameters so you can’t control model complexity
+	•	If R^2 for training is much greater than test set  overfitting  need to control complexity
+	•	R^2 (coefficient of determination) how well a model fits
+	•	So use ridge regression
+
+	•	The coefficients ‘w’ are chosen so that they predict well on training and to fit an additional constraint; their magnitudes must be as small as possible so that each feature has little effect on the outcome as possible and aren’t that predictive
+	•	The constraint is an example of regularization: restricting model to avoid overfitting by dampening the effect of features
+	•	Ridge uses L2 regularization 
+	•	Always has a unique solution
+	•	Has tuning parameter alpha that controls how strongly coefficients are pushed to 0
+	•	If alpha is too low, we remove the effect of regularization and end up overfitting
+	•	Ridge model makes a tradeoff between simplicity of model and performance on training set
+	•	The more data is available the more linear regression will perform like ridge model as it becomes harder for a model to overfit or memorize data 
+
+	•	In general: regularized empirical risk minimization
+	•	used for any model while ridge is a specific example of ERM for linear models with L2 regularization 
+	•	so L2 norm means that R(F) = ||w||^2
+ 
+	•	Optimization function in ML is defined by:
+	•	the loss factor: general function 
+	•	regularization term
+
+	•	Can add/remove features to make predefined choices before making the model
+	•	Can also have linear combinations of features 
+
+	•	Can find the best parameter setting for your alpha score just like you would in KNN
+	•	Increasing alpha forces coefficients to move closer to 0, which decreases training set performance but might help with generalization
+
+	•	Lasso regression: same as ridge but uses L1 regularization. As a result, come coefficients are exactly 0 and some features can be ignored
+
+	•	Makes the model easier to understand and simpler as you are using less features 
+	•	It equally dampens every feature rather than dampen coefficients much more when they have larger magnitudes 
+
+
+
+	•	Elastic net: combines ridge and lasso so you have 2 parameters to tune
+
+	•	In regression, not all data perfectly resonates with linear models, and may contain outliers
+	•	Either remove it since it’s not representative
+	•	Use majority and just ‘ignore’ it 
+	•	However, outliers affect our model so use RANSAC algorithm 
+	•	First select minimum amount of data required to fit a model
+	•	fit a model
+	•	RANSAC classifies each point as inlier or outlier based on residual (distance between actual and prediction). Inlier if residual is below residual threshold
+	•	Choose model with highest inliers, if they have same number of inlier use lowest residual so better score
+	•	Huber loss
+	•	Different from ridge as it applies a linear loss to samples classifies as outliers
+	•	It doesn’t ignore outliers but reduce their effect
+**
+- In linear regression you can’t control complexity 
+- To reduce overfitting, you use ridge regression where you have a tuning factor alpha that push coefficient ‘w’ closer to 0 to reduce the effect of features 
+- In ridge model there’s a tradeoff between simplicity and performance on training set
+- The bigger the data set the smaller the effect of regularization
+- Lasso regression is the same as ridge but uses L1 regularization instead of L2 so some coefficients might be 0
+- Lasso regression equally dampens all features
+- Elastic net: combines ridge and lasso
+- use RANSAC algorithm to find a model for data with outliers
+
+Lecture 5
+	•	Binary classification
+
+	•	Still finding all coefficients for each feature, instead of returning the weighted sum of the features, set the predicted value > 0
+	•	If it’s < zero -> predict class -1 and >0 -> predict class +1
+	•	Linear models for regression are a linear model of features
+	•	Linear model for classification is a decision boundary (linear function of input); linear classifier separates classes using a line, plane of hyperplane
+	•	Differences between algorithms in linear models:
+	•	The way in which they measure how well a particular combination of coefficients and intercepts fit the training data
+	•	If and what kind of regularization they use 
+
+	•	Can use classification algorithms like LogisticRegression (L2) and Linear SVC to forge dataset and visualize the decision boundary
+	•	For a more interpretable model, use L1 regularization as it used less features 
+	•	Logistic regression
+
+	•	Problem with normal linear regression we would rather work with probabilities because it can tell you the likelihood a point was fitted into a line 
+	•	So, use logistic regression as it is based on probabilities, in which binary target y is transformed to a probability scale
+	•	Instead of using a line we use a sigmoid function (S-curve) and now can segregate data points much better
+	•	(C added for optimization)
+	•	C determines the strength of the regularization, and higher values for C correspond to less regularization
+	•	Using low values causes algorithm to adjust to majority of data points and limits the influence of individual points; simple models
+	•	High C means it is trying to fit the training set as best as possible hence overfitting
+	•	C=1/alpha
+
+	•	Parameter alpha for regression models and C in linearCV and logistic regression, important to tune these parameters
+	•	Choose between L1 and L2; L1 if you assume that few features are important so easier to explain
+	•	Linear models are fast to train and predict, easy to understand how a prediction is made ut hard to know why coefficients are the way they are, and perform well when #features>#of samples
+	•	support vector machine (SVM) finds the best boundary to separate data points into different classes such that the boundary should be as far away from the nearest points of each class
+	•	looks at points on edge of clusters and checks if points are close to cluster by calculating mean
+	•	soft margin adds flexibility or “wiggle room” by setting threshold for number points inside the margin or misclassified rather than separating every point perfectly, preventing overfitting
+	•	these points are penalized but not discarded. The model learns from them but doesn’t drastically alter decision boundary
+	•	prioritizes setting a clear general boundary 
+	•	loss function quantifies the penalty for these points to ensure SVM model can still perform well even when classes are not perfectly separable
+	•	loss functions: how you penalize these points depending on far they are from the correct side
+	•	if you don’t need probability estimates can use either SVM or LogReg
+	•	if you do then use LogRem
+
+	•	for multiclass classification, use one vs rest approach which is a binary model that separates a class from all other classes, resulting in as many binary models as there are classes
+	•	it extends binary classification algorithm to handle multiclass classification
+	•	binary classifiers are run on a test point, the classifier with this highest score on its single class is labeled as the prediction
+	•	basically, first classifier is trained to distinguish class 0 from “not 0” or “rest”, second class 1 from “not 1” or “rest”, etc., then use classification formula for score to indicate how likely data belongs to respective class, highest score means test point belongs to that class. 
+	•	So, class 0 will be classified as rest by class 1 and class 2 by binary classifier, and the classification confidence formula for classifier 0 is greater than 0. Hence points in that area will be classified as 0 by final classifier
+
+	•	Class for points in the middle would be the one with highest value in classification formula so class closest to line
+	•	One vs rest: n binary classifiers (n clusters)
+	•	One vs one n(n-1)/2
+	•	Which method to use depends on the type of your data 
+	•	Each row in coeff_ contains coefficient vector of one of the classes
+	•	Each column holds the coefficient value for a specific feature
+
+	•	Stochastic gradient descent randomly selects one point (or small batch) instead of using the whole data set and calculates the gradient at each iteration
+	•	Advantages: efficient as it doesn’t use the whole dataset and easy to implement
+	•	Disadvantages: requires a number of hyperparameters such as the regularization parameter and the number of iterations and is sensitive to feature scaling
+
+Lecture 6
+	•	Scaling data might help:
+	•	dampen effect of feature based on their scale and prevents dominance from large-scale features, allowing the model to learn their true importance based on their relationship to the target variable rather than their scale.
+	•	reduce computational expenses since the larger the scale the larger the range
+	•	Sometimes where the point resides is not that important only relationship or patterns do
+	•	All models using a distance measure will be affected by order of magnitude of the features and usually benefit from scaling data 
+
+	•	Box plot can tell you where most of the data is found 
+	•	Influence of outlier is not big so can ignore large outliers 
+	•	scaling doesn’t change the visual structure of data but it changes classification
+	•	might catch patterns more effectively because u don’t emphasize on features due to their order of magnitude
+
+	•	which type of scaling depends on features 
+	•	StandardScaler scales the data such that the mean is 0 and the variance is 1
+	•	All features have same magnitude
+	•	Doesn’t ensure min and max values for features 
+	•	RobustScaler uses median and quartiles so ignores outlier 
+	•	MinMax scaler shifts data such that all features are between 0 and 1
+	•	Normalizer scales each data point such that the feature vector has Euclidean length of 1
+	•	Projects data points on unit circle 
+	•	Use when only direction of data points matters not their magnitudes. E.g.: finding direction of shopper like frequent vs occasional buyer instead of how much they spend 
+	•	Box-cox scaling method to take away skewness in data to apply linear regression models
+	•	Because sometimes LR models can’t find patterns if data is not linearly distributed
+	•	Periodic scaling: periodic patterns in data like cosine and sine e.g.: selling iice-cream in summer and winter
+
+	•	When scaling you only scale using training data.
+	•	Must apply the same transformation for training and test set. So always subtracts the training set min and divides by training set range to maintain the same structure
+	•	So you transform the training and test data by the same scaling
+
+	•	Sparse data:
+	•	Data with many zeros – only store non-zero entries
+	•	Subtracting anything will make the data “dense” as it changes 0 values to non-zero values and blow the RAM 
+	•	Only scale don’t center to maintain the zero entries
+	•	E.g.: in recommender systems, users don’t always check all the products in the store so you will have a lot of 0 entries 
+
+	•	PCA is a method that rotates the data set in a way such that the rotated feature are statistically uncorrelated (corr=0)
+	•	Done by selecting a subset of features according to how important they are for explaining data 
+	•	First component contains the most information and is the direction along which the features are most correlated and last contains the least
+
+	•	Predict: classification, regression, clustering
+	•	Transform: preprocessing, dimensionality reduction, feature extraction, feature selection
+	•	Pipeline scales the data and trains the model is one consistent process 
+	•	Reduces the risk of data leakage by avoiding discrepancies between train and testing data processing
+	•	Automatically applies transformations
+	•	Without pipeline you would have to manually apply scaling within each cross-validation fold
+
+	•	Categorical variables: discrete features, not usually numeric, and cant be handles by default by a regression algorithm 
+	•	To represent categorical variables using the one-hot-encoding known as dummy variables 
+	•	Dummy variables replace a categorical variable with one or more new features (new columns) with values 0 and 1; so 1 if yes 0 if no
+	•	Transforms all possible options for the category by creating new columns 
+	•	Remove original column 
+	•	If there are no fixed categories like writing male or man, or different spelling etc you might need to preprocess the data. Could do so by using value_counts
+
+	•	Coding:
+	•	Do not use get_dummies separately om train and test sets
+	•	Mismatch of columns and training and test sets will have different number of features. E.g.: when you have A&B in your training data set but only A in your test, 2 dummy variables will be created in training and 1 in test 
+	•	Categories are different but dummy variables are the same. E.g.: mismatched categories although they have the same number of columns so like training has A&B while test has C&D, it will create 2 dummy variables in both cases but these columns represent different categories 
+	•	To avoid it:
+	•	combine training and test sets temporarily before encoding 
+	•	align column names after encoding 
+	•	explicitly provide categories 
+	•	Sometimes we don’t know if the data is already categorical or not 
+	•	Representing categories as integers, instead of using strings, causes issues since get_dummies treats all number as continuous so data is interpreted as numerical and not categorical data, so use OneHotEncoder or convert columns into strings 
+	•	Fit-transform paradigm ensure train and test-set categories correspond, but it only works for integers right now
+
+	•	One hot vs statisticians:
+	•	One hot is redundant as last one is 1- others 
+	•	Redundancy can introduce collinearity so to avoid them you can drop one 
+	•	Choice of which one to drop matters for penalized models
+	•	Keeping all can make model more interpretable 
+
+	•	Count-based encoding: used for high cardinality categorical features so many unique categories in a feature
+	•	One hot coding would create 50 one-hot variables in US dataset (states)
+	•	Instead use one response coded:
+	•	For: regression: average response per category
+	•	Binary classification: likelihood of belonging to a class
+	•	Multiclass: one feature created per class, representing a probability distribution of each class within the category
+
+	•	Feature engineering: which feature should be included in the model training and creating new type of feature based on the original features 
+	•	Independently looking at feature we might not see patterns so combining features through interaction can help
+	•	Lecture example: made one model per gender and used both common and separate
+	•	For multiple categorical: common model + multiple models to adjust for combinations 
+	•	Captures patterns that only exist when multiple categories are combines 
+
+	•	Discretization and Binning: process in which continuous variables are converted into discrete categories or bins by dividing a continuous range into distinct intervals 
+	•	Catch the effect that takes place only in interval 
+	•	Binning is the process of assigning values to these binds based on which interval they fall into
+	•	However, it loses data, target-independent might be bad as it doesn’t consider relationship between feature and target variable 
+	•	Powerful combined with interactions to create new features 
+
+Lecture 7
+	•	Regression based models are unable to deal with missing data
+	•	Distinguish between continuous and categorical 
+	•	Continuous: having missing data is a problem as regression won’t have a value to learn from. 
+	•	Categorical: can easily transform the data by representing missing data as a different category
+	•	There is no standard format for missing values 
+	•	Not discussing missing output – semi supervised learning 
+	•	The absence is often informative – so sometimes having no data can tell you something 
+	•	E.g.: housing data set, if a house has no basement the value will be missing which tells us something about the house
+
+	•	Can remove missing data, replace with meaningful value, replace with best-guess value
+	•	Removing missing data:
+	•	For columns: might lose an informative feature and discard critical information
+	•	For rows: sometimes you don’t have a choice for dropping a sample and are forced to make a prediction, introducing bias. But sometimes you don’t have a way to deal with missing values 
+	•	Imputation methods: fills missing values usually unsupervised and only make use of information of features on the training data 
+	•	Estimates missing values 
+	•	Could fill with mean or median
+	•	Disadvantage:
+	•	Data moves to the center and distributions are harder to distinguish as there are many identical values
+	•	KNN imputation:
+	•	Find k nearest neighbors that have non-missing values
+	•	Replace using average of neighbors 
+	•	Preserves more of the original data distribution 
+	•	Disadvantage: additional hyper-parameter and large time complexity 
+	•	Model driven imputation: 
+	•	Train regression model for missing values 
+	•	Iterate over columns and create new model
+	•	Retrain after filling in 
+	•	Takes the longest
+
+	•	Feature selection:
+	•	Making model less complex to avoid overfitting
+	•	avoid redundancy and multicollinearity- sometimes when features are combined, they might say the same thing
+	•	Faster prediction and training
+	•	Less storage for model and dataset
+	•	Less complex so you can interpret the model better
+
+	•	Unsupervised vs supervised: whether you use target variable or not 
+	•	Unsupervised feature selection: discard some features based on statistics
+	•	Remove features that are mostly constant or have variance 0. Note that it doesn’t mean anything if variance is small since you can just rescale it 
+	•	Remove correlated features as they explain the same thing and make same predictions. However, sometimes they might be important like temperature and humidity (both predict weather).
+	•	Pro: doesn’t need target variable and is quick 
+	•	Con: discards values that might be important for predictions and removing low-variance or correlated features might eliminate critical information
+	•	PCA is not a feature selection; it reduces dimension of datasets by creating new features that are combinations of original features 
+	•	Reduces redundancy but doesn’t guarantee that the discarded information isn’t important for you prediction problem 
+
+	•	Univariate vs multivariate: how many features you analyze at once to understand if feature should be kept 
+	•	Univariate: tests if each feature is significantly related to the target variable; each feature is evaluated separately without considering how it interacts with other features 
+	•	For classification problems, this is often done using ANOVA
+	•	Features that are important when combined with another would be discarded
+	•	Fast but is unrelated to the specific model you plan to use
+	•	Simplest way
+	•	Check p-values; low p-value means that the relationship between feature and target variable is significant
+	•	Depending on if its classification or regression, can add t-test, f-test or chi-squared test and select features highly related to target
+	•	Mutual information: amount of information two variables shares; contains difference in information gained or loss by including a feature
+	•	If they’re independent, it’ll be 0
+	•	Doesn’t assume linear model like f statistics 
+
+	•	Model based or not: choose features from outcome of model or internal learnings like coefficients
+	•	Model based feature selection uses supervised machine learning model to judge the importance of each feature and keeps the important ones
+	•	Finds subset of features in which model performs best
+	•	considers all features at once to capture interactions
+	•	ideally you would search overall all possible combinations but its infeasible so use heuristics
+	•	fits a model then the model assigns importance scores to features 
+	•	lasso: model shrinks coefficients toward 0 and ones close to 0 are discarded
+	•	tree based models: importance depends on how often and how effectively a feature is used in splits
+	•	if features are correlated lasso pick one feature at random since the information is already captured by one of them 
+	•	in univariate methods two correlated features might be rated equally important 
+	•	The feature selection model needs to provide some measure of importance for each feature
+
+	•	Iterative feature selection uses a series of models with varying numbers of features 
+	•	Start with single feature, find most important feature, add, iterate; adds each feature one by one
+	•	Fit model, find least important feature, remove, iterate; remove one by one 
+	•	Since a series of models are build its computationally expensive 
+
+	•	Recursive feature elimination starts with all features, build the model, discards least important features according to the model then build new model, repeat 
+	•	Also needs feature measure 
+	•	Need to retrain the model many times 
+	•	Runtime:
+
+	•	Domain experts can identify useful features that are more informative than the initial representation of the data
+
+	•	Wrapper methods: 
+	•	Can be applied for any model
+	•	When using predictive model and want to evaluate on actual output of performance rather than learn from internal coefficients 
+	•	Increases complexity 
+
+Lecture 8
+	•	Trees don’t care about the scale of the data, so you don’t have to do a lot of preprocessing 
+	•	Also doesn’t care about the distribution of your data, are interpretable and can work with missing data 
+	•	Binary classification trees are binary tree where each node corresponds to a question asked about the data
+	•	For continuous features: “questions” are thresholds on single features 
+	•	For each split: exhaustive search over all features and thresholds to find the best and minimize impurity
+	•	Impurity = 0: perfect segregation of data
+	•	Nodes correspond to a split and the leaves correspond to regions 
+	•	Learning a decision tree means learning the sequence of if/else questions that gets us to the true answer most quickly.
+	•	These questions are called tests
+
+	•	For classification, gini-index and cross-entropy, are two criteria to preserve the purity of the leaf 
+            
+
+
+	•	Cross entropy is the entropy of the distribution of classes
+	•	Minimizing cross entropy aligns the predicted distribution as closely as possible to the true distribution
+
+	•	Traverse the tree based on feature tests 
+	•	Predict the most common class in leaf 
+
+	•	For regression trees: 
+	•	Impurity criteria: MSE and MAE
+	•	Usually predict the mean over the targets in a leaf
+	•	Tendency to get deep as all targets are usually distinct float numbers
+	•	Without regularization/pruning each leaf will contain a single point to be pure 
+	•	Pure means that the tree is 100% accurate on training data -> overfitting 
+
+	•	Parameter tuning:
+	•	To restrict growth, you use pre-pruning and post-pruning
+	•	Pre-pruning: restrict while growing; stop creation of tree early on
+	•	post-pruning you build the whole tree (greedily) and then you merge notes; remove nodes that contain little information
+	•	can limit tree size in pre-pruning using stretegies below to reduce overfitting
+	•	max_depth: very fast as you don’t have to go deep but if you’re only building a single decision tree it’s not good
+	•	max_leaf_nodes: prioritizes the greatest impurity first
+	•	min_samples_split: require a minimum number of points in a node to keep splitting
+	•	etc.
+	•	DecisionTreeClassifier only implements pre-pruning
+	•	Will continue to split the data until all leaves are pure so tree is 100 % accurate on training set and hence is overfitting (poor generalization)
+	•	Used when you need to easily explain and interpret data to non-experts and when using small amount of data
+	•	Completely invariant to scaling of data
+	•	searching for best parameters of decision trees you can gridsearch it but it’s not recommended since its expensive and the decision tree that gets learned is heavily dependent on how you sampled data 
+
+	•	relation to NN:
+	•	in KNN you have a radius around the data point in which you look for neighbors, in trees you look at the same leaf and let the other point in the leaf vote what the output would be
+	•	nearest neighbors are slow to predict because you need to compute distance to all training points while trees are fast to predict 
+	•	both can’t extrapolate and make predictions outside the range of training data 
+
+	•	instead of looking at the whole tree, we can summarize the workings of a tree using feature importance 
+	•	how important the feature is for the decision a tree makes; how much is each feature contributing to reduce impurity
+	•	0-1: 0 not used at all and 1 perfectly predicts target 
+	•	Low feature_importance just means that the feature was not picked by the tree not that its uninformative 
+	•	Because the tree structure is unstable, the features picked are too
+	•	If you have too many correlated features it might pick one 
+	•	Gives you importance but not direction
+
+	•	Could use anything as split candidate
+	•	Linear models used if extrapolation needed
+	•	In computer vision tasks, split candidates can involve comparing pixel values or features derived from image data 
+	•	The first-generation Microsoft Kinect used decision trees to process depth sensor data for real-time body tracking; comparisons helped identify body parts and track motion by analyzing depth changed 
+
+	•	Ensembles are methods that combine multiple machine learning models to create more powerful models; examples would be random forests and gradient boosted decision trees
+
+	•	Poor man’s ensembles: build different models, average the result as long as they provide calibrated probabilities
+	•	More models are better If they’re not correlated 
+	•	This takes time and is hard to understand so use voting classifier
+	•	Takes a list of models of different types or same model type with different visualizations. It will train all of them and average the results 
+	•	Could do hard or soft voting for classification
+	•	Soft voting: average the probabilities predicted by all trees and class with highest probability gets picked 
+	•	Bagging is a generic way to build slightly different models
+	•	Draw bootstrap samples from dataset 
+	•	As many as there are in the dataset with repetition; as big as original data set but some will be missing and some will be repeated 
+
+	•	remember bias is error introduced by approximating real world problem with a simplified model while variance is due to sensitivity
+	•	high bias means it’s too simple and low bias means it’s too complex
+	•	the idea of passing is that you take multiple high variance models and if you average them, then it will reduce the variance of the average 
+	•	Models that are very consistent but off would have a high bias and low variance 
+
+	•	Random forest: collection of decision trees where each tree is slightly different from the others 
+	•	The idea is that if you build many trees that overfit in different ways, we can reduce the amount of overfitting by averaging the results 
+	•	Must be randomized so that every tree is different
+	•	Use for complex and long datasets
+	•	Two ways to randomize: can either select data points to build a tree or select features in each split test
+	•	
+
+	•	Number of features selected is controlled by the max_features parameter; controls variance
+	•	If max_features = n_features, each split can look at all the features in the data set and no randomness will be injected; makes trees similar and able to fit data easily, and becomes an old decision tree
+	•	If max_features = 1: splits have no choice on which feature to test; relies on less predictive features and might need to go deeper 
+	•	The randomness is building the random forest forces the algorithm to consider many possible explanations and captures a broader picture 
+	•	Pros:
+	•	Work well without heavy hyperparameter tuning and don’t require scaling of data 
+	•	Reduces overfitting 
+	•	Cons:
+	•	Setting different random states can drastically change the model built 
+	•	Don’t work well on high dimensional sparse data
+
+	•	Tuning random forests:
+	•	Main parameter: max_features
+	•	Around sqrt (n_features) for classification
+	•	Around n_features for regression
+	•	n_estminators/number of trees > 100
+	•	pre-pruning might help and limiting size of tree definitely helps with model size 
+
+	•	extremely randomized trees:
+	•	draw randomly a threshold for each feature instead of searching over the thresholds 
+	•	doesn’t use bootstrap
+	•	faster because no sorting/searching – no preprocessing
+	•	smoother boundaries as thresholds are drawn at random
+	•	the higher the number of trees the better it is so no need to waste time to grid search the number of trees
+	•	use warm starts to iteratively add more trees to the forest and you can stop when you think it’s good enough
+	•	out-of-bag estimates
+	•	each tree used 66% of data 
+	•	can use the 33% as a test set 
+	•	make predictions for out-of-bag, average, score
+	•	each prediction is an average over different subset of trees
+	•	variable importance is more robust and don’t have directionality
+	•	random forests handle correlated features better than a single decision tree
+	•	decision tree might prefer one feature over the other, ignoring the other
+	•	each tree is trained on a random subset of features so some trees will pick up one of the correlated features and other will pick up second. So, when predictions are averaged both correlated features contribute equally to the outcome reducing bias towards a single correlated feature
+
+	•	gradient boosted regression trees:
+	•	builds trees in a serial manner where each tree tries to correct the mistakes of the previous tree
+	•	combines many simple models 
+	•	no randomization but pre-pruning instead 
+	•	used for regression and classification
+	•	more sensitive to parameter settings than random forests but provide better accuracy if set correctly; require careful tuning
+	•	new parameter learning_rate: how strongly each tree tries to correct the mistakes of previous trees
+	•	use gradient when prediction time is long or its important to squeeze out the last percentage of accuracy
+	•	lower learning_rate means more trees are needed to build a model of similar complexity 
+	•	high n_estimator leads to a complex model and overfitting 
+
+	•	To make linear models more flexible you can add features 
+
+Lecture 9
+	•	Metrics for binary classification:
+	•	Only have 2 classes: negative or positive
+	•	Looking for positive
+	•	Type-I error: false positive 
+	•	Type-II error: false negative
+	•	Types of error play an important role when one of the two classes is more frequent than the other 
+	•	Imbalanced data set: when one class is much more frequent than the other 
+	•	Can have a high accuracy by just predicting one class (not good)
+	•	Accuracy is an inadequate measure for quantifying predictive performance in imbalance data set
+	•	Classifier focuses on getting the larger class right 
+
+	•	Confusion matrix represents the result of evaluating binary classification
+	•	Rows: true class
+	•	Columns: predicted class
+	•	Diagonal: correctly classified and mistakenly classified 
+	•	If second column is 0, all samples were predicted as neg (in this case ^)  
+	•	True positives: correctly classified samples belonging to positive class 
+	•	True negatives: ,,, negative class
+	•	Can summarize confusion matrix by computing accuracy
+	•	Accuracy: number of correct predictions/number of all samples; how often you predicted the right class
+	•	Diagonal divided by everything
+	•	Precision measures how many of the samples predicted as positive are actually positive
+	•	TP/TP+FP
+	•	Used to limit number of false positives 
+	•	Recall measures how many of the positive samples are captured by the positive predictions
+	•	TP/TP+FN
+	•	Identify all positive samples; important to avoid false negatives 
+	•	Tradeoff between precision and recall: perfect recall means predicting all samples to positive class will result in many false positives so precision will be low 
+	•	F1-score: harmonic mean of precision and recall
+	•	2x precision x recall / precision + recall 
+	•	Harder to interpret and explain than accuracy 
+
+	•	Goal setting:
+	•	What do I want or care about? Precision, recall, etc
+	•	Can I assign costs to confusion matrix?
+	•	What guarantees do we want to give?
+
+	•	To adjust tradeoff of precision and recall, you can adjust the decision threshold 
+	•	Do not change using the test set 
+	•	Another threshold could be predict_proba: 
+	•	if it’s more than n% sure then it’s classified as such 
+	•	default is 50%
+	•	Increasing threshold means model is more confident to make a positive decision
+	•	A calibrated model is a model that provides an accurate measure of its uncertainty 
+
+	•	Once a particular goal is set – a recall or precision value – threshold can be set appropriately
+	•	Setting a requirement on a classifier is called setting the operating point 
+	•	Precision recall curves: evalutes the tradeoff by finding precision and recall values for all thresholds 
+	•	Closer it is to the upper right the better the classifier 
+	•	Instead of comparing two precision-recall curves you can find the area under the graph to summarize the curve called average precision (depending on how you treat edges)
+	•	average precision always returns a value between 0-1
+
+	•	Receiver operating characteristics (ROC) and AUC can also be used to analyze the behavior of classifiers at different thresholds 
+	•	False positive rate (FPR=FP/FP+TN) vs true positive rate (TPC) (other name for recall)
+	•	Ideally choose top left
+	•	AUC: area under curve 
+	•	Predicting randomly always produces AUC=0.5 for random/constant prediction, no matter how imbalanced the classes are, making AUC a much better metric for imbalanced classification than accuracy 
+	•	AUC: the probability that a randomly picked point of the positive class will have a higher score according to the classifier than a randomly picked point from the negative class.
+	•	Doesn’t make use of default threshold
+	•	Used for imbalanced data
+	•	Interpolation is meaningful on ROC but not PR curve 
+	•	The curve and the AUC don’t depend on where the default threshold is, it only depends on ranking. So, if all positive classes are ranked higher than negative classes you might get AUC close to 1
+
+
+	•	Summary for binary classification
+	•	Threshold-based:
+	•	(balanced) accuracy
+	•	Precision, recall, f1
+	•	Ranking:
+	•	Average precision
+	•	ROC AUC
+
+	•	Multi-class classification: 
+	•	all metrics are derived from binary classification metrics but averaged over all classes 
+	•	Accuracy is also the fraction of correctly classified examples 
+	•	In confusion matrix:
+	•	Rows: false negatives (high recall)
+	•	Columns: falsely classified (high precision)
+	•	ways to approach imbalanced multitask:
+	•	Macro: 
+	•	Macro average recall: average over all labels and recall for just this label
+	•	average computes unweighted per-class f-scores; average f-1 scores over classes
+	•	Each class should have the same weight
+	•	Weighted 
+	•	Weighted average: weight by the number of samples in each class then divide by total number  
+	•	computes the mean of the per-class f-scores weighted by their support
+	•	Micro:
+	•	Micro average f1 computes the total number of FP, FN, and TP over all classes, and then computes precision, recall, and f score using these counts. 
+	•	All samples are equally important
+	•	Multi-class ROC AUC
+ H&T is not weighted while P&D is
+	•	Summary of metrics for multiclass classification:
+	•	Threshold-based
+	•	Accuracy (Default)
+	•	Precision, recall, f1 (macro average, weighted)
+	•	Ranking
+	•	OVR ROC AUC (weighted)
+	•	OVO ROC AUC (unweighted)
+
+	•	For regression: 
+	•	R^2 (most used): easy to understand scales
+	•	MSE: easy to relate to input
+	•	MAE: more robust- used to limit impact of outliers
+
+	•	Another metric MAPE: mean absolute percentage error
+	•	Divides residual by true value
+	•	If data point is large we care less about how well we predict it
+	•	If something is not defined, 0, or very close to 0 you need to perfectly predict it otherwise you have unbound error
+	•	Different plots:
+	•	Prediction plots: predicted vs true outcome – can help debug model
+	•	Residual plots: true vs true – predicted to see if there are trends
+	•	Histogram of residuals: y test – predicted
+	•	Target vs feature
+	•	Residual (y test – pred) vs feature
+	•	Picking metrics:
+	•	Accuracy rarely what you want
+	•	Problems are rarely balanced
+	•	Find the right criterion for the task like having costs associated with confusion matrix or setting a specific goal like recall or precision must be at least X%
+	•	OR pick a substitute, but at least think about it
+	•	Emphasis on recall or precision?
+	•	Which classes are the important ones?
+	•	When you use metrics in cross validation or grid search the default scoring is accuracy
+	•	Can set the scoring to ROC AUC or average precision 
+
+Lecture 10
+	•	Imbalance in data can be solved by resampling dataset such that each class gets to a level in which they are equally distributed
+	•	Two sources of imbalance:
+	•	Asymmetric cost, e.g.: type I error (false positive) is more costly than type II error
+	•	Asymmetric data, e.g. on class is naturally overrepresented
+	•	Costs shouldn’t be symmetric as the error types are very different
+	•	All data is imbalanced 
+
+	•	How to change the model so that it considers the asymmetric costs or asymmetric data
+	•	1st approach: change the data (easier)
+	•	Add samples 
+	•	Remove samples 
+	•	Both 
+	•	2nd approach: changing the training procedure and how you built the model
+
+	•	1st approach:
+	•	The problem with pipelines is when you call fit it’ll always use the original y and the output of a transformer is always a transformed x
+	•	Can’t change y 
+	•	So scikit-learn cannot resample data
+	•	Use imbalanced-learn instead
+	•	extends scikit-learn interface with a “sample” method.
+	•	has a custom pipeline that allows resampling.
+	•	resampling is only performed during fitting to not mess with the test set in your evaluation
+	•	Warning: not everything in imbalance-learn is multiclass
+	•	Random undersampling (Easiest)
+	•	Drop data from the majority class randomly until balance, same size as the minority class
+	•	Can have parameter settings like minimum of data points you should have, or what do you do with classes that don’t have a lot of data points
+	•	Very fast training
+	•	Loses data 
+	•	Undersampling isn’t creating a performance increase by balancing but by making the model simpler which leads to better generalization
+	•	Only training data should be resampled to avoid information leakage
+	•	As accurate with fraction of samples
+	•	Really good for large datasets
+	•	Random oversampling
+	•	Repeat samples from the minority class randomly until balanced 
+	•	Much slower 
+	•	If original sample is really small you are repeating many data points and might have overfitting on that particular class
+	•	One class has much more data points than others, see how the smaller class will grow and how it affects model performance 
+	•	In example, log reg the same, RF much worse than undersampling
+	•	Curves:
+	•	Improvement on ROC AUC for LR and RF
+	•	Slight decrease on AP for LR and RF
+
+	•	2nd approach
+	•	Class weights
+	•	Instead of repeating samples, re-weight the loss function
+	•	Works for most models since loss function are applied almost every model
+	•	Same effect as over-sampling (not random), but not as expensive (same dataset size)
+	•	Preferred since in the model it’s much more efficient trying to create resamples of data because you don’t have to build new datasets or change dataset size
+	•	Class weights in linear models 
+
+	•	class weight c_(y_i ); prevents duplicating samples as each sample will be multiplied by its class weight
+	•	sum to 1
+	•	class weights in trees
+
+	•	ensemble resampling:
+	•	random resampling separate for each instance in an ensemble 
+	•	instead of bootstrap sample you can do random undersampling into a balance dataset separately for each classifier in ensemble
+	•	IOW: randomly select a subset of samples from the majority class to match the number of samples in the minority class for each classifier in the ensemble 
+	•	not in sklearn (yet), not totally easy with imbalance-learn
+	•	easy ensembles with imbleanrn
+	•	as cheap as undersampling but much better result than anything else 
+	•	difference between easy ensemble and undersampling
+	•	undersampling you randomly under sample the data set once to have a balanced dataset
+	•	easy ensemble: separately do an undersampling such that you have the same minority class but different majority class samples 
+
+	•	smart (under) resampling (1st approach):
+	•	algorithm is called edited NN
+	•	uses existing KNN algorithm to under sample dataset (remove data from classes that have a lot of data samples)
+	•	remove all samples that are misclassified by KNN from training data (mode) or that have any point from other classes as neighbor 
+	•	basically, look in areas or boundaries where we feel that data points are likely misclassified
+	•	if differences in size clusters is very big it might not be really helpful 
+	•	cleans up outliers and boundaries 
+	•	condensed NN
+	•	iteratively adds points to the data that are misclassified by KNN
+	•	can add until size is like the other cluster 
+	•	focuses on boundaries
+	•	usually removes many
+	•	remove points not close to cluster
+	•	CDD is almost opposite of EDD
+	•	Synthetic sample generation:
+	•	Synthetic minority oversampling technique (SMOTE)
+	•	Adds synthetic interpolated data to smaller class
+	•	For each sample in minority class:
+	•	Pick random neighbor from k neighbors
+	•	Pick point on the line connecting the two uniformly (within rectangle)
+	•	Repeat
+	•	Leads to very large datasets (oversampling)
+	•	Can be combined with undersampling strategies 
+	•	High k will likely draw more lines in the center region of the sample 
+
+	•	Summary
+	•	Always check roc_auc and average_precision look at curves
+	•	Undersampling is very fast and can help!
+	•	Undersampling + Ensembles is very powerful!
+	•	Can add synthetic samples with SMOTE
+
+
+
+Lecture 11
+	•	Clustering is the task of partitioning the dataset into groups called clusters 
+	•	unlike classification, clustering doesn’t rely on predefined labels
+	•	no ground truth or target variable to learn from
+	•	the algorithm only tells you if data points belong to the same cluster; labels are meaningless until examined
+	•	briefly:
+	•	group data
+	•	identify groups by assigning cluster labels to each data point
+	•	points within a cluster are similar
+	•	points in different clusters are different
+	•	number of clusters might be pre-defined
+	•	notions of similar and different depend on algorithm or use specified metrics
+
+	•	cluster algorithms have many parameters including number of clusters
+	•	to pick right number of clusters you must have prior knowledge of the data or need to inspect results manually
+	•	sometimes you don’t know
+
+	•	Why clustering?
+	•	Explore and understand structure of data
+	•	Are there coherent groups? How many?
+	•	Data partitioning: divide data by group before further processing
+	•	Summarize or compress data by representing each group by center
+	•	Unsupervised feature extraction: derive features from clusters or cluster distances
+
+	•	K-means clustering:
+	•	Pick number of clusters k 
+	•	Pick k random points as cluster centers
+	•	While cluster center changes, assign each data point to closest cluster center and recompute cluster centers as the mean of assigned points
+	•	Always converges
+
+	•	Objective function for k-means:
+	•	Finds local minimum of minimizing squared distances (Exact solutions is NP hard)
+	•	New data points can be assigned cluster membership based on existing clusters
+	•	
+	•	Sum of the distances of the cluster centers to all the points in the clusters
+
+	•	You can assign cluster labels to new data points via the predict method in Kmeans
+	•	initialization is random so running the algorithm multiple times can lead to different cluster numbers being assigned to the same group of data points
+	•	the way points get allocated affects how clusters are formed
+	•	each cluster is represented by its center and the boundary between clusters are straight lines so k-mean can only identify convex clusters
+	•	k-means assumes that all clusters are roughly the same size and finds the boundaries by finding the midpoint so might split the clusters incorrectly
+	•	even if right number of k is known, k-mean algorithm can’t recover them
+	•	k-means performs poorly if clusters have weird shapes
+
+	•	Advantages of k-means:
+	•	Easy to understand and implement as each cluster is represented by a center (simple)
+	•	Runs quickly 
+	•	Scales easily to large datasets 
+	•	Disadvantages:
+	•	Relies on random initialization so outcome depends on random seed
+	•	Restrictive assumptions made on the shape of clusters; clusters are always convex and simple
+	•	Cluster boundaries equidistant to centers
+	•	Requirement to specify the number of clusters you’re looking for
+	•	Can’t model covariances well
+
+	•	While PCA and NMF (learn later) tries to express data points as sum over some components, k-means tries to represent each data point using a cluster center 
+	•	Vector quantization: viewing k-means as a decomposition method where each point is represented using a single component
+	•	In vector quantization using k-means is that we can use many more clusters than input dimension
+	•	Using PCA or NMF while reducing to one dimension destroys data structure
+
+	•	Computational properties: 
+	•	Naïve implementation: n_cluster * n_samples distance calculations per iteration
+	•	Fast “exact” algorithms: Elkan’s, Ying-Yang, etc.
+	•	Approximate algorithms: minibatch KMeans which is much faster
+
+	•	Initialization:
+	•	Computing random centers is fast but not great
+	•	K-means++ is better as it picks point randomly then greedily adds the point further away 
+	•	By default, K-means does 10 random restarts with different initialization
+	•	For large datasets, K-means++ initialization may take much longer than clustering 
+
+	•	Feature extraction using K-means:
+	•	Add categorical features by saying it belongs to this cluster
+	•	Add continuous features saying the distance to the cluster is that
+	•	Examples: partition low-dimensional space or extract features from high-dimensional spaces for image patches
+
+	•	Agglomerative clustering: collection of clustering algorithms that all build upon the same principles 
+	•	Declares each point its own cluster and merges the two most similar clusters until some stopping criterion is reached 
+	•	Stopping criterion: number of clusters left
+	•	No predict method use fit_predict
+	•	Agglomerative clustering produces hierarchical clustering 
+	•	Detailed view
+	•	Relies on 2D nature of data so can’t be used on datasets that have more than 2 features
+
+
+	•	Dendrogram can visualize hierarchical clusters that can handle multidimensional datasets
+	•	Helpful if you don’t have many data points
+
+	•	Data points joined first are 1,4 2nd 6,9, etc
+	•	Length of branch/bats shows how far apart the merged clusters are 
+
+	•	There are linkage criteria that specify how most similar cluster is measured
+	•	Single linkage: smallest minimum distance; like computing the minimum spanning tree then cutting the longest edge
+	•	Ward (default choice): picks two clusters to merge such that the variance within all clusters increases least; leads to clusters that are relatively equally sized
+	•	Average linkage: merges clusters that have the smallest average distance between all their points
+	•	Complete linkage: merges two clusters that have the smallest maximum distance between their points.
+	•	Use average or complete if one cluster is much bigger than all the others so dissimilar numbers of data points
+
+	•	Pros and cons
+	•	Can restrict to input topology graph so you can look at only merge things that are neighboring
+	•	Retrictive topology can speed up the algorithm as you only consider few merges
+	•	Fast with sparse connectivity otherwise O(log(n)n**2)
+	•	Some linkage criteria can lead to very imbalanced cluster size (pro or con)
+	•	Hierarchal clustering gives more holistic view and can help pick number of clusters
+
+	•	DBSCAN doesn’t require the user to set the number of clusters a priori
+	•	Capture clusters of complex shape
+	•	Identify points that are not part of any cluster – can deal with outliers
+	•	Slower but scales to relatively large datasets as there are 2 parameters to adjust; neighborhood radius (epsilon) and minimum number of samples 
+	•	Identifies dense regions called core points
+	•	boundary points: points that are within distance eps of core points
+	•	Noise: points that don’t belong
+	•	Less points than min_samples points within distance eps of starting point, point is classified as noise
+	•	How it works:
+	•	Clusters are formed by core samples 
+	•	Sample is core sample if more than min_samples is within epsilon (dense region)
+	•	Start with core sample and recursively walk neighbors that are core-samples and add to cluster
+	•	Also add samples within epsilon that are bot core samples
+	•	If can’t reach any more points, pick another core sample and start a new cluster
+	•	If newly point has not enough neighbors, label outlier or noise
+	•	Outliers can be later relabeled to belong to a cluster
+
+	•	Boundary points may change depending on the order in which points are visited
+	•	Not that important as we don’t usually have many boundary points
+	•	Eps: defines cluster size
+	•	Small eps no points are core samples, and all are noise
+	•	Large eps: all points form 1 cluster – fewer but larger clusters
+	•	min_samples: defines the outliers
+	•	Increasing min_samples: fewer core points and more points labeled as noise
+	•	Small min_samples: clusters form in area they wouldn’t, leading to more noise in the form of wrong clusters 
+	•	While you don’t have to set the number of clusters explicitly, setting eps controls how many clusters will be found 
+	•	Easier to find good setting for eps after scaling
+
+	•	Pros and cons:
+	•	Can learn arbitrary cluster shape and detect outliers
+	•	Needs two parameters to adjust (eps hard to pick but can be done based on number of clusters)
+
+	•	(Gaussian) Mixture models: unsupervised models that try to fit per metric density to your data
+	•	Generative model – find p(x)
+	•	
+	•	Creates parametric density model (goal)
+	•	How likely it is to observe a new point; can be used for outlier detection
+	•	Clustering (goal)
+	•	feature extraction
+	•	Assumption:
+	•	Data is a mixture of small number of known distributions
+	•	Each mixture component distribution can be learned simply
+	•	Each point comes from one component 
+	•	Probability estimates:
+	•	Probability of a point belonging to each of the components (predict_proba)
+	•	How likely you observe X
+	•	score(X[, y]): Compute the per-sample average log-likelihood of the given data X. 
+	•	score_samples(X): Compute the weighted log probabilities for each sample.
+
+	•	Summary:
+	•	KMeans: Classic, simple. Only convex cluster shapes, determined by cluster centers, depends on initialization
+	•	Agglomerative: Can take input topology into account, can produce hierarchy. 
+	•	K-means and agglomerative allows you to specify number of clusters
+	•	DBSCAN: Arbitrary cluster shapes, can detect outliers, often very different sized clusters.
+	•	Gaussian Mixture Models (upgraded KMeans): Can model covariance, soft clustering sp how likely does it come from a particular component, can be hard to fit.
+
+
+Lecture 12
+	•	Hard to assess how well clustering algorithms work and compare outcomes
+	•	Supervised evaluation:
+	•	evaluate outcome of clustering algorithm relative to ground truth
+	•	use adjusted ran index (ARI) and normalized mutual information
+	•	Use instead of accuracy 
+
+	•	Why accuracy doesn’t make sense: 
+	•	it requires the assigned cluster label to exactly match the ground truth, but labels are meaningless
+	•	it compares labels directly 
+	•	partitions: set expressed as union of disjoint sets
+	•	so, cluster results must be evaluated based on the structure of partitions 
+
+	•	Partitions:
+	•	Labels in partitions are arbitrary so it doesn’t matter what the label is as long as it separated the same 
+	•	Subsets must be the same
+	•	contingency matrix: 
+	•	compares two different clustering results by measuring overlaps 
+	•	can calculate probability by taking intersection between the two labels 
+	•	doesn’t need to be square
+	•	
+	•	Both mean identical partitions
+	•	depends on how X values have been shaped so you need a different calculation of using the diagonals 
+
+	•	mutual information:
+	•	how much of the two distributions depends on each other 
+	•	measure shared information between two clusters
+	•	0: no MI and 1: perfect agreement
+	•	
+	•	NMI:
+	•	Normalized version of MI, accounts for difference in size of clusters
+	•	penalizes over partitioning (via entropy)
+	•	AMI:
+	•	Variation of NMI that adjusts for chance, ensuring the score isn’t inflated by random clustering 
+	•	any two random partitions have AMI = 0
+	•	perfect clustering = 1
+	•	Rand Index: 
+	•	Measures percentage of consistently classified point pairs 
+	•	R: number of pairs of points in the same set in U and in V 
+	•	S: number of pairs of points in in different sets in U and in V
+	•	nC2: number of possible pairs
+	•	between 0 and 1 
+	•	a score of 1 is a perfect agreement 
+	•	ARI:
+	•	A variation of RI that adjusts for chance; ensures the score is not inflated by random cluster agreements
+ ARI and AMI penalize too many clusters
+
+	•	Cons of supervised evaluation:
+	•	Usually there are no ground truths
+	•	Unclear what assumptions are; in clustering we use artificial labels that don’t necessarily follow a real label so its hard to link them with real world
+	•	Impossible to do in practice
+	•	ARI and NMI only help in developing algorithms not assessing success
+
+	•	Unsupervised evaluation:
+	•	Evaluating without ground truth
+	•	Use silhouette coefficient
+	•	Robustness based clustering metrics: run after adding noise to the data or using different parameter settings; if many perturbations of the data produce the same result, its trustworthy
+	•	Even if we get high scores, we won’t know whether the clusters reflect an aspect of the data we are interested it unless we analyze it manually 
+
+	•	Silhouette score: 
+	•	Measures how well each data point in a cluster fits within its assigned cluster 
+	•	computes compactness of cluster which doesn’t allow for complex shapes (like k-means)
+	•	higher score represents that you found clusters that are compact 
+	•	compact means high cohesion (small a) and separation (large b)
+	•	a: mean distance to sample in same cluster (within)
+	•	b: mean distance to samples in nearest clusters (between) 
+	•	for whole clustering: average over all samples
+
+	•	what’s the right number of clusters? supervised
+	•	If you have labeled data, clustering would be unnecessary 
+	•	Use cross-validation on whole data set
+	•	evaluate on whole data set
+	•	could use elbow method 
+
+	•	right number of cluster – unsupervised:
+	•	silhouette plots 
+	•	Studies separation distance between resulting clusters
+	•	Measure how close each point in one cluster is to point in neighboring clusters
+	•	Provides a way to assess parameters like number of clusters visually 
+	•	Interpreting plot:
+	•	Has range [-1,1]
+	•	1: sample is far way from the neighboring clusters
+	•	0: point is on or near boundary between clusters
+	•	Negative: misclassified/closer to different cluster 
+	•	Height: number of points in cluster
+	•	Width: quality of clustering points 
+	•	Red line: average silhouette score
+
+	•	Cluster stability: for comparing clustering algorithms/parameter 
+	•	Try multiple random samplings
+	•	Configuration that yields the most consistent result amount perturbations is the best 
+	•	
+	•	Qualitative evaluation (eyeballing):
+	•	Low-dim visualization
+	•	Individual points
+	•	Cluster center 
+
+	•	Face dataset with DBSCAN:
+	•	All labels were labeled as noise
+	•	Can increase eps to expand neighborhood of each point; got one cluster and noise points
+	•	Could decrease min_sample to consider smaller groups of points as clusters, however, didn’t work
+	•	Changing eps we never get more than 1 large cluster which means that all images are more or less equal
+	•	Face dataset with k-means
+	•	Could set number of clusters to known number of people but unsupervised clustering algorithm can’t recover them so use low number 
+	•	Creates clusters of even size 
+	•	Clusters create smooth versions of faces – working with PCA adds smoothness
+	•	K-means always assigns a data point to a cluster even if they don’t belong as it can’t handle noise 
+	•	Larger clusters -> finer distinctions -> more time
+	•	Face dataset with agglomerative clustering
+	•	Relatively equal size clusters but more uneven than k-means 
+
+	•	If you want semantics from clustering, you need manual confirmation
+	•	Clustering might not pick up on what you thought it would
+
+Lecture 13
+	•	Revision of PCA
+	•	Check direction with highest variance and use it as your first PC 
+	•	For 2nd component chose second most various orthogonal to first
+	•	Ordered in decreasing variance 
+	•	Direction and signs of PCA component doesn’t matter
+	•	Is unsupervised
+	•	Reduce a lot of dimension but lose information as you cant recompute your original matrix and lose predictive power
+	•	Visualizing PCA
+	•	PCA is usually used for visualization; much easier than getting many scatter plots 
+	•	Fit, transform and scatter data; get scatter plot 1st component vs 2nd 
+	•	If you do not scale data, feature with largest magnitude will be 1st PC
+
+	•	Matrix factorization:
+
+	•	Breaks down a large matrix into smaller matrices which are easier to analyze and interpret
+	•	X: number of samples x number of features
+	•	A: number of samples x k
+	•	B: k x number of features
+
+	•	MF for PCA
+	•	For PCA, A is the projected data and B is the PC
+	•	Usually make it such that the rows of B are orthogonal
+
+	•	Other MF
+	•	PCA: principal components orthogonal, minimize squared loss
+	•	Sparse PCA: components orthogonal and sparse
+	•	ICA: independent components
+	•	Non-negative matrix factorization (NMF): latent representation and latent features are nonnegative
+
+	•	Non-negative matrix factorization – unsupervised learning algorithm
+	•	Like PCA it reduces dimension
+	•	Instead of finding orthogonal components we find components and coefficients to be non-negative
+	•	Matrix must be positive; each entry is positive 
+	•	Can identify original components that make up the combined data
+	•	More interpretable components than PCA 
+	•	Advantages:
+	•	data points are composed into positive sums
+	•	Positive weights can be easier to interpret as each data point is represented as a positive combination of columns in W
+	•	No cancellation like in PCA as you don’t have components in opposite directions
+	•	Meaningful signs and no sign ambiguity
+	•	0-1 data set 
+	•	Expressed using PCA: not so clear due to cancellation effect
+	•	Disadvantages:
+	•	Can only be applied to non-negative data 
+	•	Whether components are interpretable is a hit or miss; unsupervised model so outcome might be anything 
+	•	Non-convex optimization, require initialization
+	•	Not orthogonal
+	•	Can be slow on large datasets because you look at all many possible variations of what can be seen as latent representation of your data points 
+	•	changing number of components affects results (look below*)
+
+	•	X=WH
+	•	W: weights
+	•	H: hidden representation
+	•	*
+	•	If you factor X into two components, each data point in the dataset can be represented as a positive combination of those two components
+	•	If number of components = number of features in X, NMF can perfectly reconstruct the data and components will point towards the extreme points
+	•	If number of components is 1, NMF finds best single direction to explain data and will point towards the mean
+	•	Components are not orders by importance or variance and each component plays an equal role in explaining the data 
+	•	NMF uses random initialization which leads to different results depending on the random seed
+	•	Larger effect in complex situations
+	•	Applying NMF to face images:
+	•	Main parameter: how many components we want to extract (< input features)
+	•	NMF is used to find interesting patterns within the data 
+	•	Applications of NMF:
+	•	Text analysis
+	•	Signal processing
+	•	Speech and audio
+	•	Source separation, gene expression analysis 
+
+	•	Manifold learning:
+	•	PCA is good to transform data to visualize it using a scatter plot but has it limits
+	•	Manifold learning algorithms allow for complex mapping and provide better visualization
+	•	It tries to project high dimensional data onto lower-dimensional latent manifold
+	•	Example of manifold leaning algorithm is t-SNE
+	•	Computes new representation of training data but don’t allow transformations of new data so can’t be applied to test set 
+	•	t-SNE:
+	•	also reduces dimensions
+	•	find 2D representation of data that preserves distances between points as best as possible 
+	•	starts with a random 2D representation for each data point
+	•	tries to make the points that are close in the original space close
+	•	emphasis on points close by rather than preserving distances between far-apart points
+	•	so, points that were close in the higher dimensional space will also be close in the 2D space (in PCA you would lose too much data and points might be above each other
+	•	 
+
+	•	Outlier detection:
+	•	Find points that are different within the training set
+	•	“Novelty detection”: no outlier in the training set
+	•	In outlier detection your training dataset also contains outlier but novelty detection your data is clean
+	•	Outliers are not labeled (otherwise imbalanced classification)
+	•	Outlier and novelty detection ate often used interchangeably 
+	•	Applications: 
+	•	Fraud detection
+	•	Network failure detection
+	•	Intrusion detection
+	•	Defect detection
+	•	News? Intelligence?
+	•	Basic idea:
+	•	Model data distribution p(X)
+	•	Outlier p(X)<e
+	•	For outlier detection: be robust in modelling so robust to outliers
+	•	Nonparametric or parametric (assume data follows a certain distribution) method
+	•	Apply at test-time, threshold likelihood
+	•	Task is generally ill-defined; so, you don’t know how the data looks like so you can’t detect which ones are outliers
+
+	•	Leads to elliptic envelope outlier detection:
+	•	Parametric method
+	•	Assumes data follows gaussian distribution
+	•	Fits a gaussian into data and look at data not fitted well by Gaussians. These points are outlier
+	•	Fit robust covariance matrix and mean to identify the central location and shape of the ellipse 
+	•	Compute Mahalanobis distance for each point and points with mahalanobis distance greater than a threshold are outliers
+	•	Only works if gaussian assumption is reasonable
+	•	Preprocessing with PCA might help sometimes
+
+	•	Kernel density:
+	•	Non-parametric method for estimating PDF of RV
+	•	Estimates distribution based on data points provided
+	•	Place a smooth bump at each data point by putting a small Gaussian blob around each data point and add all these bumps to form a smooth curves that represents pdf
+	•	Doesn’t work well in high dimensions as data points are sparsely distributed so most of the space will be empty making it hard for kernels to overlap 
+	•	In high dimensions you need to adjust your kernel bandwidth 
+	•	Small bandwidth makes structure more detailed and less smooth - overfitting 
+	•	Large bandwidth might create overly generalized densities that don’t reflect the data
+	•	Its an unsupervised model so cross validation can be used to pick the bandwidth but can be skewed by outliers
+	•	Addressing outlier and selecting bandwidth can improve performance
+
+	•	One class SVM:
+	•	Also uses gaussian kernel to cover data 
+	•	Goal is to find a boundary in the feature space that encloses most of the data points
+	•	So, it only selects support vectors (not all points) that lie closest to the boundary
+	•	Specify outlier ratio (contamination) via nu (ν: fraction allowed to lie outside the boundary)
+	•	Requires tuning parameter
+
+	•	Isolation forests (also nonparametric):
+	•	No parameters to tune
+	•	Build random trees; If you must go very deep into the tree, then it’s not an outlier 
+	•	Therefore, you measure the path length so how many splits (tree levels) are required to isolate a point 
+	•	Outliers are easy to isolate from the rest as they tend to differ from most of the data 
+
+	•	
+	•	Robust covariance:
+	•	Fits gaussian model to data assuming it forms a single gaussian distribution
+	•	If data is a single isotropic gaussian it performs perfectly
+	•	If data has multiple Gaussians it tries to merge them into 1 and fails to model the data correctly 
+	•	If clusters are too far apart, it misrepresents the covariance (shape of spread)
+	•	Isolation forest
+	•	Find dense regions by isolating points using random splits with trees
+	•	Works well across various cases because it simply focuses on separating dense areas from sparse
+	•	Effective even in mixed datasets (gaussian + uniform noise)
+	•	It doesn’t assume any specific data shape
+	•	One-class SVM
+	•	Uses a boundary to enclose most data points based on support vectors
+	•	Works better with a clean training dataset where majority of points are normal
+	•	Can misclassify points if there are outliers in training because boundaries are influenced by these points
+	•	Using support vectors can lead to strange behavior if the data distribution is complex
+
+	•	Summary:
+	•	Isolation Forest works great!
+	•	Density models are great if they are correct.
+	•	Estimating bandwidth can be tricky in the unsupervised setting.
+	•	Validation of results often requires manual inspection.
+	•	One class SVM depends a lot on parameters
+
+Lecture 14
+	•	Neural network models or MLPs
+	•	Can be viewed as generalizations of linear models that perform multiple stages of processing to come to a decision
+	•	In MLP, computing weighted sums is repeated multiple times, first computing hidden units which are combined using weighted sums to yield to result 
+	•	So, it introduces intermediate steps called hidden layers, which allows the model to learn more complex relationships 
+	•	Left is for logistic regression and right is for MLP
+	•	 
+	•	In the hidden layer, after multiplying each x with weight w, summing them and adding a bias, a non-linear function (tanh or ReLU) is applied to the sum
+	•	We add the non-linear function cause otherwise it would be the same as logistic regression
+	•	boundaries can now have different types of shapes 
+	•	Linear models can’t capture complex pattern, but neural networks introduce non-linearity and is able to do so
+	•	Relu: cuts off values below 0
+	•	Tanh: saturates to -1 for low input values and +1 for high input values 
+	•	
+	•	Must set parameter for the number of nodes in the hidden layer 
+	•	
+	•	Hidden layers usually all have the same non-linear function, weights are different for each layer.
+	•	Many layers → “deep learning”.
+	•	For regression usually single output neuron with linear activation.
+	•	For classification one-hot-encoding of classes, n_classes many output variables with softmax.
+
+	•	Started as non-linear models for classification and regression
+	•	Work well for very large datasets
+	•	Require solving non-convex optimization so solution is dependent on initialization and method of optimization you choose
+	•	Notoriously slow to train – need for GPU
+	•	require preprocessing, → like SVM or linear models, unlike tree. In particular scaling
+
+	•	Evaluating NN for different types of outputs 
+	•	
+
+	•	Estimating complexity:
+	•	Number of weights or coefficients that are learned 
+	•	Weights from inputs to first hidden layer = number of features * number of hidden units in layer +
+	•	Weights from each hidden layer to another hidden layer = number of features * number of hidden units in layer + 
+	•	Weights from last hidden layers to y = number of hidden units in last hidden layer
+	•	Parametric tuning:
+	•	Create a network large enough to overfit to capture underlying patterns in data 
+	•	Shrink network or add regularization (alpha) to improve generalization to make it less prone to overfitting
+	•	Early stopping: stop when performance on a validation set stops improving so prevents excessive training and reduces overfitting
+	•	Drop out; purposely disables a fraction of neurons to learn that some paths or networks are not needed and are not important 
+	•	Stochastic solver 

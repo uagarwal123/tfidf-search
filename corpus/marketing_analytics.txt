@@ -1,0 +1,445 @@
+Tab 1
+Lecture 1
+* Support marketing decision with analytical, mathematical models 
+* Marketing mix intruments: product, price, place, promotion
+*   * How does marketing mix effect sales 
+*   * Purpose of marketing mixed models: estimate how much each marketing instrcument affects sales 
+   * Measure impact of marketing strategies on sales and ROI
+   * Optimize marketing budgets 
+   * Predict future sales based on different marketing strategies 
+-> mostly use regression 
+   * Terminology:
+   * DV: outcome variable; variable to be explained 
+   * IV: predictor variable; variable that explains 
+   * P-value: prob of obtaining result 
+   * Low p-value indicated that nul hypothesis is unlikelt 
+   *      * How much of the variance in our DV can be explained by IV 
+   *      * Want to estimate alpha and beta in a way that fits the data best; many points are as close to the regression line as possible 
+
+
+      *         * SST = SSM (explained; want it high) + SSR (not explained) 
+      * OLS estimation focuses on minimizing SSR and makes predicted values as close as possible to observed values 
+
+
+         * If IV is categorical you must first create dummy variables 
+         * Dummy variables are a subgroup of categorical IV with two categories [0] and [1]
+         * Number of dummies we create = # levels of categorical IV - 1
+         * The group for which no dummy is created is called ref group and end up in the intercept 
+         * Choosing ref group depends on context and q
+         * Example: 3 dummies, 4 categories 
+         *            * If you only include DUM_sum for example, you check the sale levels in summer and will have model 
+         *            * If you want to predict sales in different seasons:
+         *   
+
+            * Information on model fit: R squared 
+            *                  * % of variance explained by the on model 
+               * Generally the higher the better but since its not a statistical test we cant make a formal conc
+               * Adjusted R squared:
+               *                  * Adding variables always increases R squared even useless ones 
+               * Adjusted R squared only increases if new variable adds real explanatory power 
+               * So it is used to compare models with different numbers of variables 
+                  * Model significance: F-test
+                  *                     *                     * If p-value < .05 → reject H₀ → model makes sense.
+
+
+                     * Coefficient testing:
+                     * Coefficients (beta) can help understand if an individual IV help explain the dependent variable 
+                     * B coefficient (slope): if X goes up 1 unit -> Y changes by (beta * 1 unit)
+                     * Use T test to check if coefficient is significant 
+                     *                        *                           * So f-text is to check model significance while t test is to check IV significance 
+                        * Managerial implications: 
+                        * if data is suited for regression, model significant, IVs significant then manager can 
+                        * understand effects like higher price -> lower sales 
+                        * Make predictions: compare scenarios 
+
+
+Lecture 2
+                        * What happens when the DV is categorical?
+                        * Transition from absolute DV to prob so how likely it is that an event will occur 
+                        * DV becomes P(y=1) -> prob is between 0 and 1 
+                        * If we use normal regression with a binary DV, predictions can be <0 or >1 which is impossible 
+                        * So instead use logistic equation to ensure that all values will fall between 0 and 1
+
+
+                        * We model probabilities not outcomes directly 
+                        * Since DV has to variance (only 0 or 1) we cannot use R squared 
+                        * Instead use:
+                        * Info on model fit: hit rate and pseudo R squared
+                        * Testing model significance: chi square test 
+
+
+                        * Model fit and testing: -2LL (log-likelihood)
+                        * Logistic regression:predict prob of an event occurring for a given person based on obs whether or not even did occur for that person
+                        * Observed Y: 0 or 1
+                        * Predicted value: Between 0 and 1 
+                        * Asses fit by summing prob associated with predicted and actual outcomes 
+                        * Measures unexplained information after the model has been fitted 
+                        * r values: better fit
+                        * Larger values: bad fit as there is more unexplained observations 
+
+
+                        * Model testing: chi square test:
+                        * Equivilant to F-test in linear regression 
+                        * F-test: does the model sig explain variance in Y 
+                        * Chi-square test: does adding predictors significantly improve prediction compared to a model with no predictors
+                        * Compare 2 models null (baseline) vs full to test if model is sig
+
+
+                        * Model fit: pseudo R^2:
+                        * Since it has no variance its not about explaining variance 
+                        * Its the likelihood ratio of new/null model so basically how much better is the full model comapred to the null model 
+                        * Pseudo R^2 values are much smaller than linear so 0.2-0.4 is a v strong model 
+                        * The higher the better 
+                        * Mianly useful to compare models 
+
+
+                        * Model fit: hit rate/accuracy 
+                        * For how many peiple is observed value Y = predicted value P(Y)
+                        * After predicting probabilities we must classify a default cutoff 
+                        * The cutoff depends on context 
+                        * Exaple for pass or fail you would use 0.5 but for cancer or not you would use 0,25 as cutoff
+                        * Can also find the cutoff value to the % of observed events that have occurred 
+                        * Accuracy = correct predictions / total 
+
+
+                        * Coefficient testing:
+                        * Similar to normal regression 
+                        * “Sig” column will inform you about whether variable is sig or not 
+                        * Sign of coeff shows direction of effect 
+                        * Cannot directly infer the effect on outcome 
+                        * To interpret effects look at column exp(B), aka odds ratio
+                        * Odds = P(event) / P(no event)
+                        * exp(B)>1: pos effect, odds increase 
+                        * exp(B): measures change in odds resulting from 1 unit change in predictor 
+                        * Example: exp(B) = 1.009. For every 1 unit increase in X odds increase by a factor of 1.009
+
+
+                        * Managerial implication: 
+
+
+Lecture 3:
+                        * How to design product in such a way for consumers do buy the product 
+                        * Conjoint analysis:
+                        * Reason for that is preferences
+                        * If you ask consumers about preferences, their stated preference is usually not the same as their revealed preference 
+                        * If you ask about intention to buy, they are usually overconfident about buying prob 
+                        * If u ask about self-reported importance weights, they identify everything is important
+                        * In reality, they make tradeoffs between benefits and costs. So what they desire most and what they're willing to give up
+                        * So conjoint analysis reveals true preferences and simulates realistic purchase decisions 
+                        * How to set up conjoint analysis: 
+                        * Give consumers tradeoffs instead of having everything 
+                        * Consumers balance cost and benefit better than stating ideal points 
+                        * Ideal points are generally not feasible 
+                        * So use cost benefit trade offs as it helps us understand which tradeofs people are actually willing to make 
+                        * Conjoint analysis: a quantitative survey-based marketing research technique designed to force consumers to make tradeoffs, thereby revealing true pref 
+                        * It treats products or services as combinations of attributes a 
+                        * estimates a mathematical model of consumers’ value systems allowing us to quantify  how much value consumers place on different attributes
+                        * Also helps understand willingness to pay so what theyre willing to give uo to obtain a certain product
+                        * Also distribution of willingness to pay which measures how consumers differ in their willingness to pay 
+                        * It solves questions like what the customer wants? What is the expected market share?
+
+
+                        * Basics of choice based conjoint (CBC)
+                        * Questionnaire where respondents choose their preferred product from a set of choices with varying attributes
+                        * Products are represented as bundles of attributes and each attribute has levels 
+                        *                           * So you give the respondent n choice sets and in every one they pick their preferred option
+                        * Because in every choice set theres a diff combination of attribute levels used, we can derive the effect of attribute level choice: attribute part-worths 
+
+
+                           * Designing CBC study 
+                           1. Choose study type: 
+                           * Rating-based: rate every option 
+                           * choice based: which one you would choose
+                           * ranking based: rank most to least preferred
+                           * Maxdiff: best and worst option 
+                           2. Identify relevant attributes: which and how many 
+                           * Should be relevant 
+                           * Have varying levels 
+                           * Not too many 
+                           * Preferably not strongly correlated
+                           3. Specify attribute levels: which and how many 
+                           * Relevant to management 
+                           * Unambiguous (high vs low is too imprecise)
+                           * Separated enough but not too much (reasonable amount)
+                           * Not too many
+                           4. Design questionnaire: 
+                           * Full factor design: include all possible combinations of attribute levels 
+                           * Fractional: only includes a fraction of all possible combinations 
+                           * Length of questionnaire: more choice tasks leads to more reliable estimates but too many decreases quality due to fatigue. Also, more levels means more parameters to be estimated so more obs needed. Rule of thumb: <=20 choice sets
+                           * Number of alternatives: 2-4 alternatives per choice 
+                           * Which stimuli to include: minimal level overlap, utility balance so equally attractive alt
+                           * Fixed vs randomized designs: randomizing helps reduce effect of order 
+                           * Adding no-choice option
+
+
+                           * Data analysis:
+                           *                              * Task: which choice set 
+                           * Alt: which option within the choice set 
+                              * Logistic regression:
+                              * First create a dummy variable for each level of attribute minus the ref group
+                              * It takes an option in the choice set and outputs the probability of how likely the person is to choose it 
+                              * The B coeff is the log odds of choosing an attribute level compares to ref category, holding all other factors constant
+                              * Using regular logistic regression is not ideal because in each choice set there are multiple alternatives. 
+                              * Binary logit ignore that these three decisions are linked. It only takes into account that you are not choosing this option and not that if you choose this option you automatically dont choose the other options
+                              * Consitional logit model is better as it calculates the prob of choosing a laptop relative to the other choices
+                              * Analogy: Imagine three people running a race. Binary logit asks "will person A finish?" as if persons B and C don't exist. Conditional logit asks "given that A, B, and C are all running, what's the probability each one wins?"
+
+
+                              *                                 * Ref category has Part-worth utility of 0
+                              * part-worth utility: how much that attribute level increases or decreases the log odds of being chosen (preference)
+                              * Higher B means its more preferred
+                              * Negative N means that level is less preferred than the ref
+
+
+                                 * To know how much each attribute matters overall you calculate attribute importance 
+                                 * Range = max part-worth - min part-worth for that attribute 
+                                 *   
+
+                                    * Conditional logit models 
+                                    * Provides a single set of utility estimates that are assumed to apply for everyone
+                                    * assume all consumers values attributes the same way
+                                    * Wtvr effect each attribute level has on choice probability it is fixed and constant across all respondents 
+
+
+
+
+                                    * Mixed logit model
+                                    * Can estimate part-worth utilities at the individual level by allowing part worths to vary randomly 
+                                    * Recognizes that different individuals have different tastes 
+                                    * Rather than giving you a single number per attribute, Mixed Logit gives you a whole distribution (a mean and a standard deviation) per attribute.
+                                    *                                     *                                       * To check if there is heterogeneity, check the SD of the terms and the respective p-value -> if it it significant then there is heterogeneity 
+                                    * In this example there is heteogeniety pref in brand and price but not processor
+
+
+                                       * Using utility for managerial decisions:
+                                       * Calculate total utility for each alternative by summing up part-worth utility. The one with the highest utility wins 
+                                       * This only tells you which product wins but we want to check individual part-worths for each respondent 
+                                       * We want to find market shares with segments 
+                                       * Segment A (70% of market): prefers HP (utility 0.60 > others)
+                                       * Segment B (30% of market): prefers Lenovo (utility 1.55 > others)  
+
+
+Lecture 4
+                                          * Shift from understanding what consumers want to understanding how much theyre worth to your firm 
+                                          * Move towards a customer-centric and relationship-oriented view
+                                          * Customers are now seen as an intangible asset that generates cash flow now and in the future 
+                                          * A customer-centric firm provides focus on customer relationship with 3 key drivers of growth and profitiability 
+                                          1. Custmer acquisition 
+                                          2. Customer retention 
+                                          3. Customer developments 
+                                          * Must have rich cutomer level data and ability to analyze it 
+                                          * Creates a bridge between marketing and finance. 
+                                          * Can check how much itll cost to acquire and keep a customer 
+                                          * How much should you spend on acquisition and retention 
+                                          * Alert when customer relationship management (CRM) is too costly 
+                                          * CRM cycle: Acquire -> retain -> monitor -> adjust 
+                                          * Sometimes customers become too costly so you should leave them 
+                                          * Acquisition: 
+                                          * direct marketing where firm contact prospects -> mass marketing 
+                                          * Customers differ in propensity to respond so if list contains data on each prospect start to be selective by creating segments and only contact segments where the  response rate is above threshold 
+                                          * Build a model for individual customers using prospect characteristics to predict the probability that each individual will respond to the offer 
+
+
+                                          * Customer equity: sum of lifetime values (CLV) of company’s customers or just the TV of customer base 
+                                          * CLV: the PV of future CF attributed to a customer relationship
+                                          * Calc now how much a customer will bring in the future 
+                                          * Each CLV = expected profits - acquisition - retention costs over expected life of the relationship 
+                                          * We don't know customers' lifetime or timing of their purchasing so we think in expected CLV
+                                          *                                             * E[V(t)] is the expected net cash flow at time t 
+                                          * S(t) is the survival probability: the chance the customer is still with you at time t 
+                                          * d(t) is the discount factor
+
+
+                                             * Mostly use CLV in settings with repeat purchases or subscription, can be service/products, helps with valuation of companies (customer equity)
+
+
+                                             * Why do you want customers to stay longer? Customers are unprofitable at first and become more profitable later
+                                             * Gave them introductory discounts
+                                             * Usage is higher earlier on 
+                                             * Spend money on marketing to acquire them 
+
+
+                                             * CLV example: say profit for customer is 1.5 per month and duration is 20 months. 
+                                             * CLV = 30 -> how much would you spend to acquire a customer? Anything below 30 could also give offer that costs like 10 euros cz customer is worth 30 
+                                             *                                                * Why retention rate matters?
+                                             * Small differences in retention compound into massive differences in customer base size over time.
+                                             *                                                * What influences retention?
+                                                * Quality of product or service 
+                                                * Customer satisfaction 
+                                                * Cost of switching to an alternative 
+                                                * Cost of cancellation 
+                                                * Netflix example:
+                                                * Spend 2 euros / new customer 
+                                                * First month free then 9.99 euros
+                                                * 5,23 marketing cost per customer 
+                                                * R = 0.8
+                                                * Acquisition cost = 9.99 + 2 = 11.99
+                                                *   
+
+                                                   * CLV simple case: In netflix example we have same rev and costs for each period 
+                                                   * Can rewrite CLV as 
+                                                   *    
+                                                   * This formula doesnt account to the fact that:
+                                                      * We value money today more than tom because you could have invested that euro in the meantime -> we can use discount rate 
+                                                      * assumes that costs are the same per period per customer -> not true. 
+-> can look at usage costs: smn who streams more is more costly 
+-> only counts acquisition costs but firms also spend on retention 
+                                                      * Customer with average retention rate r where r represents the value of tomorrows dollar like IR and is between 0 and 1 where r = prob customer stays 
+                                                      *                                                         *  ‘p” is the discount rate which is the OC of capital so what return would they get if they invest elsewhere. Higher impact in long term 
+
+
+
+
+                                                         * In reality, theres varying costs and revenue per customer so go back to og formula 
+                                                         * If you compute CLV for every customer and rank them you can decide where to focus retention efforts 
+                                                         * Can use CLV to decide how to allocate budget between acquisition and retention, and decide which customers are worth keeping 
+                                                         * NetflixeExample:
+                                                         *                                                            * Although you have more customers in the second scenario, each one is worth less because acquisition costs are higher 
+
+
+                                                            * Firms typically spend on acquisition while its more profitable to spend time on retention 
+                                                            * Two approaches for retention
+                                                            * Reactive: wait till customer signals they want to leave then offer incentive 
+                                                            * Proactive: identify at-risk customers before they decide to churnand intervene early. If you are wrong you are spending resources to retain a customer who has no intention of churning 
+                                                            * Modeling churn: logistic regression 
+                                                            * Predict which customers are more likely to churn and then target incentives to those customers to induce them to stay 
+                                                            * Helps firms focus its efforts on customers who are actually at risk to churn -> saves money
+                                                            * However it assumes that customer churn can be predicted with acceptable accuracy 
+                                                            * Bank example: 
+                                                            *     
+  
+
+                                                               * For every additional usinit on credit score, the odds of customer churning changes with factor or 0.999. So higher credit score the lower the chase customer exits the company 
+                                                               * For every additional year of age, odds of churning changes with factor of 1.087. Older a person is the higher chance of churning 
+                                                               * Customers with highest risk to churn are customers with lower credit scores, older customers, higher balances 
+
+
+                                                               * Theres a paper that says to target top 10% of customers with highest churn probabilities 
+                                                               *                                                                  * churn probabilities: customer 1 = 22%, customer 2 = 12%, customer 3 = 88%.
+                                                               * Customer 3 should be the top priority for a retention call or personalized offer.
+
+
+Lecture 5
+                                                                  * Customer journey: path of customer from first awareness to purchase and beyond 
+                                                                  * Customers interact with your brand through touchpoints which is any moment of contact between a customer and brand 
+                                                                  * Online touchpoints: 
+  
+
+
+
+                                                                  * Direct type-in: write the url of the brand directly - www.sony.com
+                                                                  * Branded: search in search bar to buy a specific brand - buy nexus 6
+                                                                  * Generic: search in general what you wanna buy - buy mobile phone 
+                                                                  * Price comparison: dk which brand ur looking for so u gather info - go to price comparison website 
+                                                                  * Display: kind of like random paid ads in websites 
+                                                                  * Retargetting: targetted ads in websites based on user history 
+                                                                  * Affiliate: affiliate puts ads on their website where customer can click it and conversions are tracked, affiliate gets comminision and you sell 
+                                                                  * Email: send emails to everyone they have emails of
+                                                                  * Content-separated: ad that has nothing to do with page youre reading 
+                                                                  * Content integrated: ad is the content 
+                                                                  * Purchase funnel: Awareness → Consideration → Preference → Purchase → Loyalty → Advocacy.
+
+
+                                                                  * If customers are bouncing across multiple touchpoints before they buy, which one gets the credit for the conversion 
+                                                                  * Conversion: the point where the recipient of marketing messages does what you want 
+                                                                  * Attribution: analytical method that reveals which marketing channels contributed ot that conversion
+                                                                  * It matters because it directly affects how you allocate your marketing budget 
+                                                                  * Research shopping: when customers use one channel for search and the other for shopping
+                                                                  * webrooming: browse online then buy in store - useful for filters 
+                                                                  * showrooming: browse in store then shop online 
+                                                                  * Drivers of research shopping:
+                                                                  * Attribute based decision making: one channel excels on attributes that determine search, while the other channel excels on attitude that drive purchase
+                                                                  * Lack of channel lockin: lock in means higher attitude towards searching on channel A translate to higher attitudes toward purchasing on channel A. in reality for example you can search a lot on instagram but then actually buy in the store
+                                                                  * Cross channel synergy: searching on channel A can actually enhance the experience of purchasing on channel B  
+                                                                  *  This is why its hard to attribute credit correctly because if cross channel synergy exists you cant juts look at last touchpoint and attribute it to conversion. The earlier touchpoints were building the foundation for final purchase 
+                                                                  * Solve the problem with carryover and spillover effects 
+                                                                  * How much does each channel contribute 
+                                                                  * Knowing this helps allocate marketing investments and target customers  
+                                                                  * Example question attribute modeling answers
+                                                                  * Which ads are driving conversions?
+                                                                  * Which keywords are driving conversions?
+                                                                  * Which channels should firms use to target customers?
+
+
+                                                                  * There are many different attribution models where many are based on rules not model 
+                                                                  * Rules are generally based on firms' intuition on how each channel plays a role in the purchase funnel of customers 
+                                                                  * Last touch attribution: all credit goes to final touchpoint before purchase 
+                                                                  * First touch: all credit goes to first touchpoint 
+                                                                  * Last non direct touch: ignore direct visits as customers were probably convinced by something else
+                                                                  * Uniform: all channels that were interacted with prior to purchase get equal credit 
+                                                                  * Exponential: more credit to touchpoints that occurred near the purchase 
+                                                                  * Position based: Gives 40% to the first touch, 40% to the last, and splits the remaining 20% among everything in between
+                                                                  * Weighted: each touchpoint gets a predetermined weight based on something like historical performance 
+
+
+                                                                  * Li & Kannan (2014): standard attribution models only look at the last touchpoint, but they ignore the fact that prior channel visits have carryover effects (a visit through channel X today makes you more likely to return through that same channel tomorrow) and spillover effects (visiting through channel X today makes you more likely to visit through channel Y later).
+                                                                  * Carryover: within the channel 
+                                                                  * Spillover: across channel
+                                                                  * Simple rule-based models can't explain why some customers convert while others dont as they treat these customers the same. Li & Kannan's three-level model actually uses individual-level data on customers’ touches and model purchasing and visiting stage 
+
+
+                                                                  * De Haan, Wiesel & Pauwels (2016) work with aggregated daily data and use a VAR (Vector Autoregression) model, which is a time-series technique. Customer-initiated contacts are more powerful than firm-initiated ones like TV or radio. Content-integrated CICs (like price comparison sites) are the most effective of all.
+
+
+                                                                  * Shaping customer journey:
+                                                                  * Recommender systems are tools that suggest products or content to customers
+                                                                  * They enhance customer engagement, increase avg order value, and improve up/cross-selling opportunities
+                                                                  * Nonpersonalized recommendations: 
+                                                                  * Dont require knowing anything about you
+                                                                  * Includes best sellers, top rate products, frequently bought tog
+                                                                  * Personalized recommendations: 
+                                                                  * Require data on the individual
+                                                                  * Collaborative filtering (ppl like u also liked these): finds user with similar purchase or rating histories and recommend what they liked 
+                                                                  * Similarity between the current user and all other users (based on rating or purchase behavior)
+                                                                  * Select the k users most similar to the current user
+
+
+                                                                  * Pros: intuitive and takes into account user behavior 
+                                                                  * Cons: struggle with sparsity where there isnt enough data on niche items/users and cold start (what do you recommend to a brand new user you know nothing about?), computation time is large with thousands of users and products 
+                                                                  * Content-based filtering ("you liked X, so you might like Y, which is similar to X"): it recommends items based on product attributes rather than other users.
+                                                                  * Create predefined set of product characteristics 
+                                                                  * Calculate similarity between products 
+                                                                  * Select the products that are most similar to consumed products 
+
+
+                                                                  * pros: works at cold start, no need for other user data 
+                                                                  * cons: it's not a statistical model per se, and "similar" is hard to define.
+                                                                  * Hybrid 
+
+
+                                                                  * Example of content based filter: recommends new product that is simil;ar to already purchased product 
+                                                                  * Use cosine similarity to calculate similarity 
+                                                                  * If = 1 the two vectors are identical 
+
+
+                                                                  * Step 1 gather data 
+                                                                  * Step 2 obtain only 1 column for each movie so that all characteristics are tog by extracting keywords
+                                                                  * Step 3 turn text into number through vectorization. You go through all 250 movies and build a master list of every unique word that appears across all bag_of_words columns. Then for each movie, you count how many times each word appears. Then use cosine similarity 
+                                                                  * Imagine each movie as an arrow pointing in some direction in a multi-dimensional space where each dimension represents a word. Two movies that use very similar words will have arrows pointing in roughly the same direction. Two movies with nothing in common will have arrows pointing in completely different directions.
+                                                                  * Cosine similarity measures the angle between those two arrows
+
+
+                                                                  * The similarities are defined by pre-specified product characteristicsbut maybe someone watched Fargo not because they love crime films, but because they're a massive Steve Buscemi fan. The content-based filter might not pick that up properly if actor names aren't weighted heavily enough. 
+
+
+Tab 2
+Chi squared for model testing
+Compares baseline/null model vs new model - does adding new IVs improve prediction compared to models without?
+
+
+Pseudo R^2 predicts the likelihood of new/null model -> improvement of model based on null model 
+
+
+What does pseudo R^2 compare
+
+
+
+
+
+
+
+
+What is non personalized recs? Give examples
+
+
+What are the ways you can test model significance?

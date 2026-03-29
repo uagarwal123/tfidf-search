@@ -1,0 +1,407 @@
+	•	People analytics help identify people most at risk of leaving and prescribe actions to help managers make right decisions
+	•	It is the analysis of employee and workforce data to reveal insights and provide recommendations to improve business outcomes 
+	•	It about business delivering commercial value, value to employees, workforce, manager and executives and the impact to the board, investors and society
+	•	PA is data driven decision making, focused on solving people related business problems. Identify drivers of business outcomes, combine people relate data to business data, data collected and stored in organization, use of statistical techniques 
+
+
+	•	
+(Bock, 2019).
+	•	Dashboard and reporting: sharing info from people data in reports
+	•	KPI and metrics: key metrics for enterprise and those of value for executives
+	•	Predictive analytics: use statistical and other techniques for predictions 
+	•	Advanced analytics & AI: using advanced techniques and AI to extract deeper insights 
+
+	•	Workforce experience: overall experience including outcomes from advanced analytics that improve experience 
+	•	Analytics culture: build awareness of people analytics in HR so that organization values data anayltics
+	•	Business performance: financial impact, risk, compliance, share growth etc
+	•	Societal value: more advanced outcomes of people analytics, such as inclusion, equality and gender pay
+
+	•	To deliver value, you must focus on business challenges, engaging with business executive stakeholders to sponsor work and working with colleagues across the business 
+	•	Have a business first approach 
+	•	The skills needed for success:
+	•	
+	•	These six skills are broadly applicable to all people analytics team but some new and additional skills are emerging 
+	•	The three most important topics for human resource leaders when talking about skills and roles are:
+	•	People analytics leader: 
+	•	needs the most skills and has key responsibilities; having a leader who gets things done is the most important aspect 
+	•	Responsibilities are building and leading the teams, ensuring ethics, trust and privacy, deliver value at scale, develop culture od people analytics, shape future of people analytics field
+	•	Able to influence others
+	•	Most important skills for team leaders are business acumen, consulting and communications 
+	•	For success, the people analytics leader should ideally report to the chief human resources or someone like chief analytics officer 
+
+	•	Operating model: 
+	•	how to organize the people analytics team to deliver value at scale most effectively 
+	•	usually there is not even a people analytics team and the activities associated with people analytics is fragmented across departments. This could be because CHRO doesn’t understand the importance of people analytics
+	•	operating model for HR analytics
+
+	•	demand engine:
+	•	communicate with stakeholders to identify and define people related business challenges
+	•	framing business question and defining hypothesis 
+	•	keep stakeholders appraised of progress throughout an analytics project
+	•	sharing insights and recommending actions to stakeholders 
+	•	solution engine - transforms drivers into scalable solutions
+	•	advanced analytics: use advances techniques to test hypothesis and scenarios of the more complex people related business challenges. This team should possess skills in statistics, programming, research design, workforce modelling and behavioural psychology
+	•	reporting and enablement: data analysts who are familiar with company’s people data. They build KPI and metrics and implement business intelligence
+	•	governance: experts that formulate and maintain proper stewardship across people analytics 
+	•	product engine: connect raw data insights to real lives of workforce 
+	•	transforms analutical solutions into useable products that are then implemented and scaled across the organization
+	•	understanding the Solution Engine’s analytics driven recommendations and translating them into scalable products 
+	•	deploying effective change management programmes for implementing solutions 
+	•	be purposeful in recruiting specialists because analytics is not some little HR slideshow
+	•	build the ecosystem around the business questions; work backwards to the data 
+
+	•	The translator: 
+	•	possess a greater knowledge of stakeholders and the context of work. 
+	•	Storytellers with an excellent grasp of data and communication skills and sound business acumen
+	•	Bring data to life and emphasizes the development of skills like public speaking and data visualization 
+	•	Must have consulting, technical and project & change management skills 
+	•	Consultants stay at the demand engine, but translators could be any person in the people analytics team who happens to have great storytelling skills 
+	•	Case of royal Caribbean cruise:
+	•	Had to find people analytics advisors who have string consultative and communication skills
+	•	The People Analytics Advisor begins with a 1:1 consultation with a customer, then go back to discuss ‘answers’ with the development team
+	•	Development team then produces minimum viable products 
+	•	the advisor then discusses and explores these solutions with the customer in an iterative fashion
+	•	Benefits:
+-Long-standing relationships with HR partners 
+-Prioritize most important works based on business needs 
+-Products and deliverables usable across companies
+
+	•	All in all
+	•	Hire and develop a leader that gets things done and is a master consultant, communicator and business influencer
+	•	Encourage CHRO to have people analytics leader as one of their direct team and don’t hide people analytics deep in the organization
+	•	Take outside in, value approach to PA that tales clients drivers and transforms them to scalable solutions and usable products for business outcomes
+	•	Build translator skill set into PA team to translate business challenges to analytical work and convert analytical insights into actionable recs
+Lecture 2
+	•	People analytics has 3 significant investments: expertise, finance, and trust dividend of all workers
+	•	Methodologies for people analytics is effective prioritization, defined process and committed sponsors
+	•	Effective prioritization:
+	•	Don’t care about what is done; care about why its done and how it will benefit the organization 
+	•	Prioritizing work effectively will allow stakeholders to gain confidence that the people analytics team focuses on topics that matter most to the organization. To do so they must understand business in depth to determine what they should focus on
+	•	Ask business leaders for their top three priorities: because not everyone will have the same priorities. This will allow to add value to more than 1 stakeholder
+	•	Focus on business topics that that deliver value in the long term and not those that will help leaders today
+	•	Take input from many different stakeholders. Having a single influential leader that dominates agenda can mean that projects that add value to the business get distracted 
+	•	Set up a dynamic prioritization forum to discuss priorities  
+	•	
+	•	Complexity-impact matrix:  guides the order of work to be done
+	•	impact: 
+	•	alignment to business strategies, financial value, benefits to the workforce 
+	•	Complexity: difficulty of activity and resource required to deliver PA project
+Availability and quality of data, required technology, expertise of resources, organizational politics, sponsors engaged, ease of productizing and implementing 
+
+	•	Know the business strategy inside out to build intuition and confidence since they will be needed in times of crisis 
+
+	•	Defined process:
+	•	PA teams find stable, efficient and clean processes for undertaking work to overcome obstacles and ensure outcomes are delivered.
+	•	Analytics value chain: move away from opinion and onto data, metrics and analysis to validate opinions 
+	•	
+	•	Eight step model:
+	•	
+	•	The focus impact value model 
+	•	Focus on business challenges linked to company’s people strategy
+	•	Project’s scope 
+	•	Project’s sponsor
+	•	Resources available
+	•	To create more impact build solid foundations and don’t dive into solving technology and data issues 
+	•	Expected outcome 
+	•	What would happen if…
+	•	To create more value, prioritize work with the end goal in mind. Will determine if work is important, if a sponsor is required, if budgets will be released and if it’s impactful
+	•	Financial value 
+	•	Risk mitigation
+	•	Engagement of stakeholders 
+	•	Build a ‘Why? – How? – What?’ manifesto for the people analytics team.
+
+	•	Committed sponsors:
+	•	Provides support for project through personal commitment, helping with financial aspects and personal endorsements 
+	•	Finding sponsors: 
+	•	Have a business problem they want to be solved
+	•	Involved and passionate in work and business area
+	•	Authority to make things happen 
+	•	Securing sponsors commitment: 
+	•	Create contract with sponsor: shows team is serious and committed 
+
+	•	Summary 
+	•	Ask what is the business value first
+	•	Identify potential work by engaging with stakeholders, clearly defining business questions and developing strong hypotheses
+	•	Set up a project prioritization forum comprising the people analytics leader and representatives from HR, finance and the business that reviews priorities, enables progress and provides guidance.
+	•	Select projects using a robust framework (such as the Complexity-Impact Matrix) that prioritizes high-impact ‘Quick Win’ and ‘Big Bet’ work and low-impact ‘Trivial Endeavors’ and ‘Pet Project’ work.
+	•	Create impact by focusing on solving business challenges and prioritizing work with the end goal in mind deliver more value.
+	•	Identify a sponsor for every piece of significant work: one who has a clear business problem they want to solve as well as the willingness and authority to implement recommendations.
+
+	•	Take a business first approach to PA with a focus on working directly with business executives to solve key challenges confronting the organization.
+	•	Business and strategy are considered the area that adds the most value, above business focus areas like employee experience and well-being, strategic workforce planning and employee productivity
+	•	
+	•	People analytics teams in large global business are becoming more business focused and are aligned with organizational topics that were considered outside HR’s responsibility
+	•	This helped PA become more important to companies 
+	•	Value chain helps transform PA to an outside in approach
+	•	They will focus more on what people factors will improve business performance or which roles in organization deliver the most value
+	•	 
+
+	•	PA must ensure that buiness outcomes are the goal and all activities are aimed to deliver that goal
+	•	
+	•	Align work to strategy:
+	•	Align PA with most important business challenge 
+	•	Prioritize projects based on business value (chapter 2)
+	•	The 7 forces of demand identify areas of business demands that are drivers for PA. they usually align more with business strategy and operations 
+	•	Validate likely impact and value
+	•	Use focus impact value model to reengage stakeholder to define scope, create investment if needed, and collaborate with finance to measure outcomes 
+	•	Make friends with colleagues in the finance team and learn their language and terminology.
+	•	Focus: define scope, secure project sponsor, agree on budget, and define time frames
+	•	Impact: determine impact of project on 7 stakeholder groups and establish extent of involvement
+	•	Value: assess and define value 
+	•	Share insights and recommendations
+	•	Reveal insights: identify insights from analyses to prove or disprove hypothesis being tested. Without insights presented, executives and project sponsor will make their own conclusions to best fit their objective 
+	•	Determine recommendations: provide clear recommendations either alone or with stakeholders to drive decisions. Always be mindful of original business question 
+	•	Get your point across: effective storytelling, carefully considered visualizations and using the right language all improve the success rate of people analytics work.
+	•	Sometimes, switch from framing the story financially to the language of the specific business unit.
+	•	Analytics is a progressive activity; work iteratively, amending questions as stakeholder input develops, and tell the story as meaningfully as possible.
+	•	Deliver solutions at scale
+	•	Focus on realizing value through scaling and productizing analytical solutions and focus on PA value chain to maintain outside in perspective
+	•	Before the tipping point the PA teams establishes credibility, skills and infrastructure. So, they focus on proving value and gaining trust
+	•	After tipping: shifts to managing and prioritizing numerous project requests. Must scale the most valuable solutions quickly.
+	•	Quantify outcomes
+	•	In doing so, they deliver the value they set out to achieve, and provide benefits to the workforce and employees, and improve their credibility
+	•	communicate the success of people analytics both internally to create momentum and demand and externally to attract and retain talents.
+	•	Gain credibility through proving the financial and commercial benefit of people analytics.
+	•	Tip: always start with business strategy
+
+	•	Summary:
+	•	PA must deliver outcome that improve business performance, support strategy and manage risk.
+	•	Take a value-chain approach to people analytics focused on client drivers as inputs and measurable business outcomes as the outputs.
+	•	Orient all activities involved in people analytics work on delivering quantifiable outcomes.
+	•	Work closely with finance and agree at the outset how the outcomes will be measured.
+	•	Learn to be a storyteller; get to know each audience and the language that will compel them to take action.
+	•	Look to scale analytics across the enterprise. This is when value is fully realized. Don’t limit analytics to experiments, projects or pilots.
+Lecture 3
+	•	Workforce experiences: describes how audiences across any organization benefit from people analytics 
+	•	Availability of data, required technology, experts of resources, politics, sponsirs ease of productizing 
+	•	Delivering benefits of analytics to the people who provide data positively impacts business performance 
+	•	Employee experience: do things with and for your employees and not to them 
+	•	What the employee observes 
+	•	How they feel about every interaction they have with the company through their tenure
+	•	Why is it important?
+	•	Increase retention and the reputation of the organizations
+	•	Create positive culture: boosting productivity, engagement, and innovation
+	•	Improve employee well-being psychologically and physically
+	•	Increase inclusivity and positivity: feeling respected and values 
+	•	The consumerization of HR: looking at employees as consumers
+	•	The four responsibilities of PA
+	•	Employee of one
+	•	Collect touchpoints/moments that matter for employees & use data to enable personalization (personalized experiences)
+	•	Managing EX requires HR to involve line managers and work with IT since most touchpoints that matter to employees are owned by the business
+	•	ABN AMRO case 
+
+	•	Workforce as a consumer of people processes
+	•	Collect feedback and design offerings with detailed differentiation 
+	•	Use data to deliver business outcomes and redesign performance management
+	•	Case study:
+	•	To collect feedback, you can use stratified sampling by dividing population into smaller subgroups based on job levels then randomly select a sample (% of very group) from each subgroup. This covers all subgroups of employees equally 
+	•	To ensure good measurements ensure reliability (consistency) and validity (accuracy) of measurement 
+	•	Challenges could include how to highlight business value or improve process
+	•	Manager as a consumer of people data 
+	•	Provide data insights about their teams, team members, and themselves 
+	•	Managers usually rely on HR business partners for support when requesting data and information about their teams
+	•	Have a platform in which people can easily access data as it helps people believe in it and deliver solutions without expensive data scientists
+	•	democratized people data means that users can ‘in real time, take stock, check on, adapt or develop new strategies as rapidly as business circumstances or people circumstances change’.
+	•	Executive as a consumer of people insights 
+	•	Productize the insights make solutions in a way that fits the executives’ ways of working 
+	•	For example, you see that all employees (Key employees) who worked with an executive for 3 years and resigned, had a higher propensity to leave, So now you productize the insights. Executives who manage other executives must have offerings, so like an early warning to act when an employee becomes a key employee.
+	•	
+	•	Summary:
+	•	PA should benefit employees, managers, executive and the workforce by providing personalized experiences
+	•	Provide a fair exchange of value whereby employees get personal benefit form sharing their data with the organization
+	•	Help HR colleague define, measure, and manage employee experience through data-driven approach
+	•	Analyze and identify moments that matter for employees 
+	•	Provide insights that help individual employees and implement technologies that give personalized experience
+	•	Create a digital ecosystem that continuously listens to the workforce, and design HR programmes with a human-centered approach.
+	•	Democratize data to managers to help them understand their team and individual employees.
+	•	Deliver advanced analytics solutions to executives as consumable, intuitive products that are easy to use.
+
+	•	Transforming PA: always adopt business-first approach
+	•	Connect with business stakeholder:
+	•	Business executives are the ones who think most about how to improve the company’s performance 
+	•	The closer the business executive is to what a company produces the better they understand how to convert corporate strategy into business operations 
+	•	Engaging them helps people analytics leaders align their strategies with real business needs rather than just HR-focused initiatives. 
+	•	Prioritize quick wins and big bets
+	•	Having many project and constant requests from HR executives, PA leaders are reluctant to speak with more stakeholders as they fear It will increase expectations, risk delivering less, or even ruin reputation of PA by overpromising and underdelivering 
+	•	Need to meet with stakeholder for know which projects to prioritize
+	•	Prioritization helps: 
+	•	Provide most objective way to select highest impact work
+	•	Deliver most effective vehicle to create an investment case for skills 
+	•	Productive evidence-based conversation for low-value projects to be deprioritized
+	•	Prioritization is a way to gain credibility, make an impact and deliver high-value work
+	•	Define the ambition of people analytics 
+	•	Having clear ambitions for analytics deliver more value
+	•	Defining the ambition and then realizing that ambition means even a relatively small people analytics team can provide significant value to their organization.
+	•	Making the ambition widely known builds momentum for the team.
+	•	Clear communication ensures that stakeholders recognize the value of analytics projects as they deliver measurable benefits.
+Lecture 4
+	•	Three waves of people analytics technology
+	•	First wave: core HR
+	•	Companies moved from tradition HR software where they hosted their own servers to SaaS-based HR platforms that operate in the cloud 
+	•	Can benefit from regular updates and improvements without managing the software infrastructure themselves 
+	•	While cloud-based HR systems provide a strong foundation, they aren’t enough for deep analysis 
+	•	Data models: system lack well-structure data models making it hard to analyze HR data effectively
+	•	Incomplete story: HR professional struggle to access and integrate data from multiple sources so they only see a part of the picture, limiting their ability to make informed decisions 
+	•	Predictive analytics: lack of predictive analysis meant they had limited insights and no ability to prescribe recommendations for action
+	•	Data inclusion: unable to add specialist data from emerging technology platforms so complex business topics are less likely to be undertaken using HR core alone
+	•	They can’t deliver analytics beyond reporting, dashboard and scorecards and even then, are limited to data within their own system
+	•	Second wave: analytics dashboards
+	•	Before, executives didn’t understand or care about effort, cost or technology behind making report as long as they were available. The report was created on demand and on-premise
+	•	Now companies still use people analytics only when needed and HR teams struggle with inefficient, time-consuming manual reporting 
+	•	Companies needed dashboards that combine data from multiple HR and business systems. However, this leads to a lot of challenges.
+	•	Cost: companies see these platforms as an extra expense even though they are cheaper than core HR systems 
+	•	Perceived value: businesses underestimate the true impact of analytics on performance, focusing only on HR benefits and not business outcomes. They focus on soft benefits (time) rather than hard benefits
+	•	HR capability: Many HR professionals lack technical skills, limiting their ability to communicate effectively with stakeholders and drive data-driven decision-making
+	•	Benefits of implementing people analytics dashboard successfully
+	•	Executive insights: C-suite executives receive consistent, accurate information about their workforce in real time
+	•	Democratization of data: the opportunity to democratize data to all managers in the business improves decision making around people and teams 
+	•	Speed of decision making: HR can provide insights instantly instead of waiting for analytics to compile reports 
+	•	Improved credibility of HR: HR gains trust and influence by providing accurate, real-time data across all systems 
+	•	Cost savings: reducing time spent on manual data consolidation leads to significant cost savings 
+	•	Third wave: specialist people analytics technology
+	•	New technologies focus on workforce panning, talent and market intelligence, behavioral skills, productivity etc. 
+	•	technology is transforming people analytics, with specialized tools providing deeper insights into workforce behavior and performance.
+	•	Cloud-based solutions are modernizing traditional HR functions, making them more data-driven and efficient
+	•	Used well they can excite business leaders to take action but if they’re used poorly, they can be an expensive mistake. Before investing:
+	•	Start with the business question and understand what the problem is. Third wave tools help provide new insights.
+	•	Use the right combination of technologies: some third wave providers have products that are highly specialist in nature however a solving analytical questions require more tools than a single multi-elements core HR system. Might need a combination of technologies.
+	•	Be mindful of privacy and ethics:  Third Wave technologies gather and analyze data that can be considered invasive so whether to use the solutions is a question for legal teams.
+	•	Before buying people analytics technology consider
+	•	Indicators that buying technology is needed
+	•	Lack of existing solutions: available tech won't help analyze a clearly defined and highly prioritized business problem 
+	•	Tech experts are not available 
+	•	Limited time to build the right solution internally due to urgency of problem
+	•	How to navigate the vendor market
+	•	Keep up with market trends: stay informed about latest HR tech and assign a team member to routinely research vendor and update team
+	•	Build a network of industry peers: connect with peers who already work with a specific HR tech company which helps you understand the pros and cons of each vendor
+	•	Have a shortlist of companies and list of vendors by category to save time when businesses suddenly require a solution and enhance HR’s credibility
+	•	Working with procurement specialists
+	•	Procurement teams help navigate vendor selection and costs
+	•	Treat procurement colleagues well: don’t wait till you urgently need a tool, establish trust beforehand. A strong partnership ensures that HR gets the best tech at the best price
+	•	Respect their expertise: they understand the market and risks to instead of dictating choices, collaborate and let them guide the selection process
+	•	Help procurement understand the HR business problem: explain why new analytics tool is needed and how it will benefit the company.
+	•	Ten key question to consider when buying technology
+	•	Does the product address the needs of all countries in scope
+	•	What are the hidden costs
+	•	What is the approach to privacy 
+	•	What is required of the people analytics team, both time and resource?
+	•	What is the policy for access to raw data that is gathered by the vendor?
+	•	What are the implementation stages for conducting a pilot and for implementing across the enterprise?
+	•	How quickly is the technology integrated into core systems?
+	•	What failures have occurred with the product/solution and what was learnt?
+	•	What customer and technical support is provided?
+	•	What is the vendor’s financial stability (if a small firm)?
+	•	What to look for in a vendor partnership
+	•	Real partnership: includes influence on their product road map, levels of support during implementation, and whether vendor will make data available at no extra cost
+	•	Conducting pilots: instead of running full scale they can implement a pilot/ trial run to assess if the tool works well before making the financial commitment 
+	•	Privacy: understand the vendors approach to data security and privacy
+
+Insight from case
+	•	Don’t buy tech just for the sake of it buy only when it makes sense; make sure you need it
+	•	Sometimes internal development is better other times purchasing is more effective
+	•	Engage internal stakeholder for smoother process
+	•	Vendor relationships matter: best vendors are those who act as partners 
+	•	Pilot before full implementation
+	•	When building people analytics tech, you must focus on 4 factors:
+	•	Indicators that building tech is needed
+	•	If a vendor marketplace assessment reveals that existing solutions do not meet the necessary use cases, then building the tech inhouse is better
+	•	When business needs are complex and align with long-term strategy, develop tech infrastructure internally
+	•	A well-constructed investment case can show that building tech in house will yield greater return on investment 
+	•	How to work with enterprise and HR tech teams
+	•	Learn their language of tech: if key points aren’t understood due to tech jargon the solution risks being designed without meeting project requirements.
+	•	Involve colleagues from enterprise and HR tech in business rationale
+	•	Build expertise within the people analytics and HR team: while tech is built and delivered from outside PA team, data stewardship should be owned within PA team. Also true for productization in which the accountability for product management solution should be with PA leader
+	•	Ten key questions to consider when building tech
+	•	Who is the key business sponsor for the project
+	•	Is the investment case validated and has it been signed off by relevant colleagues in finance and tech?
+	•	is the right level of representation from HR technology privacy and finance involved for executive support and decision-making
+	•	will a governance board be needed to manage the project 
+	•	Who is assigned from technology HR and legal to build the product 
+	•	Is there access to human centered design skills to support the implementation of the analytic solution? 
+	•	if the product being built involves data gathering and storage has consideration, been given to data privacy 
+	•	How will employee communications be managed? 
+	•	How are the relevancy of the technology offering be maintained overtime? 
+	•	how will the technology meet the potential changing demands of the business?
+	•	What to look for in an internal tech partnership
+	•	Real partnering: Is the inhouse team invested for the duration of the project? Are they passionate about the business problem being solved 
+	•	Conducting pilots: the tech team must be willing to pilot and implement across the enterprise 
+	•	privacy will internal tech partner be supportive of the work and prepared to work together to address privacy challenges?
+
+	•	Using tech to scale and productize analytics:
+	•	Analytics doesn’t stop when analysis is complete. The real challenge begins when valuable insights need to be implemented and scaled across the organization
+	•	Tech is crucial for scaling analytics solutions, making them more productive, and personalizing PA
+	•	Need to shift from seeing analytics as a series of experiments and start treating them as products or offerings
+	•	Product management:
+	•	While product managers are common in customer-focused product development, they are rarely found in people analytics teams. However, as people analytics solutions often result in technology applications, the role of product management becomes crucial.
+	•	The Product Engine should be viewed as a software factory that transforms analytical solutions into software products that employees will find useful and enjoyable to use.
+	•	Developing products for people analytics can be complex, especially when multiple recommendations lead to a range of products
+	•	It is essential to carefully consider the skills and processes needed to turn analytical projects into scalable, user-friendly products. 
+	•	Human-centered design:
+	•	Consumer experiences are increasingly personalized, and PA is following this trend. It is essential for creating user-friendly software employees will use
+	•	Design should be used to improve end-user experience
+	•	Summary: 
+	•	Tech helps with data gathering and analysis, supports democratization of data and provides basis to scale analytics solution across the enterprise
+	•	Keep up with PA tech market through research and peers, but only consider buying tech if it helps solve a defined business problem
+	•	Demand a sound and solid approach to privacy and ethics especially with some emerging tech
+	•	Nurture the relationship with the procurement team, help them understand the business problem and involve them with vendor selection
+	•	Focus on vendors that seek partner, provide flexibility around roadmaps and pilots and have clear approach on data privacy
+	•	Secure sponsorship to build tech solution, work with finance on investment case and partner in a transparent easy with enterprise and HR tech teams
+	•	Scale and productive analytics through implementing tech across the enterprise, when possible, build product management and human-centered design skill into PA team
+Lecture 6
+	•	Culture Building analytically willing and savvy people accross HR function. Aim to build a healthy analytics culture
+	•	Culture refers to the shared beliefs, values, customs, behaviors, and artifacts that characterize a group of society
+	•	it is important for the CHRO to create a culture of data across the entire resources function
+	•	the more deeply culture is embedded in culture of HR the less resistant HR professionals are to using it
+	•	
+	•	Demonstrate value: create a platform of belief in analytics through communicating and demonstrating the value of PA itself
+	•	Develop capability: invest in learning to develop HR professionals in skills needed for the future
+	•	Create structure: develop tools and activities that will engage people in analytics at all levels across the breadth of the HR function
+	•	Build confidence: encourage a mindset shift to a data-driven way of working
+	•	CHRO and PA leader is responsible to instill and affirm the value of PA
+	•	Based on the case study, to do so you have to:
+	•	Establish a clear vision. E.g.: create culture across HR
+	•	Clarify the understanding of business challenges. E.g.: introducing PA to business practice 
+	•	Harness the tech to scale the adoption of analytics. Have access to company’s people data and work closely with privacy teams and works councils
+	•	Secure stakeholder buy in. driving awareness to increase adoption and establish creditability (solve real world problems)
+	•	Use reverse marketing rather than direct; the customer seeks the supplier 
+	•	Deliver quantifiable business impact
+	•	Tip: developing a culture of analytics requires a clear vision and persistence
+	•	Building capability in analytics across HR
+	•	Focuses on the skills needed for HR professionals to help them become more data-driven
+	•	
+	•	Data driven
+	•	Analytical thinking: frame business problems into questions and hypotheses through convos with business leaders then partner with data analysts and consultants in PA to translate requests to solutions then understand how to translate info to stakeholders.
+	•	Workforce panning understand how the business strategy impacts workforce decisions and demand and supply of skills impact business opportunities
+	•	Data analysis: gather analyse and interpret data to provide insights 
+	•	Experience led skills
+	•	Human center design (think like an employee): helps consider employee experience; use design techniques and agile methods of co creation
+	•	EX implementation (act like a marketer): partner with business leader to realize new solution to improve employee experience. Learn marketing process and concepts to improve EX
+	•	Digital literacy: learn the potential of AI, automation, and digital tools 
+	•	Business focused skills:
+	•	Organizational acumen (think like an executive): understanding the organization’s vision and strategy and how they align with HR programs and initiatives. Can learn and thrive in constantly changing environment and deal with ambiguity
+	•	Stakeholder management (Act like a diplomat): build relationships across the organization to support HR initiatives and motivate and engage stakeholders by building trust and credibility.
+	•	Storytelling: translate analytics to insights and recommendations 
+	•	The best way to learn the complex and new skills for an entire HR function is to involve HR professionals in co-creation and collaborative projects.
+	•	Create structures and build confidence  
+	•	Delivering value through a culture of PA means convincing HR to think differently
+	•	Psychological safety
+	•	To succeed and build the future data-driven culture and convert this opportunity into business outcomes requires a lot of hard work and confidence
+	•	Psychological safety: being about to show and employ one’s self without fear of negative consequences of self-image, status or career
+	•	Eg.: CHRO has a fail fast mentality; allow failure without significant consequences
+	•	Allow employees to feel safe to take risks 
+	•	
+	•	PepsiCo case: 
+	•	shows how PA teams can use a strong centralized knowledge structure to deliver real value across a global workforce
+	•	When broken into bite-size pieces with practical toolkits, people analytics enables a culture of do-ability at the local level.
+	•	PepsiCo is structured in sectors: by category (beverages/food) in the US, by geography elsewhere
+	•	Each market tailors business strategy to local need 
+	•	Create a modern and effective approach to strategic workforce planning
+
+Top Tio: build globally, enable locally
+	•	Summary
+	•	To realize sustainable and long-term value for PA, then it has to create a data-driven culture across the entire HR function
+	•	Create a platform of belief in analytics through communicating and demonstrating the value of PA itself
+	•	Invest in education and learning to develop HR professionals in skills needed for the future 
+	•	Develop tool and activities that will engage people in analytics at all levels across the breadth of the HR function
+	•	Allow HR professionals to lean skills while working on real business challenges 
+	•	Encourage a mindset shift to data-driven way of working and reinforce it through a clear and consistent communications 

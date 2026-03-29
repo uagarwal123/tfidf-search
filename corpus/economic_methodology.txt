@@ -1,0 +1,1618 @@
+Chapters
+
+
+Ch.1 - Humean
+Lecture 1
+* Positive science: explains facts that can be proven as right or wrong -> objective 
+* Example: Increasing taxes on the rich reduces income inequality (can be tested)
+* Normative sceince involves values, opinions and judgements -> subjective  
+* Example: The government should increase taxes on the rich (judgement).
+* Received views: theories based on observable facts 
+* Received view is the concept of science developed by logical positivisim 
+* The main goal is demarcation (science vs non-science): scientific knowledge must be logically consistent and verifiable by observation
+* What counts as scientific knowledge?
+* Analytic propositions: true by definition/logical analysis and dont depend on experience 
+-> Examples: all bachelors are unmarried or logical and mathematical truths like circles are round
+* Synthetic a posteriori propositions: not true by definition and must be empirically verifiable through observation
+-> Examples: my neighbors dog is aggressive or unemployment increased last quarter 
+* What does NOT count as scientific knowledge:
+* Synthetic a priori propositions: truth is not shown by empirical research and that are not true by definition. Statements you claim are true before you gathered evidence 
+-> Example: Newton’s laws and Euclidean geometry are not universally true, but empirically testable and revisable.
+
+
+* Verifiability Principle (meaningfulness): all propositions that are not true by definition (non analytic statement) are only meaningful iff it can be verified by observation (emperically verified) 
+* Consequences are that metaphysical, ethical and religious statement are meaningless for science 
+-> example: god created the world in 6 days -> meaningless in science
+
+
+* logitical positivists are normative scientists because they are making a value of judgement about science itself by saying that only satatements that can be tested or verified are meangingful. IOW, logical positivists are saying science SHOULD only study facts but the type of science they want is positive science
+
+
+* Empiricism: all evidence for synthetic must come from sense perception
+* Statements has to be empirically verifiable 
+* Statement has been verified 
+* Predicates are meaningful only if we can observe whether something falls under them 
+* Example: “is red” 
+
+
+* Theory structure - the syntactic view:
+* A scientific theory is written in formal logic (like math) built from axioms (basic laws) and definitions 
+* It is divided into:
+* -> Observation statements (sometimes called protocol sentences): they are directly observable facts 
+* ->Theoretical statements: things we can’t directly observe like electron, force, intelligence 
+* Logical positivists were worried that if we can’t observe these things does it make it meaningless?
+* To avoid metaphysics theoretical terms are allowed only if they can be connected to observation
+
+
+* Operationalization: for a concept to be meaningful it must be entirely in terms of measurement procedure 
+* Turns an abstract concept into something that can be measured or observed.
+* Correspondence rules (key idea): bridge between theoretical and observation terms 
+* How theoretical concepts show up in observable measurements 
+* Example: theoretical terms -> temperature & observation term -> thermometer reading 
+* Basically: Under the syntactic view, a scientific theory is a formal system of sentences in logical language, containing theoretical and observational terms, where theoretical terms are only meaningful through correspondence rules that link them to observable facts.
+* Axioms + theoretical rules -> (via correspondence rules) observable predictions -> emperical testing 
+
+
+* Theories vs evidence:
+* Context of discovery: how a theory was found -> irrelevant 
+* Context of justification: how a theory is logically and empirically supported -> crucial 
+-> science only concerns justificiation
+
+
+* The Deductive-Nomological (DN) answers the question: what does it mean to scientifically explain something?
+* According to the received view: to explain an event is not to tell a story it is to logically show that the event had to happen given certain laws
+* The idea is that if the event can be deduced then it is explained 
+* How to remember it: nomos-> law
+* So, an explanation = deduction using laws not just facts
+* DN: Law + initial conditions = event (explained)
+* Example 1: why did the stone fall?
+* Law: all objects near the earth experience gravitational acceleration 
+* Condition: the stone was released near earth 
+* Explanation: the stone fell
+* Example 2: why did unemployment increase?
+* Law: if aggregate demand decreases, unemployment increases 
+* Condition: AD fell this quarter 
+* Explanation: unemployment increased this quarter 
+
+
+* Scientific Laws must be:
+* Universal: must apply to all objects 
+* Exceptionless: if one exception exists its not a law
+* Unrestricted by time/place: true everywhere, always 
+* Necessary: not a coincidence 
+-> Example of law: all bodies near earth accelerate at 9.8 m/s^2 (in a vacuum)
+-> Example accidental: all coins in my pocket are silver 
+* BUT they cannot be satisfactorily defined semantically and induction cannot justify them with certainty 
+* Induction: the inference of a general law from particular instances
+
+
+* The problem of induction (Humean)
+* Observe many cases -> infer general law
+-> example: observed that the sun rose every day so far -> sun will rise tom
+* No logical guarantee that the future will resemble the past as no amunt of observations can logically prove a universal law 
+* This is a problem because law must be universal and exceptionless but observation can only give finite data 
+* so how can we justified universal laws scientifically? We can’t do that with certainty 
+* Logical positivist responses: not a solution but tried to manage it 
+* Intrumentalism (Moritz Schilick): laws are useful tools and guidelines not literal truths; dont claim theyre true, only effective 
+* Confirmation theory (Rudolph Carnap): evidence doesn’t prove laws; it confirms them to a degree -> probabilistic certainty 
+* So laws are more of less supported but never absolutely certain
+* takeaway : scientific knowledge is fallible, probabilistic and always open to revision
+
+
+Summary 
+* Science is a logical system built from axioms and laws expressed in formal languages connected to the world via observation free from values 
+* Scientific if its logically consistent and all empirical terms are operationalized 
+* In science only justification matters 
+Ch.2 - Samuelson & Friedman
+Lecture 2 
+* Received view in economics 
+* Problem is that economic law cant be tested in labs
+* Econometrics was established to provide an alternative to experimental science by unifying economic theory, statistics, and mathematics
+* The process of econometrics involves 3 steps 
+* Step 1: specify economic model in explicitly functional form (often linear)
+* Step 2: decide on the appropriate data definitions and gather relevant data series for every variable included in the model (like operationalization)
+* Step 3: create a bridge between theory and data using statistical methods. Bridge consists of various sets of stats, which helps determine the validity of the theoretical model 
+* Positivism in econometrics:
+* mathematics as analytical foundation (model structure)
+* Statistics as observational foundation (model test)
+-> operationalisation and data choice guarantee verifiablity
+-> stats testing verifies it 
+* Explanation and prediction follows D-N model 
+
+
+* The Keyenes-Tinbergen Debate
+* Tinbergen’s methods: trying to make a model of the whole american economy with many variables 
+* Keyenes’ critique: tinbergens method only assumes the theory is correct and simply fills in the numbers. It failed as a test because it could not discover new causes or critize existing model if it doesnt provide a complete list of all significant casual factors beforehand.
+* Basically, tinbergen doesnt test theory but simply measures  
+* Tinbergens measuring is only possible if all relevant causal factors are already known 
+
+
+* Haavelmo thought that we can tweak parameters until we find stability in the parameters which could mean the model is correct and stumble upon an economic law 
+* Goal is finding invariance through repeated measurements under different model specifications, but of and by means of probability not exact values 
+* Basically economics lacks controlled experiments and stable citerus paribus conditions so his solution was to use prob theory and accept randomness explicitly
+* Searches for invariance no exact laws 
+
+
+* Measurement-without-Theory (Koopmans):
+* Accused researchers of only measuring and only describing what the data looks like without explaining why. 
+* He argued that true scientific testing required economic theory to specify structural relations. Without a theoretical framework to specific probability distributions and causal directions, statistical results cant be tested for invaraince (whether they will hold true in the future under different policies)
+
+
+* Cowles vs NBER 
+* NBER (Burnss & Mitchell): theory is based on observation. So, you start from data and observation, look for empirical regularities, minimal theory -> they behaved as if theory emerged from data 
+* Cowless commision tradition (Koopmans & Haavelmo): start from economic theory, build structural models then test them with data. Theory tells you which variables matter and how they are connected. 
+* Koopmans' critique of NBER: economic analysis must start with theory to decide what to observe, and empirical evidence then refines that theory. Data alone isn't enough
+* Problems of econometrics 
+* No lab -> no certainties of cause and effect 
+* More variables -> more certainty and more complexity 
+* Do observations (NBER) or introspective theory (Koopmans) determine relevance?
+* Either way: the more statistical controls the better -> complexity is unavoidable
+
+
+* Friedman’s methodology
+* Friedman claimed that if models out predict the benchmarks of naive models, then it is a good model. 
+* Models are simplifications and assumptions can be unrealistic 
+* Validity of a model should be judge solely by its predictive success not realism of assumptions
+* Dont test assumptions test predictions 
+
+
+* Alfred marshall said that nature is so complex and we cannot solve everything simultaneously so we carefully analyse one element at a time and combine partial results into an approximate overall understanding.
+* Friedman uses the same logic but explicitly in economics. A full theory of economic change it so complex to build directly so you should analyse specific sectors and combine them to coherent general theories 
+* Friedman claimed that important theories often rely on highly unrealistic assumptions but still yield good predictions
+* Unrealistic assumptions for examplewhen economics assumes perfectly rational agents. This assumption is false literally, but useful analytically.
+* Types of assumptions (Musgrave) -> defends Friedman against the charge of false assumptions:
+* Domain assumptions: define where theory applies 
+* Negligibility assumptions: factors exist but have no effect 
+* Heuristic assumptions: made if a factor is considered negligible just to simplify the logical development of the theory 
+
+
+* Summary of friedman:
+* Simplify for parts (or domains) as economy is too complex and test by predictions 
+* Positivist aspects: still accepts D-N model so we still believes that science explains by laws
+* Distances himself from testing assumptions due to induction which breaks logical positivism 
+* Relevance of observation is evaluated solely by predictive success within specific domains
+* (for him the model is never wrong its just that we applied it to a different domain)
+* Instead of increasinging complexity you just get more and more models 
+* If you can predict something -> it is scientificic
+* Critique of F-twist (Samuelson):
+* Prediction does not mean explanation 
+* Two false models can predict equally well
+* Examples
+App A says: “It will rain tomorrow because the clouds are angry.”
+App B says: “It will rain tomorrow because a magic frog croaked.”
+Both repdicts rain only 1 makes sense 
+* Without realism we cannot compare theories meaningfully and learn causal mechanisms 
+* Replacing explanations just means better description not deeper truths 
+* Leads to descriptivism
+* Descriptivism:
+* economics becomes pattern fitting and no true laws 
+* If all elements must be empirically verified economic laws become impossible 
+* No D-N explanations only descriptions of pattern
+
+
+
+
+* summary : 
+* Anti-realism in Friedman’s methodology holds that the assumptions of economic models don’t need to be descriptively accurate, as they function merely as analytical tools. 
+* What matters is the predictive success of the model, especially out-of-sample. Given the complexity of economic reality and the impossibility of directly testing assumptions, unrealistic simplifications are both unavoidable and desirable.
+* Friedman says that powerful scientific theories rely on deliberately unrealistic assumptions in order to abstract from irrelevant details and generate simple, general, and testable predictions, and should be evaluated by their predictive success rather than the literal truth of their assumptions. 
+* However, this instrumentalist view is criticised for undermining explanation and causal understanding, potentially reducing economics to mere description rather than law-like science.
+Ch.3 - Popper & Duhem-Quine
+Lecture 3
+* Remember the received view says that science starts with facts and from many observations we induce general laws
+* Induction problem states that no amount of observation can prove a universal law (black swan example)
+
+
+* Popper’s Solution: Falsificationism 
+* Idea: science doesn't prove theories true it tries to prove them false 
+* Scientific procedure by Popper:
+* Propose a bold conjecture (general theory)
+* Clearly state what should falsify it
+* Test theory aggressively 
+* If it survives keeps it as provisional (never as final truth)
+-> basically, theories are never verified, they are only not yet falsified 
+* Implications:
+* Laws are back 
+* Scientific knowledge is fallible (can be mistaken)
+* Scientists should aim for refutations rather than verifications
+
+
+* Why falsibility matters (demarcation problem)
+* Scientific theories make risk predictions and could be proven wrong 
+-> einsteins relativity -> risky, testable predictions -> scientific 
+-> had a way to prove it wrong 
+* Non-scientific theories explain everything and therefore explain nothing; can never be refuted 
+-> freud/adler -> any outcome confirms the theory -> non scientific 
+-> can never be proven wrong
+
+
+* Testing theories Popper-style 
+* Logical consistency (min req)
+* Falsifiability (demarcation criterion)
+* Empirical consequences (predictions)
+* Empirical content (potential falsifiers)
+* Empirical content: how much a theory say about the world 
+* More predictions -> more potential falsifiers -> more phenomena covere
+* Empirical content increases -> more precise predictions are or more general class can be tested upon
+* If something is more likely to be true it is less likely to be falsified so it has less empirical content 
+* Example: IR falls vs IR falls and keeps falling until it reaches its natural level 
+* The second is riskier and has higher empirical content so is a better science 
+* Logical positivists: more probable = better theory 
+* Popper: more improbable but informative = better theory 
+* A theory that says almost nothing is very likely true but a theory that says a lot risks being wrong 
+
+
+* Making certain observation and base theories on it then we make sure that every observation/theory is totally true so growth of knowledge is exponential 
+* Popper: Scientific knowledge doesn't grow by accumulating proven truths, but by eliminating errors and producing theories that are less wrong, more precise, and more informative. So proving a theory is false doesnt decrease knowledge as we now know what is false and where the old theory fails. 
+
+
+* Theory ladeness observation
+* With popper theory comes before observations 
+* Theories offers potential falsifiers and tells us what to look for 
+* Observations are guided by theory 
+* Facts are not neutral they are interpreted through theoretical lenses
+
+
+* Immunizing strategies (how theories avoid falsification)
+* Scientists often protect theories instead of abandoning them 
+* A posteriori strategies (after bad evidence): redefine concepts, adjust underlying theories, change domain 
+* A priori strategy: “all else equal” -> i used vaguely it makes theories unfalsifiable 
+* Popper warns: saving a theory at all costs is bad science 
+* Duhem-Quine problem
+* When a prediction fails, what is falsified? Core theory? measurement? domain?
+* If we do not know what is at fault, immunizing strategems may actually improve the theory
+* Example: whales were classified as fish but when it was discovered that they breathe air and can drown. Instead of redefining the definition of fish they were reclassified to mammals. so in this case saving the theory improved it
+
+
+* Logical positivism: the more probable a theory is the more reason to accept it 
+* Popper: the more improbable the theory is the more reason to accept it 
+* Friedman: the more significant the theory is, the more unrealistic its assumptions
+
+
+* Social laws and economics:
+* Popper is skeptical about strict laws in social science because theyre hard to find as there are no controlled experiments and many factors 
+* Reflexivity: once people know the law they change behavior and invalidate it
+-> there will be a bank run so people will rush to withdraw money so the prediction causes the event 
+-> cant happen in physics: electrons dont change behavior when physicists publish papers 😂
+* Social and historical inescapability (that history follows fixed laws independent of human choices) (such as in Hegel’s and Marx’s historicism) does not exist because you cannot predict the future of history asit depends on future knowledge, and future knowledge cannot be known in advance. Prediction a future discovery today means its not really a discovery since you already know it 
+
+
+* Political implications: the open society:
+* Popper links epistemology to politics
+* An open society:
+- Allows criticism 
+- Encourage public debate
+- improves institutions gradually
+Rejects authoritarian historical laws 
+* Science and democracy both progress through criticism not certainty 
+
+
+* Summary:
+* Popper argues that scientific knowledge grows not by verifying theories but by proposing bold, falsifiable conjectures and eliminating errors through critical testing 
+Ch.4 - Kuhn & Lakatos
+Lecture 4:
+* The received view says that science is objective facts + logic and that they are neutral 
+-> not really the case
+* This view cannot explain why smart scientists disagree so deeply or why they miss big events
+* Kuhn wonders if facts are objective, why did aristotle’s wrong ideas survive for centuries?
+* Kuhn’s answer is that science is a social activity not just logic + data 
+* Theoretical frameworks held by observer influences observations
+* What scientists see depends on what they already believe in 
+* So, scientists work inside a community
+
+
+* Normal science takes place within a scientific community that shares 
+* Research domain (what is worth studying)
+* Methods (how to study it)
+* Criteria for good science
+* This shared framework is what kuhn calls a paradigm 
+* Once a paradigm exists scientists don't question it they only start solving because everyone agrees on these things. They dont discover new things; the only work within the paradigm
+* Example: no one asks why should we even use equilibrium this question lies outside normal science 
+* Kuhn breaks down the paradigm into a disciplinary matrix (everuthong a scientific community shares that lets them do normal science together) 
+* Paradigm: standard examples everybody learns; template for problem solving
+-> the Marshallian supply–demand graph
+* Metaphysics: background worldview, not tests directly 
+-> agents respond to incentives 
+* Symbolic generalizations: equations and symbols everyone accepts without debate 
+-> equilibrium conditions 
+* Values: shared standards for evaluating theories
+* -> formal modeling instead of verbal reasoning 
+* Education & policing: why paradigms persist:
+* Students learn through standard examples and imitating successful solutions not by questioning fundamentals  
+* Even after education, journals, conferences and rankings reward conformity 
+* This created intellectual stability but also blind spots aka anomalies 
+
+
+* So, if paradigms are so stable, how does change ever happen? -> Anomalies 
+* Anomalies is a fact the paradigm can’t explain 
+* Scientists dont see anomalies because of “Gesalt perception”
+* A gesalt image can be a duck or a rabbit but you dont see both at once 
+* At first, anomalies are ignored, explained away or treated as measurement errors because facts are interpreted through the paradigm so perception itself is structured 
+* This leads to radical conclusion
+* So, observation is theory-laden
+* There are no neutral facts so they are not independent of theory as observation already presupposes concepts 
+* You dont see facts then build theory
+
+
+* If observation depends on theory and paradigms shape what counts as a fact then there is no neutral language to compare paradigms -> incommensurability 
+* A new paradigm leads scientists to view different puzzles (specifically anomalies) in a differen tlight 
+* So science doesn't grow smoothly and there are breaks 
+* Paradigm change isnt purely rational which leads to scientific revolutions 
+* Scientific revolutions:
+* When anomalies accumulate -> confidence in paradigm collapses -> a new paradigm emerges -> scientists “swtich Gesalt”
+* Problem is that old and new paradigms are incompatible and science starts to look irrational because there is no neutral way to decide between paradigms   
+* Lakatos: 
+* Kuhn’s idea of a paradigm shift is too extreme, it’s like a “religious conversion.” Scientists suddenly abandon one worldview for another, seemingly irrationally. This makes science look irrational, because there’s no clear rational standard for choosing the new paradigm.
+* Poppers falsification is naive; In reality, theories are never rejected immediately just because some predictions fail. Scientists often adjust auxiliary hypotheses instead of abandoning the theory.
+* Kuhm + popper = sophisticated falsification
+* Lakatos says that you can compare programmes rationallt:
+* He agrees with kuhn that facts dont falsify theories and science is not instant falsifications 
+* But disagrees that paradigm change is irrational 
+* His solution is research programs 
+* Research programs = structured paradigms:
+* Part 1 - Hard core: fundamental assumptions, never questioned
+* Part 2 - Protective belt: adjustable assumptions; can be adjusted when problems arise 
+* This explains why theories survive anomalies and scientists dont abandon frameworks immediately 
+* Duhem-Quine problem: when data contradict a theory, what failed?
+* Lakatos says: immunising strategies are theory improvements in a progressive research programme
+* Progressive programs: Predicts new facts thats are later confirmed emperically
+* Degenerating programs: Only explains problems after the fact 
+* rationality:
+* choose most progressive research program
+* Theoretical pprogressiveness: predicts/explains new facts 
+* Empirically progressives: new facts are actually shown empirically  
+* problemL how long before theoretical progressiveness is empirically observed 
+
+
+* Summary:
+* Kuhn explains scientific stability through education and institutional policing, and scientific change through anomalies that trigger paradigm shifts. 
+* Kuhn: Science works in “paradigms”, long periods of normal science, punctuated by sudden paradigm shifts 
+* Kuhm: something is true if it conforms to social conventions regarding truth
+* Because observation is theory-laden, paradigms are incommensurable and progress is discontinuous. 
+* Lakatos accepts this critique of naive falsification but restores rationality by comparing research programmes based on their theoretical and empirical progressiveness.
+
+
+
+
+Ch.5 - SSK & ESK
+Lecture 5
+* Sociology of scientific knowledge (SSK) asks: why do scientists believe certain theories and reject others 
+* According do SSK, knowledge is not justified by abstract rational rules but on theories and concepts that are established and accepted. In other words, it is these interests that determine what scientists come to regard as knowledge.
+* SSK claims that knowledge production serves social wants; uses sociological techniques to understand the practice of science
+* truth is socially constructed
+* Its not made up but what counts as truth depends on shared standards and community agreement 
+* Kuhn fits here: scientists are trained to see the world in a certain way (Gesalt) and operate within communities not individuals 
+* Leads to the naturalistic turn: Instead of judging science by abstract philosophical rules, we study science using empirical methods, just like we study any other human activity.
+* Traditional philosophy focuses on the rules of proper scientific method and such things as logic, truth, evidence, etc that influence the acceptance or rejection of theories 
+-> whats true or false are theories of science 
+* SSK: focuses on scientists’ behaior in terms of motives and interests as members of scientific communities to understand why theories are accepted/rejected 
+-> what’s true or false are theories of scientists’ behavior 
+
+
+* The edinburgh strong programme 
+* Starting point: study science naturalistically 
+* Scientists are to be investigated just as we would natural phenomena -> try to be understood objectively
+* Instead of asking “Is this belief true?” it asks: “Why did scientists come to believe this?”
+* Four principles to prevent passing of judgement:
+1. Causality: explains why scientists hold the beliefs they do
+2. Impartiality: treat true and false beliefs equally
+3. Symmetry: same types of causes explain success and failure
+4. Relexivity: apply the SSK to SSK itself; No one gets a free epistemic pass, not even us.
+-> every time u find a reason for T/F you gained an understanding of the beliefs but still stuck in believing that some beliefs are T/F and those beliefs are caused by your own scienitifc community so needs to be researched the same way as other communities 
+* Another approach - Lab studies approach (microsociological SSK):
+* SSK doesn’t just theorise, it focuses on daily practices in labs and workplaces -> Its an immersive approach 
+* Basically goes undercover in these scientific communities 
+* Actor Network theory (Callon):
+* Science produced by networks of humans (Scientists) and non-humans (machines, etc.)
+* Knowledge stabilises through alliances 
+
+
+* Philosophical problems raised by SSK:
+* Relativism: truth depends on historical and social context 
+-> you try to make rules to get a truthful description of the community but then say that these rules are social constructs -> reflexivity?
+-> hard to be objective 
+* Realism (world exists independently of beliefs): SSK leans towards relativism so can we say that SSK itself is objectively true?
+* Value neutrality: SSK claims to be descriptive and value neutral but topic choice and concept used are value-laden 
+
+
+* ES(K): economic techniques to understand the practice of science -> individual interests must be aligned with scientific values 
+* Both ESK & SSK explain science socially but while SSK uses sociology ESK uses economics 
+* Scientists are modeled as utility maximizers
+* 2 versions: 
+* Old economics of science (ES): Scientists follow certain characteristic norms. The way its organized can make it easier or more difficult to do so but doesnt change as a reaction to incentives 
+* New economics of scientific knowledge (ESK): scientific output depends on incentives that scientists face -> what they do is affected by how science is organized
+
+
+* Old economics of science: Robert Merton
+* 4 norms for good science -> cudos 
+1. Communalism: common ownership of scientific discoveries -> scientists give up intellectual property (will never keep it to themselves) in exchange for recognition and esteem 
+2. Universalism: good scientists will demonstrate truth of statements and theories in a way that are universally acceptable  -> should not depend on who is making it 
+3. Disinterestedness: scientists shouldn't act for personal financial gains and are rewarded for acting in ways that outwardly appear to be selfless. Scientists should act for the advancement of knowledge
+4. Organized skepticism: scientific claims should be tested and be exposed to rigorous, structured community scrutiny 
+
+
+* This benefit society but not scientists themselves. They work to create universally acceptable truth, disseminating to wide audience, are subjected to lots of criticism while trying to be disinterested
+-> creates pos externalities but are underproduced in competitive markets 
+* So it is a pure public good -> everyone benefits except scientists themselves -> must be subsidized or be given patents for applied research which can be profitable 
+
+
+* New economics of scientific knowledge: david and dasgupta
+* Treats scientists as economics agents that maximize utility specifically reputation
+* Open science makes it rational for self interested scientists to behave in ways that still produce good knowledge 
+* Open science is incentive compatible with a reward system based on self interest
+* This includes quickly publishing results, public access and priority rule where credit goes to first discoverer 
+* Scientists would publish their work quickly because thats the only way to get recognition and maximize reputation (communalism), must appeal to a wide group (universalism), must seem disinterested to not take a hit on your reputation (disinterestedness), and must make sure you dont have mistakes so you ask people to critize before publishing (organised scrutiny)
+* So in the end if they want to maximize reputation they will have to go through the 4 norms of Merton
+=> science becomes break-through oriented 
+* The standards of research push younger researchers to conform to survive as alternative approaches struggle to enter.
+* So by rewarding conformity, dominant approaches persist even when better alternatives exist.
+* Causes lock-in problems: Technologies and ideas persist even if inefficient 
+* Example: QWERTY keyboard 
+* Philip kitcher’s social epistemology:
+* Science is a social study so scientific standards are also social 
+* Goal: maximize ratio of reliable beliefs to total beliefs in population
+* How?: arrange social institutions in most epistemically (relating to knowledge or degree of validation) efficient way possible 
+* Principle: knowledge is promoted by cognitive diversity through competition 
+* Intuition: an industrial organization of cognitive labor -> divide intellectual labor
+* Basically, different people tackle different problems, using diverse methods, competing and cooperating, so that collectively we produce the most reliable knowledge.
+
+
+* Summary:
+* SSK: emphasizes communities and social interests; uses sociological techniques 
+* ESK: emphasizes incentives and self interest; uses economic techniques 
+* Old economics of science (ES): basic research is a public good with positive externalities -> subsidize 
+=> normative approach to science 
+* New economics of science (ESK): scientists are utility maximizers
+
+
+Ch. 6 - Postmodernism & rhetoric
+Lecture 6
+* Postmodernism is a critique of humanism and traditional views of science dating from the enlightenment 
+* Postmodernism questions the basic assumptions of modern science 
+* It is a rejection of modernism and rejects ideas like:
+* Theres a single scientific method: there is one correct method for producing scientific knowledge 
+-> post modernism says that there is no single method and that methodology is plural not universal
+* Knowledge has foundations 
+-> PM there are no ultimate unquestionable foundations as observations are theory-laden and what counts as evidence changes over time
+* Meaning can ultimately be determined with certainty: once defined clearly, everyone should agree
+-> PM: meaning is context-dependent and plural 
+* History possess a pattern such as progress
+-> PM: history is non-linear and messy 
+* The self is a coherent unity 
+-> PM: the “self” is socially constructed so individuals dont have stable identities 
+* Things and beings have essential natures 
+-> PM: you can say that you made observations that tells you the truth about something, however you made a lot of assumptions that you dont know are true 
+* Master narratives are possible
+-> PM: no single story explains everything
+* Causal determination has a privileged role in explanation
+->PM: not everything has a clear stable cause 
+* Things can be represented in language: if we choose the right words or equations, we represent the world as it truly is 
+-> PM: language shapes reality instead of mirroring it  
+* Implication of postmodernism:
+* Demarcation is a non-starter. Draws a clear line between science vs non science 
+* PM says this is impossible as there are many ways of describing and interpreting reality, none uniquely superior 
+* PM also critiques economic theory itself 
+-> equilibrium: there may be many equilibria, unstable equilibria or none at all 
+-> causality: economic change may be random and arbitrary -> coincidental 
+-> rationality: the single rational self may not exist
+* Leads to rhetoric approach 
+* Positivism (according to McCloskey)
+* Positivism is a misleading and overly narrow view of science 
+* McCloskey argues that positivism treats economics as a science that should rely only on logic, numbers, and observable evidence, while ignoring persuasion, judgment, rhetoric, and real scientific practice.
+* She characterized positivism as (she disagreed with this):
+1. Science aims at predictions and control: goal of economics is to predict not understand or interpret social reality 
+2. Only observable implications matter for truth: A theory is judged only by its observable predictions, not by realism of assumptions, interpretation, or narrative plausibility
+3. Knowledge must be based on objective observation: scientific knowledge must come from observable, reproducible objective experiments. Subjectivity is excluded 
+4. Falsification is decisive: A theory is scientific only if it can be falsified, and only when a prediction fails is the theory rejected.
+5. Objectivity is essential: subjective elements are considered unscientific 
+6. Quantification is superior (Kelvin’s Dictum): Knowledge that cannot be expressed numerically is viewed as inferior or unscientific.
+7. Discovery vs justification: nonscientific elements may help discover ideas but can never justify thejm 
+8. Sharp demarcation of science: methodology’s role is to separate science vs non science 
+9. Explanation means subsumption under laws: To explain something scientifically is to show it follows from a general law.
+10. Science is value-free: Economists, as scientists, have nothing to say about moral or aesthetic values.
+* McCloskey says that economics is not a science or social science but humanities
+* Uses a classical rhetoric approach 
+* Traditional concern: this approach was usually used as methods of argument and communication 
+* Modern focus: used as discourse analysis (how people speak)
+* Connections to SSK: emphasis on the practices of scientists and their tools 
+* Classical rhetoric:
+* Logos: logical appeals (orignally)
+* Pathos: emotional appeals
+* Ethos: apeals to speaker’s sincerity and authority 
+* The rhetoric approach: persuasive
+* Attention to how economists actually seek to persuade one another
+* Economics doesnt develop through simple rules but through communication between economists
+-> mathematics gives authority (adds to ethos not logos)
+-> writing ideas mathematically adds to how impressive argument looks so people take it more seriously 
+* Analogy persuades by interpreting economic statements in terms of another more intuitive framework 
+-> interactive competition seens as game theory 
+* Metaphor persuades by importing non-economic concepts into economics (
+Vice versa)
+
+
+   * Key ideas of this approach 
+   * economists are story-tellers
+   * Methodology with small m: descriptive not normative
+   * No foundations (knoweldge isn’t a pyramid) 
+-> evidence is theory-laden and subject to interpretation
+-> Meanings are plural: competitive markets doesnt have only 1 def 
+   * Economics as a convo: governed by norms of civility not algorithms 
+   * Klamer and Colander:
+   * Studied economics as communication through interviews
+   * Interview with economists: reveal hidden assumptions 
+   * Interview with students: show how economists are trained
+   * Found that books standardize thinking, controversies are removed, history is simplified into fables 
+
+
+   * Pluralism: it’s a response to postmodernism that avoids extreme skepticism 
+   * Epistemological pluralism: multiple kinds/forms of legitimate knowledge 
+   * Rejects relativism (no standards for truth): has multiple standards for truth like chem vs physics 
+   * Rejection of reductionism: macro and micro explanations can coexist
+   * Methodological pluralism: dont reject theories solely because of method and encourage multiple approaches as once 
+   * Why pluralism makes sense because we dk which approach will succeed so best strategy is diversification and confidence increases when different method reach the same conc
+
+
+   * Summary:
+   * Postmodernism rejects key assumptions of modern science, including the existence of a single scientific method, objective foundations of knowledge, stable meanings, unified selves, and universal narratives. In economics, it challenges concepts such as equilibrium, causality, and rationality. However, taken to extremes, postmodernism risks skepticism and relativism.
+   * The rhetoric approach views economics as a persuasive practice not a purely logical one. Draws from classical rhetoric, emphasizing logos, pathos, and ethos, arguing that economists persuade one another through arguments, authority, metaphors, models, and stories. McCloskey’s work highlights how economics relies on narrative, analogy, and conversation, and critiques positivism for ignoring real scientific practice, and assuming fixed meanings. She denies foundations for knowledge
+   * Pluralism preserves the insights of postmodernism without abandoning science. Epistemological pluralism holds that multiple forms of knowledge exist, each with its own standards, while methodological pluralism recommends encouraging diverse methods and approaches. It views scientific knowledge as an evolving process rather than a fixed set of truths.
+Ch. 7 - Value Judgements
+Lecture 7
+   * Normative reasoning in economics:
+   * An analytical rather than a historical discussion 
+   * Normative reasoning is important for economic methodology
+   * The standard claim is that economics is value-free
+   * Value judgements enter economics in 4 ways
+   * Methodological value judgements
+   * These are judgements about methods not moral judgements like ‘stealing is wrong’
+   * Judgements about ‘how to do it’
+   * Economists makes value judgements when choosing what topics to study, which methods to use and what counts as valid evidence or a good theory 
+   * Value-ladeness of economic concepts
+   * Economic language itself carries values 
+   * Hume’s Guillotine: cant logically move from facts to values 
+   * Moore’s naturalistic fallacy: moral claims aren’t reducible to facts. Wanrs against defining good in purely factual terms 
+   * Myrdal argues economics is value-laden 
+-> is statements often hide ‘ought’ statements
+-> Examples: competition, equilibrium, productivity, efficiency, rationality.
+-> Even if economists define these “technically,” they still carry social and moral connotations, shape how economists think and what they consider important
+-> economic concepts are taught with specific viewpoints that shapes interpretation
+   * Weakly value-laden vs strongly value-laden
+   * Introduces a test: does using certain concepts promote particular moral judgements?
+   * Some concepts contain values but don’t strongly push moral conclusions (weakly value-laden)
+   * Others actively promote particular moral judgments (strongly value-laden)
+   * The key test is whether using the concept nudges us toward specific ethical conclusions.
+   * Rational choice theory is used as a test case
+   * The ethical commitments of rational choice explanations (1)
+   * ‘Rational’ is value-laden: it is good to be rational (saying smth is rational implies it is good)
+   * This implies one ought to choose rationally
+   * By making a rational choice one maximizes pref
+   * Can be proven mathematically that is maximizes social welfare 
+   * But this excludes many other idea of good like justice, developing capabilities, etc.
+   * So rational choice makes a strong value judgement by favoring only one idea of good over all others 
+
+
+   * Logical positivism and ordinalist utility theory: why economists tried to avoid ethics
+   * Cardinal utility (measurable happiness) was replaced by ordinal utility (rankings)
+   * Robbins rejected interpersonal comparisons to avoid value judgments.
+   * Logical positivists viewed ethics as unscientific 
+   * This made economists reluctant to make value-based policy claims 
+   * The ethical commitments of rational choice explanations (2): why avoidance failed 
+   * Rational choice requires the pareto principle (helping someone without hurting anyone)
+   * Preferences are satisfied clearly and uncontested 
+   * Pareto principle avoids ethical trade offs but real policy always involves winner and losers to ethcis cant actually be avoided
+   * Historical roots of economics’ normative commitments 
+   * In feudal societies, profit and interest were immoral
+   * Capitalism would lead to chaos 
+   * Early economists (Smith) defended capitalism by arguing that self-interest and profit, though morally suspicious, can still produce good outcomes through the “invisible hand.”
+   * Keynes challenges glorifying profit
+   * Accommodating ethical values and norms
+   * Explaining behavior requires we explain how people make choices 
+   * People care about morality when choosing
+   * Many kinds of social pref: altruism, fairness, kindness
+   * Economics can model social preferences but not all preferences are morally acceptable or harmless
+   * So, you cant explain human behavior properly without including moral values, but in doing so you question whether all preferences should count as equally valid 
+   * Economics as a useful subject: 
+   * A value free science would tell us nothing about our concerns, interests and values -> would be useless 
+   * Logical positivism failed because it stripped meaning 
+   * There is a difference between abusing science with politics and ideology and using science according to shared social values 
+   * The important thing is to be transparent about value judgements in theories 
+   * Neutral science 
+   * Politics chooses goals 
+   * Neutral science: development of means 
+   * Political decision decide what to do
+   * Old ideal is that science provides means and politics provides end 
+   * In reality, science influences values and society influences science so neutrality is impossible  
+   * Naturalistic legitimation 
+   * Science is seen as an ideal type of human activity
+   * Science is naturally trusted because it delivers results. 
+   * Economic failure can delegitimize economic theory.
+
+
+Summary 
+   * Economics is unavoidably value-laden
+   * The real issue is not whether values are present, but which values are being used and whether they are made explicit
+   * Although economists claimed separation between positive analysis (“what is”) and normative judgments (“what ought to be”), value judgments enter economics through 
+   * methodological choices
+   * the value-laden nature of economic concepts
+   * the ethical commitments embedded in theories such as rational choice
+   * the need to explain behavior shaped by moral norms and values. 
+   * Some economic theories are only weakly value-laden, while others, especially rational choice and welfare economic, are strongly value-laden because they imply particular moral views about what it means to be better off. 
+   * A completely value-free economics would be useless for policy or understanding economic life; the real methodological challenge is not eliminating values, but making them explicit and critically examining their role.
+
+
+Summary - scratch
+Logical positivism: science = observations + logic
+Something is true if it is verified by observation
+⚠️ Problem: humeans prob of induction (you can’t logically prove general laws from finite observations)
+
+Econometrics: statistics + math
+⚠️ Problem: model choice, oversimplification, complexity
+
+Friedman: models are instruments for prediction
+⚠️ Problem: correlation ≠ causation
+
+Popper: falsification
+Something is true if counterexamples can disprove it but have not 
+⚠️ Problem: Duhem–Quine (when a theory fails, what fails?)
+
+
+Samuelson: descriptions
+⚠️ Problem: no longer making general laws, explanations or predictions 
+
+Kuhn: paradigms, scientific revolutions and disciplinary matrix 
+Something is true if it conforms to social conventions regarding truth 
+⚠️ Problem: science starts to look not very special
+
+Lakatos: research programs
+⚠️ Problem: progress is slow, ambiguous, and disputed. How long should you wait
+
+
+ES: basic and applied research
+⚠️ Problem: Cudos norms -> underproduction of basic research (public god)
+
+
+ESK (David & Daskupta): emphasizes incentives and self interest, competition for prizes
+⚠️ Problem:  break-through oriented / lock-in rules
+
+
+ESK (Kitcher): epistemically efficient markets for ideas 
+⚠️ Problem: hyperspecialization
+
+
+SSK: scientific communities, whose cultures explain its successes and failures 
+⚠️ Problem: reflexivity. values, social constructivist relativism 
+
+
+SSK (lab studies): science tribes 
+⚠️ Problem: values, social constructivist relativism 
+
+
+SSK (Callon’s actor network th.): social networks 
+⚠️ Problem: social constructivist relativism 
+________________
+The received view
+According to this view, facts exist independently of theories, scientists propose theories which are tested against facts 
+In economics, this translated into: models generate predictions data tests those predictions. If predictions fail → model is rejected
+
+Popper: falsification
+Popper argued: you can never prove a theory true, you can only try to falsify it
+Science progresses by eliminating false theories
+But in economics: models are rarely abandoned after one failed prediction, assumptions are tweaked instead. “Auxiliary assumptions” protect the core model
+
+Kuhn: paradigms
+Kuhn claimed that facts are not neutral and are interpreted within paradigms. What counts as a “problem” or “solution” depends on the dominant framework and what is widely accepted
+Economics clearly shows this:
+   * Keynesians vs New Classicals interpret the same data differently
+   * No single experiment settles the debate
+
+
+Lakatos: research programmes
+Lakatos tried to save rationality by saying that science consists of research programmes
+   * A “hard core” protected by auxiliary hypotheses
+   * Progress judged by whether a programme generates new insights
+This already moves us away from naïve “facts decide everything”.
+
+
+
+
+Sociology of Scientific Knowledge (SSK)
+SSK argues that scientific beliefs are shaped by social factors
+   * Power, institutions, careers, prestige matter
+   * True and false beliefs should be explained symmetrically
+
+Economics of Scientific Knowledge (ESK)
+ESK adds that incentives and self-interest matter -> people are utility maximizers
+This prepares the ground for postmodernism.
+=> both say that science is a social activity 
+
+
+Postmodernism 
+rejects key assumptions of modern science, including the existence of a single scientific method, objective foundations of knowledge, stable meanings, unified selves, and universal narratives. 
+In economics, it challenges concepts such as equilibrium, causality, and rationality. 
+Taken to extremes, postmodernism risks skepticism and relativism.
+
+
+The rhetoric approach 
+views economics as a persuasive practice not a purely logical one. 
+Classical rhetoric, emphasizing logos, pathos, and ethos, arguing that economists persuade one another through arguments, authority, metaphors, models, and stories. 
+McCloskey’s work highlights how economics relies on narrative, analogy, and conversation, and critiques positivism for ignoring real scientific practice, and assuming fixed meanings. 
+She denies foundations for knowledge
+
+
+Pluralism 
+preserves the insights of postmodernism without abandoning science. 
+Epistemological pluralism holds that multiple forms of knowledge exist, each with its own standards
+Methodological pluralism recommends encouraging diverse methods and approaches. It views scientific knowledge as an evolving process rather than a fixed set of truths.
+
+
+
+
+Actual Summary - Imp concepts
+Logical positivism 
+      * Received view of science 
+      * Proposed demarcation criteria to separate science vs non science 
+      * Science involves:
+      * Analytic statements: true by def or logic 
+      * Synthetic a posteriori: not true by def and must be verifiable empirically 
+      * Science doesnt involve: 
+      * Synthetic a priori: not true by def or logic but also cant be verifiable emperically
+      * Do so through operationallization which specifies with correspondence rules how theoretical concepts are measured 
+      * Used to check if synthetic a posteriori statements are true
+      * Only care about context of justification not discovery 
+      * Scientific theory can be described using deductive-nomological model
+      * DN model: law + initial conditions = explanation
+      * Problem with scientific laws is that they should be completely objective 
+      * Claiming that scientific theories should have one scientific law is subjective 
+      * Prob with scientific laws:
+      * Problem 1: It is not clear how to define scientific law. Semantically scientific law should be verified unrestricted generalization not coincidences. It should also identify causality. But its impossible through observations
+      * Problem 2: Also operationalization detrmines how theoretical concepts are measured but they can be measured in a lot of different ways
+-> Operationalism: If theyre measured differently then irs not the same concept 
+      * Problem 3: humes problem of induction: impossible to infer unrestricted genralization from a finite set of observations 
+      * Instrumentalism (Schlick): scientific laws are usable guidelines and are instruments not foundations of scientifc knowledge
+      * Confrimationism (Carnap): scientific laws are not certain by probabilistic knowledge 
+      * Sometimes concepts cant be operalizationalised so cannot be verified 
+      * Scientific theories are never completely neutral
+________________
+
+
+Methodologies of positive economics:
+      * Problem is that economic law cant be tested in labs
+      * Econometrics was established to provide an alternative to experimental science by unifying economic theory, statistics, and mathematics
+      * Keyenes disagreed with Tinbergens because 
+      * Too much trial and error without guarantee that the model describes reality 
+      * Incomplete models problem: Without a complete list of all relevant variables, measurements will be biased
+      * No controlled experiments: Unlike natural sciences, economists cannot isolate variables in laboratories
+      * Economic reality is too complex for the positivist program
+      * Haavelmo:
+      * Economics variables are strongly interdependent and economists cannot do controlled experiments 
+      * Goal is finding invariance through repeated measurements under different model specifications, but of and by means of probability not exact values 
+      * Searches for invariance no exact laws 
+      * If relation is stable -> economic law
+      * Passive Observation: If no correlation is observed between variables, we cannot conclude they are unrelated because The independent variable may not have changed enough to show its effect. Cannot empirically distinguish between relevant and irrelevant variables through observation alone
+      * NBER (Burnss & Mitchell): theory is based on observation. They behaved as if theory emerged from data -> descriptive stats
+      * Cowles Commission tradition (Koopmans & Haavelmo): Start from economic theory, build structural models, and then test them with data. Empirical research based on theory
+      * Koopman: true scientific testing required economic theory to specify structural relations
+      * Friedman
+      * Was against large economic models as theres too much trial and error (invariance problem)
+      * Naive models are used as benchmarks to assess the predictive power of models 
+      * Just like marshall, he thinks it’s better to simplify for parts (or domains) as economy is too complex and test by predictions 
+      * Relevance of observation is evaluated solely by predictive success within specific domains not whether assumptions are realistic or not
+      * According to musgrave, friedman argues there are 3 types of assumptions
+      * Negligibility assumptions: some factors have negligible effect to are neglected
+      * Domain assumptions: theory is only application within a certain domain 
+      * Heursitis assumption: shortcut to simplify theory 
+      * Samuelson: criticized friedman 
+      * F-twist: disagrees that assumptions do not matter provided a theory predicts well 
+      * Predictions ≠ explanation because 2 models can predict the same thing but be completely different 
+      * Relying on predictive success of model makes science descriptive 
+      * Descriptivism: scientists never explain anyhting, they only describe 
+
+
+Karl Popper and the Duhem-Quine Thesis 
+      * For logical positivists the demarcation criterion is that scientific theory should be verifiable 
+      * For Popper a scientific theory should be falsifiable
+      * Logica positivisim: observations -> induction to find regularities -> verify until u find a scientific law 
+      * Knowledge grows by building upon certainty 
+      * Impossible to conclusively verify a scientific law
+      * Popper: Propose a bold conjecture (general theory) -> Clearly state what should falsify it
+-> Test theory aggressively -> If it survives keeps it as provisional (never as final truth)
+      * Knowledge grows by learning from mistakes 
+      * A scientific theory should have falsifiers 
+      * Potential falsifiers of a theory is empirical content 
+      * More precise predictions of a theory -> more falsifiers -> more empirical content 
+      * A good theory has a lot of empirical content (v risky) but is corroborated by empirical data 
+      * Testing theories Popper-style 
+      * Logical consistency (min req)
+      * Falsifiability (demarcation criterion)
+      * Empirical consequences (predictions)
+      * Empirical content (potential falsifiers)
+      * Scientists can create immunizing strategies that make it impossible to falsify theory 
+      * Immunization ex ante: theory is immuned before it’s even tested like ceterus paribus
+      * Immunization ex post: make adjustments to theory after to make it immune
+      * Popper warns: saving a theory at all costs is bad science 
+      * Social laws and economics:
+      * Hypothesis of human history cannot be tested hence cannot lead to a law 
+      * Reflexivity: once people know the law they change behavior and invalidate it
+      * Regularities in past are not really laws but rather tendencies 
+      * Popper was in favour of open society: a society with freedom of though and expression to support critical thinking 
+      * Duhem-Quine thesis:
+      * a single failed prediction does not uniquely falsify one isolated theory because empirical tests involves a lot of assumptions.
+      * When a prediction fails, what is falsified? 
+      * If we do not know what is at fault, immunizing strategems may actually improve the theory
+      * Whale example
+________________
+
+
+Kuhn & Lakatos
+      * Kuhn: instead of prescribing what scientists have to do for something to be scientific he tried to describe how scientists actually work 
+      * Kuhn’s says that science is a social activity not just logic + data 
+      * Normal science: research by a scientific community that shares the same paradigm
+      * Kuhn breaks down the paradigm into a disciplinary matrix (everything that a scientific community shares that lets them do normal science together) 
+      * Paradigm: standard examples everybody learns (supply–demand graph)
+      * Metaphysics: predespositions that arent backup by firm empirical evidence but are taken as true or are useful to assume as foundation
+      * Symbolic generalizations: equations and symbols everyone accepts 
+      * Values: shared standards for evaluating theories
+      * The disciplinary matrix determines which puzzles scientists can and want to solve 
+      * Commitment to disciplinary matric is necessary for successful normal science 
+      * Anomalies are facts that paradigms cannot explain 
+      * Often first ignored or explained away 
+      * Dont see anomalies because of Gesalt perception (can’t see two things at once)
+      * Becomes a problem and more researchers tries to find a solution and some find it by deviating from the paradigm
+      * Incommensurability: methological POV that two competing paradigms cant be compared 
+      * Can lead to a paradigm shift -> scientific revolution
+      * When anomalies accumulate -> confidence in paradigm collapses -> a new paradigm emerges -> scientists “swtich Gesalt”
+      * Problem is that old and new paradigms are incompatible and science starts to look irrational because there is no neutral way to decide between paradigms   
+      * Kuhn says that science proceeds by having long periods of normal science (puzzles solving) and scientific rev (paradigm shifts) where falsification are set aside
+      * Lakatos: Naive falsification for popper (saving theory can be good - whale) and disagreed with kuhn that comparing paradigms is irrational
+      * His solution: research programs = structured paradigms:
+      * Part 1 - Hard core: fundamental assumptions, never questioned
+      * Part 2 - Protective belt: adjustable assumptions (when problems arise)
+=> Why theories survive anomalies and frameworks rnt abandoned immediately 
+      * Progressive programs: Predicts new facts that are later confirmed emperically
+      * Theoretically progressive: if each new theory has more empirical content 
+      * Empirically progressive: if each theory’s empirical content is better corroborated
+      * Degenerating programs: not progressive theoretically or emperically
+      * Sophisticated falsificationism: hard core not falsified and Immunising strategies are theory improvements in a progressive research programme (adjust prot. belt)
+      * problem: how long before theoretical progressiveness is empirically observed 
+      * A paradigm shift is a rational choice to abandon degenerating research programs in favour of progressive research programs
+
+
+
+
+Economies of science, SSK & ESK
+      * ES (Merton): based on CUDOS-norms which are the preconditions for good science 
+      * Communalism: common ownership of scientific discoveries -> scientists give up intellectual property in exchange for recognition and esteem 
+      * Universalism: validity of a scientific claim should be evaluated with universal or impersonal criteria -> should not depend on who is making it 
+      * Disinterestedness: Scientists should act for the advancement of knowledge not for personal financial gains. They are rewarded for acting selfless
+      * Organized skepticism: scientific claims should be tested and be exposed to rigorous, structured community scrutiny 
+=> benefits society not scientists -> pos ext -> basic research is a public gd -> subsidize
+=> normative approach to science: how science shld be done, not how it’s actually done
+      * SSK: study science as a social activity. Scientific output depends on social dynamics 
+      * truth is socially constructed so what counts as truth depends on shared standards and community agreement 
+      * Kuhn fits here: scientists are trained to see the world in a certain way (Gesalt) and operate within communities not individuals 
+      * -> naturalistic turn: moving from a normative to descriptive approach to science 
+      * The edinburgh strong programme: major contribution to SSK 
+      * Starting point: study science naturalistically; how science actually works in practice, using the same methods as the natural and social sciences
+      * Four principles to prevent passing of judgement:
+      1. Causality: explains why scientists hold the beliefs they do
+      2. Impartiality: treat true and false beliefs equally
+      3. Symmetry: same types of causes explain success and failure
+      4. Relexivity: apply the SSK to SSK itself 
+      * Another approach - Lab studies approach (microsociological SSK):
+      * SSK focuses on daily practices in labs and workplaces -> Its an immersive (anthropological)  approach 
+      * Actor Network theory (Callon): Science produced by networks of actors like humans or non-humans. Can stabilize certain scientific explanations for a while 
+      * ESK: study science as an economic activity. Science output depends on incentives scientists face. Also takes a descriptive science 
+      * David and Dasgupta: open science system where results are quickly and readily available to all interested party 
+      * Incentive to be the first to publish to gain reputation (open science makes this possible) -> want to maximize rep
+      * -> cudos norms. Communalism, disintredness (no financial gain) and organized skepticism 
+=> science becomes break-through oriented 
+      * Lock-in effect (David):
+      * Incentives to keep certain tech or methodology causes path dependency
+      *  So sceintifc research may be locked where tech/ideas persist even if inefficient 
+      * Philip kitcher’s social epistemology - effect of division of cognitive labor:
+      * Incentives to specialize and coordinate 
+      * Socially optimal division of cognitive labor maximize the ratio of true justified beliefs in the total number of beliefs
+      * Science is a social study so scientific standards are also social 
+      * Principle: knowledge is promoted by cognitive diversity through competition 
+      * Implications of SSK and ESK:
+      * Relativism: view that scientific knowledge is not objective and doesnt reflect reality, but depends on historical and social context 
+      * SSk is relativist adn ESK sometimes is too (like lock in effect)
+      * Self-defeating? you try to make rules to get a truthful description of the community but then say that these rules are social constructs -> relfexivity
+      * Realism (world exists indep of our beliefs): SSK and arent anti-relest but question whether scientists really discover objective truths 
+      * Value neutrality: SSK claims to be descriptive and value neutral but topic choice and concept used are value-laden 
+________________
+
+
+Postmodernism, rhetoric and pluralism
+      * Rhetoric approach (McCloskey) = conversation analysis 
+      * Economics is a persuasive practice 
+      * Draws from classical rhetoric:
+      * Logos: appeal to logic 
+      * Pathos: appeal to emotions 
+      * Ethos: should be trustworthy or have credibility  
+      * How scientists try to persuade their colleagues:
+      * Arguments from authority: acknowledgements or advanced math (adds to ethos)
+      * Stories: analogy provides intuitive justification (& explanation) of math model
+      * Metaphor persuades by importing non-economic concepts into economics
+      * Critiques positivism as a methodology for economics. She claims that many economists do as if they follow a positivist methodology but in fact they dont 
+      * Small-m methodology (descriptive mot normative) is more useful than big-M (developed by philosophers of science)
+      * Knowledge does not have foundations since knowledge changes according to how economists succeed in persuading each other -> implies knowledge can be lost
+      * Meanings are plural: they depend on context 
+      * No foundations (knowledge isn’t a pyramid): evidence is theory-laden and subject to interpretation and meanings are plural
+      * Economics is a conversation -> keep it civilized 
+      * Klamer and Colander:
+      * Studied economics as communication through interviews
+      * Interview with economists: reveal hidden assumptions 
+      * Interview with students: show how economists are trained
+      * Found that books standardize thinking, controversies are removed, history is simplified into fables 
+      * Postmodernism: reaction against modernism 
+      * Influenced by postructuralism: movement against structuralism 
+      * Some struturalist assumptions: there’s a single scientific method, knowledge has foundations, stable meanings, history possess a pattern like progress, coherent self, essential natures, master narratives, causal determination has a privileged roles in explanation, things can be represented in language 
+      * In economics, it challenges concepts such as equilibrium (multiple equilibria), causality (economic change may be coincidental), and rationality. 
+      * Pluralism: Rejects relativism (no standards for truth): has multiple standards for truth
+      * Epistemological pluralism: view that there exist multiple kinds and forms of knowledge, none of which can be shown superior or reducible to the other 
+      * rejects reductionism: diff types of knoelsge can be reduced to 1 form 
+      * Methodological pluralism: cant show that one methodology is superior to another one, analyses shouldnt be rejected solely based on methodological considerations
+      * Advantages: 
+      * Risk diversification: if its not known in advance which method will be successful
+      * Triangulation: confidence increases when different method reach the same conc
+________________
+Value judgements in economics:
+         * Normative reasoning in economics is analytical rather than historical discussions 
+         * Standards claim is that economics is value free but value judgements enter in 4 ways:
+         * Methodological value judgements: judgements about ‘how to do it’
+         * Happens when choosing research domain (what topic to study), research method, and evaluation criteria (what counts as valid evidence)
+         * Value-ladeness of economic concepts: Economic language itself carries values 
+         * Traditionally (Hume’s Guillotine): ‘is’ statements (pos) dont imply ‘ought’ statements (normative) -> fact-value distinction
+         * Moore’s naturalistic fallacy: moral claims aren’t reducible to facts
+         * Myrdal disagrees and argues economics is value-laden and it is impossible to sep ‘is’ and ‘ought’ statements 
+-> Even if economists define concepts “technically,” they still carry moral connotations and shape how economists think like ‘productivity’
+         * Some economic theories are only weakly value-laden, while others, especially rational choice and welfare economic, are strongly value-laden because they imply particular moral views about what it means to be better off. 
+         * Ethical implications of rational choice theory:
+         * ‘Rational’ is value-laden: its good to be rational 
+         * Implies people ought to choose rationally as they reach higher utility and are assumed to be better off
+         * But this excludes many other ideas of gd like justice, developing capabilities, etc.
+         * So rational choice makes a strong value judgement by favoring only one idea of good over all others 
+         * Policy implications of rational choice theory: search for pareto improvements 
+         * Policy that makes at least one pers better off without making smn else worse off
+         * Not controversial but also not realistic: policy changes almost always make some people better off and some worse off
+         * Resulted in cost benefit analyses: identity who will be better off and how much they will benefit and who will be worse off and how much theyll lose
+         * Check if gains are sufficient to compensate the losses for ppl who r worse off
+         * CBA are not value neutral 
+         * Assumptions about norms and values in economic models:
+         * Explaining behavior requires we explain how people make choices 
+         * Norms and values are found in almost all economic models 
+         * Economics can model social preferences but not all preferences are morally acceptable or harmless
+         * So, you cant explain human behavior properly without including moral values, but in doing so you question whether all preferences should count as equally valid 
+         * Logical positivism and ordinalist utility theory: why economists tried to avoid ethics
+         * Logical positivists thought only empirically verifiable statements were meaningful, so ethical claims were treated as unscientific. Tried to keep ethics out.
+         * Used ordinal utility instead of cardinal utility (measurable happiness), which only ranks preferences without measuring how much happiness someone gets. Robbins reinforced this by rejecting interpersonal comparisons of utility.
+         * In Feudal societies, profit and interest were widely seen as immoral, and capitalism was feared as socially destabilizing. 
+         * Early economists (Smith) defended capitalism by arguing that self-interest and profit, though morally suspicious, can still produce good outcomes through the “invisible hand.”
+         * Ideally, science is value-neutral where politics chooses goals, NS develop means & politics decide what to do -> impossible in reality
+         * A completely value-free economics is impossible and would be useless for policy or understanding economic life; the real issue is transparency, not pretending values aren’t there
+         * Naturalistic legitimation 
+         * Science is seen as an ideal type of human activity
+         * It gains trust because it delivers results, not because it is value-free
+         * But, economic failure can delegitimize economic theory.
+
+
+
+
+
+
+chat concepts from pp
+TEHERE ARE MORE CONCEPTS BUT THEY WERE EASY AND DUMB 
+Logical Positivist Demarcation Criterion
+         * Only logically consistent tautological statements, statements true by definition, and verifiable statements are scientific
+         * Problem: Leads to the conclusion that scientific laws don't exist (because universal laws cannot be fully verified)
+Responses to the Problem of Induction
+Schlick's Instrumentalism
+         * Judges general laws by their usefulness rather than their certainty
+         * Laws are tools, not truth claims
+Carnap's Confirmationism
+         * Accepts not only certain but also highly probable statements as scientific
+         * Laws become more scientific as their degree of confirmation rises
+         * Weakens the strict verification requirement
+Deductive-Nomological (D-N) Model
+Symmetry Thesis
+         * Explanations and predictions have the same logical structure
+         * A general law + initial conditions can both explain past events and predict future ones
+________________
+
+
+2. ECONOMETRICS
+Tinbergen's Approach
+         * Attempted to apply logical positivism to economics through econometric methods
+         * Used statistical testing of mathematical models
+         * Aimed to measure correlations between economic variables
+Keynes's Criticisms
+         1. Incomplete models problem: Without a complete list of all relevant variables, measurements will be biased
+         2. No controlled experiments: Unlike natural sciences, economists cannot isolate variables in laboratories
+         3. Economic reality is too complex for the positivist program
+Haavelmo's Problem of Passive Observation
+         * The Problem: If no correlation is observed between variables, we cannot conclude they are unrelated
+         * Reason: The independent variable may not have changed enough to show its effect
+         * Implication: Cannot empirically distinguish between relevant and irrelevant variables through observation alone
+________________
+
+
+3. FRIEDMAN'S METHODOLOGY
+Demarcation Criterion
+         * Theories are scientific if they enable accurate predictions on well-defined domains
+         * Realism of assumptions is irrelevant
+Two Criteria for Theory Evaluation
+         1. Precision: More precise predictions are better
+         2. Simplicity: Theories using fewer independent variables are better
+Dealing with Complexity
+         * Limits applicability to specific domains where complicating factors are negligible
+         * Prefers many simple models for different domains over one complex universal model
+Instrumentalism Critique
+         * Theories are merely instruments for prediction
+         * Does not distinguish between correlation and causation
+         * Critics say this makes it anti-realist
+Musgrave's Defense
+         * Friedman focuses on domain assumptions and negligibility assumptions
+         * If a theory predicts well, it likely captures the most important realistic factors
+         * Not necessarily anti-realist, just pragmatic about domain-specific truth
+4. SAMUELSON'S DESCRIPTIVISM
+Implication vs. Equivalence
+         * Friedman: Premises that correctly predict (imply) consequences are scientific
+         * Samuelson: Requires premises to be based on and equivalent to all relevant observations
+Why Scientific Laws Don't Exist (for Samuelson)
+         * General descriptions are based on limited observations
+         * Can never be certain laws hold across all time and space
+         * Can describe regularities but not establish universal laws
+________________
+
+
+5. POPPER'S FALSIFICATIONISM
+Demarcation Criterion
+         * Only logically consistent statements that could be shown false by observation, but have not been, are scientific
+         * Scientific theories must be falsifiable
+Circumventing the Problem of Induction
+         * Accepts general disprovable statements that haven't yet been shown false
+         * Science progresses by attempting to falsify theories, not verify them
+Empirical Content
+         * Definition: The number of potential observations that could disprove a theory
+         * How to increase it: Make statements more general AND more precise
+         * Higher empirical content = more scientific
+         * Large domain and precise statement 
+Example Ranking:
+         1. "If supply rises while demand stays constant, price falls by the same percentage" (Most empirical content - general and precise)
+         2. "If supply rises while demand stays constant, price falls" (Medium - general but less precise)
+         3. "If potato supply rises, potato prices fall" (Least - specific, not general)
+Immunizing Strategies (A Posteriori)
+What they are:
+         * Re-operationalizing terms after falsification
+         * Adding ceteris paribus clauses after the fact
+         * Adjusting the domain of applicability to exclude counterexamples
+Popper's view: Forbidden - they allow scientists to avoid admitting theories are false
+Duhem-Quine Thesis
+         * When a theory is falsified, we can't be sure if the theory itself or auxiliary assumptions are at fault
+         * Problem for Popper: Makes it unclear what to reject when falsification occurs
+Historicism Critique
+         * Historicism: Belief in discovering laws of historical development
+         * Popper's objection: Social laws are historically and culturally specific, subject to change
+         * Positing immutable social laws threatens democratic, open society
+Piecemeal Social Engineering
+         * Related to fallibilism: all knowledge is uncertain
+         * Both scientists and policymakers must be ready to adjust when outcomes differ from expectations
+         * Incremental changes preferred over grand social transformations
+________________
+
+
+6. KUHN'S PARADIGMS
+Incommensurability
+         * Different paradigms have different:
+         * Research questions (puzzles)
+         * World views
+         * Standards for evaluation
+         * Scientists in different paradigms cannot agree on important questions or interpretations
+         * Makes long-term assessment of knowledge growth impossible
+Disciplinary Matrix Components
+         1. Symbolic Generalizations: Mathematical formulations (e.g., Max U(x))
+         2. Metaphysics: Fundamental beliefs about the world (e.g., "human behavior is goal-oriented")
+         3. Values: Standards for good theories (e.g., "theories must be mathematically modeled")
+         4. Paradigm: Exemplary problem solutions (e.g., prisoner's dilemma)
+Normal Science as Puzzle Solving
+         * Scientists assume:
+         1. A solution exists
+         2. Standard tools of the discipline will find it
+         * Like puzzle solving: if you can't solve it, it's your failure, not the puzzle's fault
+         * Scientists don't question fundamental assumptions during normal science
+Gestalt and Gestalt-Switch
+         * Gestalt: The way one sees a multi-interpretable picture
+         * Disciplinary training determines a common Gestalt
+         * Gestalt-switch: When scientists start seeing things differently - can trigger scientific revolution
+Scientific Revolutions
+         * Occur when anomalies accumulate and paradigm fails
+         * New paradigm emerges with different world view
+         * Previous observations may not even be perceivable in new paradigm
+________________
+
+
+7. LAKATOS'S RESEARCH PROGRAMS
+Synthesis of Popper and Kuhn
+         * From Kuhn: Hard core (like paradigm) - fundamental unfalsifiable assumptions
+         * From Popper: Protective belt theories must be falsifiable
+Structure of Research Programs
+Hard Core
+         * Fundamental, unfalsifiable assumptions
+         * Example (Neoclassical): "Economy consists of optimizing agents"
+Protective Belt
+         * Adjustable theories that protect the hard core
+         * Can be modified or replaced
+Positive Heuristic
+         * Guidelines for theory development
+         * Example: "Adjust theories to keep hard core intact"
+Negative Heuristic
+         * Prohibitions
+         * Example: "Don't propose theories where equilibrium is meaningless"
+Progressive vs. Degenerative Programs
+Progressive:
+         * Theories in protective belt predict novel facts
+         * Attracts more scientists
+         * Advances knowledge
+Degenerative:
+         * Only explains known facts through ad hoc adjustments
+         * Loses scientists
+         * Stagnates
+Solving the Duhem-Quine Problem
+         * Unlike Popper, allows adjustment of auxiliary theories
+         * Doesn't require rejecting entire framework when falsification occurs
+         * Can repair protective belt while maintaining hard core
+________________
+
+
+8. SOCIOLOGY OF SCIENTIFIC KNOWLEDGE (SSK)
+The Naturalistic Turn
+         * Shift from normative (what science should be) to descriptive (what science actually is)
+         * Studies science as a social phenomenon
+Edinburgh School Strong Programme
+Four Principles:
+         1. Causality: Look for reasons behind convictions
+         2. Impartiality: Don't pass judgment on beliefs
+         3. Symmetry: Same causes can explain true and false beliefs
+         4. Reflexivity: Apply same standards to SSK itself
+Social Constructivism Problem
+         * Claims scientists create truths rather than discover them
+         * Truth is relative to the group
+         * Self-defeating: If true, SSK's own claims are just social constructions, not objective truths
+Laboratory Studies
+         * Observe scientists in their actual work environments
+         * Studies how scientific facts are constructed through social processes
+Actor Network Theory (Callon)
+         * Knowledge production depends on personal relations, hierarchies, and organizational ties
+         * Charts these networks to understand why certain research occurs
+________________
+
+
+9. ECONOMICS OF SCIENCE
+Merton's Four Norms
+         1. Universalism: Truth claims based on universal criteria, not personal characteristics
+         2. Communalism: Research shared widely and quickly, knowledge is public good
+         3. Disinterestedness: Avoid conflicts of interest, pursue knowledge not profit
+         4. Organized Skepticism: Welcome well-argued criticism
+Merton's Policy Implications
+         * Fundamental research is a public good (non-rivalrous, non-excludable)
+         * Benefits society more than private actors
+         * Should be subsidized by government
+         * Open science system is incentive-compatible with fundamental research
+Economics of Scientific Knowledge (ESK)
+David & Dasgupta's Model:
+         * Scientists maximize reputation
+         * Do so by publishing breakthrough theories quickly and reliably
+         * Open science and priority tournaments facilitate this
+         * Emphasizes competition and scientific prizes (like Nobel)
+Kitcher's Approach:
+         * Science should maximize ratio of reliable beliefs to total beliefs
+         * Requires epistemically efficient division of cognitive labor
+         * Like Adam Smith's division of labor but for knowledge production
+         * Justified beliefs depend on "social standards of belief"
+________________
+
+
+10. RHETORIC AND POSTMODERNISM
+Classical Rhetoric (Ethos, Pathos, Logos)
+Ethos: Appeal to authority/credibility
+         * Example: "As a senior economist at the ECB, I can assure you..."
+Pathos: Appeal to emotion
+         * Example: "A mask mandate is the first step toward totalitarian oppression"
+Logos: Appeal to logic/reason
+         * Example: "If prices are inversely related to quantity supplied, then increases in quantity supplied decrease price"
+McCloskey's Position
+What she advocates:
+         * Mainly descriptive: studies how economists actually convince each other
+         * Rhetoric matters - all arguments use persuasive techniques
+         * Pluralism in methods and language use
+Models as Storytelling:
+         * Models formalize informally told stories
+         * The stories do the convincing, not the mathematics
+         * Focus on art of convincing rather than truth criteria
+Modernism/Structuralism Assumptions (McCloskey identifies these to reject them)
+         1. Single scientific method exists
+         2. Knowledge has foundations
+         3. Meaning can be determined with certainty
+         4. History shows progress
+         5. Self is coherent unity
+         6. Things have essential natures
+         7. Master narratives are possible
+         8. Causation privileged in explanation
+         9. Things can be represented in language
+Postmodernist Rejections
+McCloskey agrees with postmodernists:
+         * No single method
+         * Knowledge lacks foundations
+         * Meaning depends on context (pluralism)
+McCloskey differs from postmodernists:
+         * Still believes more convincing theories are better
+         * Emphasizes civil conversation
+         * Not complete relativism - quality distinctions matter
+Reductionism
+         * Quest to find underlying entities and processes explaining all phenomena
+         * Assumes essential natures exist and master narratives possible
+         * Modernist/structuralist approach
+Pluralism Types
+Epistemological Pluralism (descriptive):
+         * Multiple forms of knowledge exist alongside each other
+         * Observation of how things are
+Methodological Pluralism (prescriptive):
+         * Multiple forms of knowledge ought to exist
+         * Advocacy for diversity of approaches
+________________
+
+
+11. VALUES IN ECONOMICS
+Three Types of Methodological Value Judgments (Inevitable)
+         1. Choice of Subject Matter: What the discipline studies (domain)
+         2. Methods of Investigation: How to study phenomena
+         3. Standards of Validity: How to evaluate results
+Four Ways Values Enter Economics
+         1. Inevitability of methodological value judgments: Must choose domain, methods, standards
+         2. Value-ladenness of concepts (Myrdal): Terms like "rationality" carry normative weight
+         3. Supporting ethical views: Economic theories imply certain behaviors are better
+         4. Accommodating people's values: Economic explanations must account for ethical motivations
+Hume's Guillotine (Is-Ought Distinction)
+         * Cannot derive "ought" statements from "is" statements
+         * Descriptive claims don't logically imply prescriptive ones
+         * But Myrdal argues strict separation impossible in economics
+Weak vs. Strong Value-Ladenness
+Weakly Value-Laden:
+         * Concept has normative connotations in ordinary language
+         * Example: "rationality" generally viewed positively
+Strongly Value-Laden:
+         * Theory implies moral value judgments
+         * Example: Rational choice theory suggests preference satisfaction is ethically superior
+Rational Choice Theory Example
+         * Starts with weakly value-laden "rationality"
+         * Argues rational behavior increases social welfare
+         * Concludes people MUST behave rationally
+         * Transforms weak into strong value-ladenness
+Pareto Principle Critique
+         * Often presented as normatively neutral
+         * Actually contains strong political judgment
+         * Implies: redistribution must be rejected if it causes any inefficiency
+         * Privileges efficiency over equity
+________________
+
+
+12. COMPLEX SYSTEMS AND BEHAVIORAL ECONOMICS
+Behavioral Economics and Postmodernism
+         * Finds preferences are time-inconsistent
+         * Postmodernist connection: Challenges the self as coherent unity
+         * If preferences change, the "self" is not stable and predictable
+Complex Adaptive Systems Theory
+         * Small changes in initial conditions can have huge, unpredictable effects
+         * Postmodernist connection: Challenges privileged role of causal determination
+         * Causality functions in seemingly arbitrary ways
+         * Equilibrium becomes virtually meaningless
+________________
+
+
+KEY EXAM STRATEGIES
+When concepts appear together:
+         * Popper vs. Friedman: Both reject verification, but Friedman accepts domain-specific prediction, Popper wants universal falsifiable claims
+         * Kuhn vs. Lakatos: Both have unfalsifiable cores, but Lakatos allows progress through progressive research programs
+         * Merton vs. David & Dasgupta: Both support public funding, but emphasize different mechanisms (norms vs. reputation incentives)
+         * Logical Positivists vs. Popper: Both want empirical foundation, but positivists verify, Popper falsifies
+
+
+Tutorials
+
+
+Tutorial 1
+1.  Describe the syntactic and semantic requirements an empirical generalization must fulfill to be called a scientific law.?
+Syntactic requirements (form): It must have the form of an unrestricted generalization and be exceptionless. Causality would be nice, but LP cannot require it because causality is not observable. Correlation is all they can demand without breaking their own rules.
+Semantic requirements (meaning): All terms must be adequately operationalized.
+The law must be verifiable in principle through observation. Based on these operationalizations, it must have been confirmed by observations so far.
+
+2. Carl Hempel developed a model of scientific explanation. Give a description of this
+model. Give also an example of a scientific explanation. Show how this explanation can be turned into a prediction.
+
+
+The D-N model: Law + initial conditions = explanations
+Example: law: metals expand when heated, condition: rod is metal and is heated, explanation: the rod expands
+Prediction: if you know the law and initial conditions before, you predict it 
+Explanation: you observe the expansion first then apply law and conditions, you explain it 
+
+3. Within the logical positivist program, two alternative answers were developed to the Humean induction problem. Give a short description of each.
+Humeans induction problem: cant inder exceptionless general law using finite observations
+Schlik intrumentalism: scientific knowledge are uses as guidelines and intrcuments 
+Carnap confirmationism: laws are not certain they have degrees of confirmation 
+
+
+6. Does the following argument satisfy the logical positivist’s requirements for a scientific
+explanation? Give a short explanation of your conclusion.
+If experts predict a solar eclipse at time T, then a solar eclipse takes place at time T.
+The experts predict a solar eclipse at time T.
+A solar eclipse takes place at time T.
+Not a scientific explanation because logical positivists require a scientific explanation that uses lawlike statement and explains events through causality 
+This argument is an observation so it cannot explain causality, it doesnt explain why the eclipse happens. Experts dont cause the eclipse they predict it. 
+7. The standard example of the modus ponens form of argumentation is:
+
+All men are mortal.
+Socrates is a man.
+Socrates is mortal.
+
+Can this classic argument be considered as an explanation of Socrates being mortal?
+No because although its in the right form, it fails as a scientific explanation. The law that all men are mortal is too general and doesnt explain what causes mortality 
+
+8. Work out whether the following statements are analytic, synthetic a priori, or synthetic a posteriori:
+
+a. There exist no round squares. 
+         * Analytic: contradiction by def
+
+b. There exist no unicorns. 
+         * Analytic if unicorns are defined as non-existent.
+         * Synthetic a priori if taken as an absolute non-existence claim.
+         * Synthetic a posteriori if interpreted as “never observed so far.”
+
+
+c. There exist no synthetic a priori statements.
+         * Analytic if taken as definitional.
+         * Synthetic a priori if treated as a philosophical claim about knowledge.
+
+d. In the long run, the economy moves to potential GDP.
+         * Analytic if potential GDP is defined as the long-run average.
+         * Synthetic a priori if “long run” is infinite or the claim is exceptionless.
+         * Synthetic a posteriori if long run and potential GDP are independently operationalized.
+e. If inflation becomes expected by the public, the price-adjustment schedule is
+shifted upward by the amount of the expected inflation.
+         * Analytic if it refers only to the model or expectations are inferred from inflation.
+         * Synthetic a priori if expectations are unobservable or the claim is exceptionless
+         * Synthetic a posteriori if expectations are measured (e.g. surveys) and inflation actually rises.
+
+
+________________
+
+
+1. In his discussion of Milton Friedman’s paper on methodology, Alan Musgrave made a distinction between different kinds of assumption. Give short descriptions of each of them.
+Negligibility assumptions: some factors have negligible effect to are neglected
+Domain assumptions: theory is only application within a certain domain 
+Heursitis assumption: shortcut to simplify theory 
+
+2. Friedman’s methodological aims are interpreted in various ways. They can be seen either as a call for instrumentalism, or as a critique of too much realism. Give arguments for each of these interpretations.
+Friedman as an instrumentalist: assumptions dont need to be true. Theories are evaluated by predictive success. Supports an anti-realest, instrumentalist 
+Friedman as critic of excessive realism: friedman doesnt reject realism entirely he rejects overly detailed descriptively correct models. Because these models will be as complicated as the real world-> Which make it impossible to learn anything from it
+
+3. Give a criterion of Samuelson’s descriptivism according to which theories can be considered as empirically valid.
+A theory is empirically valid if all assumptions and concepts are observable or operationalizable
+
+
+4. In one of the examples in his Methodology of Positivist Economics paper, Friedman uses “as if” reasoning. Explain what this involves.
+Agents behave as if they solve complex problems even though they actually done 
+Example: firms behave as if they maximize profits 
+
+6. While the assumptions of a model do not need to be true, the model can still be empirically adequate. Describe how it can be shown that the model is empirically adequate.
+If it predicts observable outcomes accurately, predictions are tested against actual data, preferably new data, the domain is clearly specified 
+
+7. According to Friedman’s methodology, an important criterion for assessing a theory is
+its predictability. The more precise the prediction, the better the theory. To achieve more
+precise predictions, one has to develop more comprehensive models. This contradicts another Friedmanian criterion for the assessment of theories, namely their simplicity. Describe what Friedman’s position is in respect of the tension between these two criteria.
+Friedman prefers many simple model, each valid in its own domain, rather than 1 complex model. Complexity is handles by model pluralism
+
+8. For technical or ethical reasons, many economic phenomena cannot be investigated in a laboratory. This makes it difficult to find economic laws. Give a brief description of the
+alternative research strategies that were suggested by Haavelmo, Koopmans, and Friedman.
+Haavelmo: searched for invariance over time 
+Koopmans: advocated theory-driven economics. Data without theory is meaningless
+Friedman: uses naive models as benchmarks and judges success based on predictive performance 
+Tutorial 2
+1. According to Popper, to allow for progress in science, immunizing strategies are not allowed. Describe two different kinds of immunizing strategies.
+Ex ante: immunizing before testing like citerus paribus or keeping predictions deliberately vague 
+Ex post: immunizing after falsification 
+
+
+3. According to Popper, the development of science can be progressive if it takes place
+according to the application of a specific methodological rule. Give a description of this rule.
+Scientific progress occurs is theories are rejected through falsification and they are replaced with theories with greater empirical content 
+         1. Propose a bold conjecture
+         2. Specify potential falsifiers 
+         3. Test the theory critically
+         4. Reject or revise 
+
+4. Is Popper’s methodology positive or normative? Explain your answer.
+Normative because it explains how scientists should do science by saying they should purpose falsifiable theories, avoid immunizing strategies and use critical tests to refue hypothesis 
+(positive describes how scientists actually behave) 
+
+5. Read Focus 3.1. What implication does the Duhem–Quine Thesis have for Popper’s
+methodology?
+Duhem-Quine thesis says that a single failed predictions forsnt uniquely falsify one isolated theory because empirical tests involves a lot of assumptions. So the question is what exactly was falsified? Could be the theory? Assumptions? measurement?
+
+6. Explain why Popper considered falsificationism an improvement on past methodologies.
+Because it solves major problems
+         * Induction problem: universal laws cant be verified by finite observations 
+         * Demarcation: falsifiability provides a clearer way to distinguish science vs non science (scientific theories take risks)
+         * Scientific progress: science advances by eliminating error 
+
+7. An important aim of prescriptive methodologies is to demarcate science from
+pseudo-science. Consider the following statement from
+N.G. Mankiw, Macroeconomics, 3rd edn: “An increase in the rate of savings causes a period of high growth until the new steady state is reached.”
+a. Is this a scientific statement according to logical positivism?
+Yes because its an empirical synthetic statements that makes a claim about observable macroeconomics variables 
+
+b. Is this a scientific statement according to Popper?
+Yes, because it has high empirical content and can be falsified for example if we see an increases in savings rate but no high growth 
+
+8. According to Popper’s theory, the empirical content of a theory can be increased by the addition of potential falsifiers. Consider the following statement: “If the profit of an
+enterprise increases, its share price will increase.” Add potential falsifiers to increase the
+empirical content of this statement.
+If the profit of an enterprise increases, its share price will increase within the first 5 days.
+Increases falsifiability because if profits increase and share price doesnt increase within the time window it is dalsified 
+________________
+
+
+1. Give a description of an anomaly. Describe an account of Kuhn’s view of the role of anomalies in normal science.
+Anomalies are events that paradigm cannot explain. They are usually ignored or explained away but at some point they become a problem and scientists treat them as puzzles to solve. Only when anomalies accumulate they create paradigm shifts 
+
+2. Give Kuhn’s explanation why two different paradigms are incommensurable.
+There is no way you can compare two paradigms as they use different concepts, standards, methods. So there’s no fully neutral language to compare the directly.
+
+3. Why did Kuhn speak of revolutions in science?
+Because science doesnt progress gradually. SOmetimes an old paradigms breaks down and is replaces by a new one, changing theories and what counts as valid methods
+
+4. Within a period of normal science, scientific progress is possible, according to
+Kuhn. Describe what progress within such a period of normal science entails.
+Progress means puzzle solving. The more committed scientists are to puzzle solving and understanding anomalies the more successful normal science is
+
+
+5. Imre Lakatos’s Methodology of Scientific Research Programs consists of two
+heuristics for how to deal with anomalies. Give a short description of both heuristics.
+Pos heuristic: hard core which are assumptions that cannot be challenged
+Neg heuristic: protective belt which can be adjusted after falsifications
+
+6. Describe Lakatos’s proposal to evaluate different research programs.
+Progressive: if it leads to new predictions and are empirically supportive 
+Degenerating: changes are mainly ad hoc fixes to match known facts without generating new successful predictions 
+
+7. According to Lakatos, one can compare different research programs. Nevertheless, one cannot decide definitely in favor of the most progressive program. Why not?
+Even if a program looks best now we cannot definitely decide because we dont know howlong to wait for progress. If a program is degenerating noew, it could be progressive later.
+
+8. Kuhn’s theory of paradigms has significantly contested the idea that science is a rational process.
+a. Explain how Kuhn’s theory might contest the idea that a paradigm shift is rational.
+Kuhn says paradigm shifts are irrational because paradigms are incommensurable and observations are theory-laden.Sccience starts to look irrational because there is no neutral way to decide between paradigms  
+
+b. Explains how Lakatos’s idea of scientific progress in its turn contested the supposed irrationality of a paradigm shift.
+He made it rational by comparing research programs over time using progressivenes. Pick progressing over degenerating research program 
+
+
+Tutorial 3
+1. Give a short description of Merton’s four defining norms of science.
+         * Communlism: scientific knowledge should be available to everyone 
+         * Universalism:  knowledge shouldnt depend on who make it 
+         * Distinteredness: scientists do research for scientific progress not personal gain 
+         * Organized skepticism: claims are critically examined 
+
+
+
+2. How does the SSK depart from the philosophy of science and economic methodology from which it arose?
+It sees science as a social activity while tadisitonal philosophy focus on correct knowledge SSk focuses on correct and incorrect.
+Related to naturalistic turn when they moved away from thinking about criteria for good science and started understanding why scientists have specific views. 
+
+
+
+3. What is SSK, and how does it differ from ESK? Give an example of each type of explanation.
+SSK knowledge is socially constructed. People discover and accept it inside a social community 
+ESK: sees science as an economic activity where scientists act to gain reputation, 
+
+
+
+4. What is the difference between ESK and the economics of science (ES)? Explain the difference by describing the ESK David–Dasgupta model and the ES welfare arguments used by governments to support funding of science.
+ES: uses CUDOS norms. Sees science as a public good and is underproduced as it benefits society not scientist so must be subsidized. It is normative science 
+ESK: publish quickly to get recognition
+
+
+
+5. Say what the laboratory studies approach involves, explain how it is like anthropology, and say why the approach is often called social constructivist.
+It involves immersing yourself in the communities. Its like anthropology because you use observations and recording, its social contructivist because science is built through oractice and interaction 
+
+
+6. Describe the Edinburgh School Strong Programme.
+Studies science naturalistically 
+         * Causality explain why scientists hold the belief they do 
+         * Impartiality: dont be bias towards true or false 
+         * Symmetry: treat true and false equally 
+         * Reflexivity: apply same methods to sociology 
+
+
+
+7. Explain why there cannot be a distinction between the context of discovery and the context of justification, according to SSK.
+Discovery is how something is found and justification is how ideas are checked. SSK says that both are constructed socially
+
+
+
+8. The website of Eurostat includes the following mission statement:
+
+Eurostat’s mission is to provide the European Union with a highquality statistical information service. Eurostat is the Statistical Office of the European Communities situated in Luxembourg. Its task is to provide the European Union with statistics at European level that enable comparisons between countries and regions. This is a key task. Democratic societies do not function properly without a solid basis of reliable and objective statistics. On one hand, decision-makers at EU level, in Member States, in local government and in business need statistics to make those decisions. On the other hand, the public and media need statistics for an accurate picture of contemporary society and to evaluate the performance of politicians and others. Of course, national statistics are still important for national purposes in Member States whereas EU statistics are essential for decisions and evaluation at European level. Statistics can answer many questions. Is society heading in the direction promised by politicians? Is unemployment up or down? Are there more CO2 emissions compared to ten years ago? How many women go to work? How is your country’s economy performing compared to other EU Member States? International statistics are a way of getting to know your neighbours in Member States and countries outside the EU. They are an important, objective and down-to-earth way of measuring how we all live.
+         * Communalism: Data is public for everyone.
+         * Universalism: Anyone can use it, no matter position or background.
+         * Disinterestedness: Free and used for society’s benefit.
+         * Organized skepticism: Checked by government and international institutions.
+2. Explain how a metaphor might be important in the rhetoric approach.
+Give an example.
+Rhetoric approach is how scientists persuade each other, 
+Metaphor is important as it helps incorporate non-economic concepts to economic ones to make it easier to understand so makes it easier to persuade. An example is the invisible hand 
+
+3. In what ways is economic practice like a conversation?
+Its like a conversation because they all interact with each others by studying others’s data and sometimes argue with them.
+
+
+5. What is the main idea behind methodological pluralism? Explain how
+Methodological pluralism supports the existence of different schools
+of thought in economics.
+Methodological cant show that one methodology is superior to another one, analyses shouldnt be rejected solely based on methodological considerations. It supports the existence of different schools because it encourages economists to approach problems in different ways 
+
+
+7. In art, an exemplary modernist artist is Piet Mondriaan. Locate a
+selection of his paintings, and describe a key feature of modernism in
+art which is similar to modernism in science.
+
+8. Discuss which rules of positivism, as characterized by McCloskey,
+apply to Friedman’s methodology.
+Positivism focuses on predictable results, objective and repeatable evidence. Friedman follows these rules bcz he uses out of sample data. McCloskey emphasizes focusing on predictable results. Friedman thinks that the truth of the models assumptions isnt important, only the predictive success is. 
+
+
+
+
+Tutorial 4
+1. Give examples of the different kinds of methodological value judgments.
+Research domain: what is worth studying 
+research method: how scientists study the subject 
+validity criteria: what is considered good science 
+
+
+
+2. What is the basis for the strong distinction between positive and normative economics found in so many textbooks?
+Positive: descirbe how scientists actually behave 
+Normative: study how science ought to be 
+Textbooks separate positive and normative because science is seen as value-free
+
+
+
+3. How did Myrdal argue that economics is value-laden?
+You cannot separate is and ought statements. Economics is not fully neutral and value judgements are hidden in statements.  Even if economists define concepts “technically,” they still carry moral connotations and shape how economists think like ‘productivity’
+
+
+
+4. What value judgments enter into standard rationality theory? What methodological value judgments?
+Saying that something is rational implies that it is good. So says that people ought to be rational to maximize preference. Methodologically, it reflects econoists preference for simplified rational behavior
+
+
+
+5. How do cost–benefit judgments differ from Pareto recommendations?
+Cost-benefit judgements: checks how much a person gains and how much the other loses. If gains > losses then it is a good policy. Someone loses 
+Pareto: when at least someone wins and another person does not lose 
+
+
+
+6. What are moral norms, and what role do they play in economic analysis?
+Moral norms are socially shared rules about right or wrong behavior. They appear in economics because people cannot ignore morals when making decisions, they guids what questions are worth studying 
+
+7. In economics, various types of unemployment are distinguished: frictional, natural, cyclical, structural, and voluntary. Identify the implicit values these concepts may convey.
+         * Frictional: that its normal and acceptable 
+         * Natural: that its not their faults 
+         * Cyclical and structural: seen as problems with the system 
+         * Voluntary: is that its their choice 
+
+8. Robbins defines economics as “the science which studies human behaviour as a relationship between ends and scarce means which have alternative uses.” Identify the kinds of values that are implied by this definition.
+dk

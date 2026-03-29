@@ -1,0 +1,837 @@
+Lecture 1
+		Descriptive analytics: analyze data to create informative description of the past and present
+		Predictive analytics: using models to predict something 
+		Prescriptive analytics: using decisions models including optimization models and OR to derive managerial decisions 
+
+		Process of operations research:
+	⁃	Define the problem:
+	o	Understand the objectives and constraints
+	o	Study relevant system and develop a well-defined statement of the problem including appropriate objectives, constraints, alternative courses of action, time limits for decision
+	o	Analysis to convince the management including neglected constraints, tradeoff between costs and benefits, different parties of an organization have different objectives, politics inside the organization
+	⁃	Gather and organize relevant data:
+	o	Collect data to make sure the problem accurately represents the real-world conditions relevant to the problem
+	o	Data is complete, accurate organized, and cleaned
+	o	legal problems 
+	⁃	descriptive analytics:
+	o	what happened and what is happening
+	o	data mining: derive useful statistics and detect pattern in the data 
+	o	transform data into more useful/applicable forms 
+	o	data visualization
+	⁃	predictive analysis 
+	o	what will happen in the future 
+	o	predict future based on data 
+	o	statistical forecasting methods
+	o	clustering algorithms 
+	o	machine learning
+	⁃	formulating a mathematical model
+	o	formulate real-world problems as mathematical optimization problem
+	o	Model parameters are determined based on available data, predictions and expert knowledge
+	o	Decision variables, objective function, optimization direction, constraints
+	⁃	Derive solutions from the model:
+	o	Mathematical properties of the model must be analyzed 
+	o	Different solutions depending on the problem structure
+	o	Does the algorithm always find the optimal solution
+	o	Are solutions feasible 
+	o	Fast heuristic algorithms must be used if there’s a limit on computation time 
+	o	Sensitivity analysis: how does the solution change if the model parameters are slightly changed 
+	⁃	Test the model:
+	o	Mathematical models may have flaws like parameters weren’t accurately estimated or constraints ignored
+	o	Before implementation the model must be tested
+	⁃	Preparing to apply model
+	⁃	Implementation
+Lecture 2
+		In linear optimization we use mathematical models to find an optimal solution of a linear optimization problem
+		Optimal = best possible solution of our model
+		Allocate limited resources among competing activities in an optimal way
+		All mathematical models (objective function and constraints) are linear
+		Restricting to linear functions isn’t as limiting
+
+		Example:
+		Each product will be produced in 20 batches
+		Need to know the hours available, how much time it takes to produce one product and how m profit per batch 
+		Find decision variables, objective functions, and constraints
+
+		Limitations of model:
+	⁃	Doesn’t describe reality well as the models are simple
+	⁃	Profit is assumed to be constant which depends on demand, production and transportation costs
+	⁃	No transportation costs between factories considered
+	⁃	Opening/closing facilities in locations could improve solution
+	⁃	Number of produced batches should be integer
+	⁃	Waste of ordered materials not minimized
+	⁃	Uncertainty in problem parameters like uncertain future demands or production times 
+		A solution is feasible if all constraints of the problem are valid of the solution
+		Feasible region: set of all solutions which are feasible 
+		Optimal solution: feasible solution that has the best possible objective value under all feasible solutions or there exist no feasible solution which has a strictly better objective value
+		Optimal value: objective value of an optimal solution
+		Optimal value is unique but optimal solution is not
+
+		If you want to maximize the objective function, find the largest objective value (number
+		 the objective function is equal to) such that there exists a feasible solution
+		Can be done graphically by shifting the line as long as it intersects the feasible region
+A math equations on a white background
+
+Description automatically generated
+		C are objective function parameters, m constraints, constraint parameters aij (variable j in constraint i)
+		A screenshot of a white sheet
+		
+		Description automatically generated
+		A linear program can be infeasible; no feasible solution exists
+		Can also happen that no optimal solution exists although the problem is feasible so there is no constraint that prevents from improving the objective infinitely. You will always find a better point
+		Optimal value is infinity, so LP is unbounded
+		**Can have 1 optimal solution, no optimal solution or infinitely optimal solutions
+
+		Extreme points: feasible points that lie on corners of feasible region
+	⁃	It’s a Feasible point such that there don’t exist two other feasible points x’ and x’’ and an a E (0,1) such that ax’+(1-a)x’’ 
+	⁃	Cannot draw a line between 2 feasible points such that the extreme point will be on that line
+	⁃	If you take two points inside or along the edge (feasible point) and make a line (ax’+(1-a)x’’), any point on that line will never give you the extreme point
+		If a LP has an optimal solution, then there always exists an optimal solution that’s an extreme point
+	⁃	Not every optimal solution is an extreme point because it might not be feasible
+Lecture 3
+		The coefficient of the decision variables represent vectors that are perpendicular to the line drawn; tell you in which direction it moves 
+		To move from min to max: multiply the objective function by negative (max the neg)
+	⁃	Don’t forget to multiply back by -1 at the end 
+		For negative decision variables: then replace  to get
+
+		Move from equality to inequality: A white rectangular object with black text
+		
+		Description automatically generated
+		Move from inequality to equality: slack variables 
+
+		All extreme points lie on the intersection of two lines, defining the feasible region 
+		There exists always an optimal solution which is an extreme point so how can we iterate through them to find an optimal solution 
+		Constraint boundary:
+
+		Xi>=0 also has a constraint boundary x=0 
+		Extreme point:
+
+		Doesn’t mean that each solution of n constraint boundaries is always an extreme point as it could have no solution, unfeasible, and infinitely many solutions (parallel) 
+		extreme points -> intersection not <-
+A close-up of a text
+
+Description automatically generated
+A close-up of a text
+
+Description automatically generated
+		Just iterate through the extreme points until all adjacent extreme points are not better so doesn’t give a better objective value then you found the optimal solution
+		To calculate the extreme points, you must choose n constraint equations from n+m choices. So extreme point is the solution of a systems of eq (intersection)
+		n are the decision variables (non negativity constraints) and m equality constraints. 
+Lecture 4
+		Simplex method is used to iterate through the extreme points to find an optimal solution:
+	⁃	Initialization: choose (0,0) as the initial extreme point
+	⁃	Optimal test: conclude that (0,0) is not an optimal solution since the adjacent point is better 
+	⁃	Moving: move to the adjacent extreme point with the largest improvement of rate; largest increase in objective value 
+	⁃	Repeat steps until no adjacent point with better objective value exists
+
+		 AB is the matrix which only has B columns and cB vector with only B entries
+		The general equation:
+A math equations on a white background
+
+Description automatically generated
+		To move from inequality to equality use slack variables; moving from standard to augmented form
+A math equation with numbers and symbols
+
+Description automatically generated
+		The value of the slack variables is the amount of slack between left- and right- hand side of the inequality
+	⁃	How much room left until you reach the constraint boundary
+	⁃	If the slack variable is non-zero then that point is not on the constraint boundary of the constraint 
+	⁃	For greater than you subtract and for less than you add 
+A math equations and formulas
+
+Description automatically generated with medium confidence
+		the number of indices in the basis should be equal to the number of constraints (m)
+		All non-basic variables are 0
+		To check if basic solution is feasible only check the greater than 0 constraint, because you already get the basic solution from the constraints, so these constraint will be automatically satisfied
+
+		There always exists a basic solution for a basis 
+
+A black and white math symbols
+
+Description automatically generated with medium confidence
+	⁃	Since columns of A correspond to a basis, so they’re linearly independent and have a full rank so the equality system always has a solution
+	⁃	Not every basis has a basic feasible solution
+
+		Every basic feasible solution is an extreme point of the problem 
+	⁃	Every BFS lies on the constraint boundary of all m constraints since you are solving for equality constraints (def of constraint boundary) and xn=0 so
+	⁃	Since xn=0 and |N|=n-|B|=n-m, each BFS lies on the constraint boundary of n-m (non-basic), of the constraints x>=0. 
+	⁃	the BFS will lie on all m+n-m=n boundary constraints 
+	⁃	Since its a unique solution (basis) and is feasible, its an extreme point 
+
+		All extreme points of an LP are BFS
+		There always exists an optimal solution which is a BFS so with simplex method you will iterate through the BFS to find the optimal solution.
+		Move to the adjacent basic solutions which are the ones where one basis index is removed and replaced by a non-basis index
+		Variable corresponding to the entering index is the entering basic variable and one leaving is the leaving basic variable
+
+		When iterating from one BFS to the adjacent BFS, we choose the one which yields the largest improvement in objective value, just like before
+		It is much easier to iterate though the BFS solutions rather than the extreme points because we don’t have to find the extreme points, you are only changing the index
+		The non-basic index which calculates the largest improvement can be found from reduced costs
+A group of math equations
+
+Description automatically generated
+A close-up of numbers
+
+Description automatically generated
+	⁃	Inverse of AB exists as it has a full rank (basis)
+
+		Reduced costs: if you change your non-basic variable to 1, the objective value will increase by the reduced cost eq
+	⁃	What is the increase in objective value if the non-basic variable becomes non-zero?
+
+		Assume BFS so Xn=0
+
+		For max: want to have positive reduced cost
+		If the reduced costs for 1 non-basic variable are positive so ci bar >0, increasing xi by 1 unit increases the costs of solution by ci (good for maximization) where i EN
+		Cannot increase xi as much as you want since it will change the values of the other variables, and the solution can become infeasible 
+	⁃	To avoid this: check that new solution holds for x>=0 and Ax=b
+		If all reduced costs are non-positive c bar <= 0 then the current basic solution is optimal
+
+		For min: want to have negative reduced cost
+		Increasing non basic variable xi improves objective value if reduced cost variable is negative ci bar<0 
+		Solution is optimal when cN bar >=0
+A white sheet with black text and numbers
+
+Description automatically generated A math equations and formulas
+
+Description automatically generated with medium confidence
+To find the non-basic variable that enters the basis, choose the positive or greatest value (see later). If both are negative, optimal solution is found 
+
+Lecture 5
+		Sometimes choosing the higher value in the reduced costs might not work because we don’t know if you can increase by that number to remain feasible
+		Finding the inverse of the matrix could be very computationally heavy as the size of the problem increases
+		Easier way: start like this
+ A math equations on a white background
+
+Description automatically generated transform it such that columns corresponding to variables in B are 0 in first row and contain the ith unit vector for ith basic variable 
+A diagram of a number
+
+Description automatically generated
+
+
+
+
+
+Above is an example for B = {2,3,5}, you can now find the reduced costs directly from the tableau 
+		Simplex method:
+	⁃	Assume we have a basis B and a BFS x
+	⁃	Calculate reduced costs for XN
+	⁃	If all reduced costs are <0, stop, the current BFS is the optimal solution 
+	⁃	Otherwise pick the non basic variable xi for which RC>0, and increase the value of xi as long as the solution is feasible 
+
+		To find out how much you can increase that variable:
+	⁃	Use the tableau at the stage when you found the reduced costs 
+	⁃	Every feasible solution must fulfill the equations from the tableau
+	⁃	Transform the equalities in regard of the basic variables B then set them >=0
+	⁃	Take the largest value
+	⁃	*After the basis change the basic variable leaving the basis becomes 0
+
+		In general: 
+	⁃	Assume BFS x for B and j is any index for which the reduced costs >0 (possible candidate for entering the basis)
+	⁃	Increasing the value of the corresponding variable means to move x into a direction d where dj=1 and dk=0 for all other non basis indices k
+	⁃	Move in direction d by certain amount ,  so out new basic solution would be 
+	⁃	For it to be feasible so Ad=0 
+	⁃	 is feasible if  (and Ax=b) 
+
+		Case 1: d>=0
+	⁃	Since x>=0,  for every 
+	⁃	Can increase  as much as we want so LP is unbounded
+		Case 2: at least one index i such that di<0 (must be a basis since all other di =1 or 0
+	⁃	=> must hold for all i for which di<0
+	⁃	The largest value for :   because theta must be less than all of them so if its less than the min then it holds 
+	⁃	The new index j enters the basis, and the variable has value xj+*dj=*
+	⁃	I* be the index that takes the minimum, the value of the corresponding value is 
+	⁃	I* leaves the basis since it becomes 0
+
+Example in lecture solution: 
+A group of math equations
+
+Description automatically generated
+Lecture 6
+		If you have 2 positive non-basic variables in reduced costs, in this course we will choose the largest reduced costs
+		Runtime of simplex method-trade-off:
+	⁃	Number of iterations; number of extreme points we “go” through
+	⁃	Computation time per iteration
+		Trade-off:
+	⁃	How much computational effort do we spend to find the entering index
+	⁃	How large is the improvement in costs and in the resulting number of overall basis changes 
+SUMMARY
+A screenshot of a math problem
+
+Description automatically generated
+A screenshot of a math problem
+
+Description automatically generated
+	⁃	Start with a basis of the slack variables 
+	⁃	Find BFS ABxB=b
+	⁃	Calculate reduced cost, if <0 stop if not pick non-basis j with RC>0
+	⁃	Calculate db if If d>0 stop -> unbounded
+	⁃	If d<0 find i* that minimizes theta*, remove it and add j
+
+		Simplex method by hand:
+Start 
+A yellow arrow pointing to a black and white text
+
+Description automatically generated with medium confidence
+After simplifying the tableau to find the reduced costs you get
+A white board with black text and symbols
+
+Description automatically generated
+A close-up of a white background
+
+Description automatically generated
+		If all reduced costs are negative, stop
+		If not take column j with largest reduced cost; j will enter the basis
+		A close-up of a black text
+		
+		Description automatically generatedColumn that leaves:
+	⁃	Find entry a positive entry i in j for which 
+	⁃	Ith basis variable will leave 
+	⁃	If not value in column is positive -> unbounded
+		Continue with the normal process until your reduced costs are both negative (for max)
+A white paper with writing on it
+
+Description automatically generated
+A close-up of a math problem
+
+Description automatically generated
+		A basic solution is degenerate if at least one basic variable is 0
+		Can happen in degenerate solution that for 2 different bases we get the same BFS
+		If we are not careful with changing the basis the simplex method cycles forever
+		To avoid cycling by Bland’s rule:
+	⁃	The entering variable should be a variable with positive reduced cost with lowest index (most left)
+	⁃	Leaving variable (in case of tie in min ratio test) should be lowest index row (closest to top)
+Lecture 7
+		Every linear problem has associated with it another linear problem called the dual problem
+		Dual problem: 
+	⁃	Provides upper bounds on the optimal value 
+	⁃	Dual solutions provide useful interpretations (e.g. shadow prices)
+	⁃	Can be solved instead of the original problem (sometimes that’s faster)
+	⁃	Most important technique in Robust Optimization
+		A math symbols on a white background
+		
+		Description automatically generatedPrimal problem: A close-up of a math problem
+		
+		Description automatically generated
+		Let x* be an optimal solution, the relaxed problem 
+		The optimal value is always the upper bound for the optimal value of the primal problem 
+	⁃	Note that x* is optimal for the primal problem not for relaxed
+	⁃	Therefore, max f(x) >= f(x*) since you are maximizing all feasible solution and int f(x*) you’re only maximizing one, so you could have a better optimal solution than x*
+		Now find the smallest of these upper bounds to ensure the solution is optimal and close to the actual minimum; ensures dual solutions closely matched the primal optimal value
+A math equations and formulas
+
+Description automatically generated
+Since we want to minimize over y, infinity must be avoided. So not you get the dual problem 
+A close-up of a diagram
+
+Description automatically generated
+		For each variable/constraint in the primal problem, we have one constraint/variable in the dual problem, respectively
+A math problem with lines and symbols
+
+Description automatically generated with medium confidence 
+		The dual form can easily be derived with any form of the primal problem
+A diagram with arrows pointing to different directions
+
+Description automatically generated with medium confidence
+		The dual of the dual problem is the primal problem
+		If x is a feasible solution of the primal problem, and y is a feasible solution of the dual problem then 
+A close up of a text
+
+Description automatically generated with medium confidence
+		Corollary: 
+	⁃	optimal cost in primal is + infinity, dual is infeasible
+	⁃	optimal cost in dual is – infinity, primal is infeasible 
+		x is feasible for primal, and y is feasible for dual and bTy=cTx, x optimal for primal and y optimal for dual
+		proof:  for all x’ which are primal feasible so x must be optimal 
+		strong duality: if a linear problem has an optimal solution, the dual has an optimal solution as well, and the respective optimal values are equal
+A black text on a white background
+
+Description automatically generated
+
+		x and y is optimal if 
+A math equations on a white background
+
+Description automatically generated
+	⁃	x and y must be primal and dual feasible, respectively
+
+		in the lecture assignment, you choose y3 to be 0 because when you replace in the equation above, a3Tx-b3 is not 0 so y3 must be zero to fulfill the slackness condition
+
+		A shadow prize for resource i is the rate at which the profit would be increased by slightly increasing the amount of this resource.
+
+		Consider an extreme point and set of constraints I: aiTx=bi
+		By complementary slackness: yi=0 for i not in I
+		Solution is only feasible if the costs vector c can be expressed as a conic combination of the corresponding row vectors 
+
+Lecture 8
+		A network is a set of points and a set of lines between some pairs of points
+		Its a tuple G=(V,E), where V is a finite set of nodes and E is a set of edge 
+		Edge is a tuple of vertices
+		Directed graph: edges have direction and can only be traversed in given direction
+	⁃	Edges are called arcs and we use A; G=(V,A)
+	⁃	Write it like e=(v,w)
+		Undirected graph: can be transversed in any direction; G=(V,E)
+	⁃	Write it like e={v,w}
+		Assign values to edges or nodes
+	⁃	Costs for edges cij
+	⁃	Cost for nodes bk
+
+		the transportation problem
+A white sheet with black text
+
+Description automatically generated A math equations and formulas
+
+Description automatically generated with medium confidence
+		In the constraints you only sum over j since i remains the same. Same for the second one.
+		Assumptions: 
+	⁃	Entire supply must be distributed, and entire demand must be received
+	⁃	Costs of distributing units from any source is proportional to the number of units distributed 
+	⁃	Sum of supplies = sum of demand; always a feasible solution
+		If all supply and demand values are integers, then all basic variables in every basic feasible solution also have integer values 
+
+		The assignment problem:
+A math equations with numbers and symbols
+
+Description automatically generated with medium confidence
+		Due to the integer property, there always exists an optimal solution where all variables xij are either zero or 1
+		If you have missing values, you can assign the cost for it to be high 
+		You can add dummy variables such that every entry is 0 (only need that for specific algorithms 
+		If you can solve transportation problem you can solve assignment problem, not other way around
+
+		Minimum cost flow problem is a very general network problem with many applications in industry 
+A close-up of a white sheet
+
+Description automatically generated
+		Must send flow through the network such that the amount flow going out of a node i minus the amount of flow going into the node i = bi 
+		The flow on each arc must not exceed capacity of arc
+		Find the flow in the network which has minimum costs 
+		If no capacities are given the problem is incapacitated 
+A white background with black text
+
+Description automatically generated
+		If we sum up the flow conversation constraints bi then it must be 0
+		Assume its true since otherwise no feasible solution exists
+		Transportation problem is a special case of incapacitated minimum cost flow problem
+Lecture 9
+		If you can solve network flow problems, you can solve transportation problems 
+		A close up of text
+		
+		Description automatically generated
+		 # of columns = # of arcs
+		# of rows = # of nodes
+		Sum of columns should be 0
+		A close-up of a math equation
+		
+		Description automatically generatedA close up of a sign
+		
+		Description automatically generated
+		Hence the minimum flow problem becomes: 
+
+		Can be solved by simplex method but for network flow problems all single steps in the simplex method can be simplified 
+		Uncapacitated network flow problem: 
+A math formula with letters and numbers
+
+Description automatically generated with medium confidence
+		No simplex tableau needed so inefficient transformations can be avoided
+		Number of nodes: |V|=n (A has n rows)
+
+		A math equations on a white background
+		
+		Description automatically generated
+	⁃	Path doesn’t have a cycle 
+
+		A math equations on a white background
+		
+		Description automatically generated
+	⁃	Same start and end node
+	⁃	Finding a cycle that visits every node is hard (traveling salesman problem)
+
+		
+
+		A math equations on a white background
+		
+		Description automatically generated
+
+		Tree properties:
+	⁃	An undirected graph is a tree if it’s connected and has |V|-1 edges
+	⁃	For any two distinct nodes i and j in a tree, there exists a unique path from i and j (if not you will have a cycle)
+	⁃	If we start with a tree and add one new arc, the resulting graph contains exactly one cycle
+		A close-up of a white background
+		
+		Description automatically generated A close-up of a white background
+		
+		Description automatically generated
+	⁃	The first assumption is not that restrictive as you can add a dummy node which has the remaining value that prevents it from being 0
+		Rows of A must be linearly independent but the node-arc incidence matrix A are not so as the sum of rows is 0
+		Remove the last row of A, new matrix A
+		A has linearly independent rows if the underlying grpah is connected 
+		Remove the last entry of b, new vector b 
+		
+
+		A white paper with black text
+		
+		Description automatically generated
+	⁃	Arcs for which flow is positive, in some arcs there is no flow so after removing the non-positive arcs, what’s left there must be a tree
+
+		A white paper with black text
+		
+		Description automatically generated
+	⁃	Theorem sats that for a given tree we can always construct a tree solution (not necessarily feasible)
+	⁃	If you have a tree, then there’s always a feasible flow 
+
+		A screenshot of a math problem
+		
+		Description automatically generated
+A screenshot of a math problem
+
+Description automatically generated
+		Classic simplex: B -> AB xB=b where XN=0
+		Network simplex: Tree T - > fT where  fij =0 if (i, j) not in T
+		For step 3 call last (or any) node the root and use flow conservation equations to determine the flows on the arcs incident to the leaves and continue by proceeding from the leaves upwards towards the root of the tree
+A close-up of a whiteboard
+
+Description automatically generated
+
+		Reduced costs:
+		Assume a given basis (tree) T
+		Reduced costs are 
+		columns of A are either one entry 1 or -1 or both so when it is multiplied by p^T it becomes pi-pj
+		A math equations with black text
+		
+		Description automatically generated with medium confidence*n is the last row (could be root)
+		Pn=0 then 
+	⁃	Without bar: original costs
+	⁃	With bar: reduced costs 
+		Since reduced costs of basic variables are 0, we must solve 
+		must hold for every arc in the tree
+		Procedure
+	⁃	Consider node n as the root of the tree and set pn=0
+	⁃	Go down the tree, from root to leaves with a new component of p evaluated at each step
+		Now you can easily calculate cij by using the original costs of “non-basic” variables, so arcs that are not in the tree
+Lecture 10
+		After determining which variable will enter the basis, calculate maximum value the variable can have such that the flow is feasible 
+		From theorem we know that when you add a new arc you get exactly one cycle 
+		If we send theta flow over the new arc then the flow of the arcs in the cycle must change to remain feasible 
+	⁃	We can go through the cycle 
+	⁃	Each arc which has the same direction as the new one has to be increased by theta as well
+	⁃	Each arc in the opposite direction must be decreased by theta 
+		Since all flows must be non-negative, we can increase theta until one of the opposed direction arcs has flow 0 
+ where O contains arcs of opposite direction
+		The arc that attains the minimum has then flow 0 and will leave the basis 
+		A diagram of a mathematical equation
+		
+		Description automatically generated
+		If all arcs in the cycle have the same direction then you can increase the flow to infinity and the problem is unbounded
+		Network simplex algorithm:
+		A white background with black text
+		
+		Description automatically generated
+		Removing an arc may cause the graph to become disconnected. 
+
+		Minimum cost flow problems
+		
+
+		It has several special cases like maximum flow problem 
+		A white paper with black text
+		
+		Description automatically generated
+		A close-up of a math equation
+		
+		Description automatically generated
+	⁃	You are maximizing how much flow you can send out of f
+	⁃	Amount of flow out of s is the same that goes into t
+		Verifying max flow problem is a special case of min flow problem:
+	⁃	Assume we have a given instance of the maximum flow problem
+	⁃	Set the costs of all arcs to 0
+	⁃	Add a new arc (t,s) with infinite capacity and costs -1
+	⁃	Set bs=bt=0
+	⁃	Minimizing the total flow in this new network is the same as maximizing the flow from s to t
+		Network flow problem: transportation problem, assignment problem, minimum cost flow problem, maximum flow problem, shortest path
+
+		Shortest path problem: another special case of the minimum cost network flow problem
+	⁃	A close-up of a math problem
+	⁃	
+	⁃	Description automatically generated
+		To verify:
+	⁃	Set bs=1, bt=-1, bi=0 for all other nodes i
+	⁃	Minimal cost flow problem will always follow the shortest path
+	⁃	Only true since the costs are non-negative. Otherwise, some cycles will have negative costs and optimal solution will send infinitely many flow into the cycle 
+	⁃	There is no flow greater than 1 
+		A math equations and formulas
+		
+		Description automatically generated with medium confidence
+	⁃	Each BFS has values 0 or 1. If fij=1 edge (i,j) is part of the shortest path while fij=1 is not 
+	⁃	Can also use Dijkstra 
+Lecture 11
+		Integer decisions: Number of products to produce, number of trucks to send from A to B, etc
+		Binary decisions: special case of integer decisions 
+	⁃	1 if decision is yes
+	⁃	0 if decision is no
+	⁃	E.g.: employee i is assigned to job j or not: xij E {0,1}
+		Integer LP:
+A white rectangular with black text
+
+Description automatically generated with medium confidence
+Feasible set: 
+		Problem is a binary linear problem when variables can only attain values 0 or 1 
+		A math equations on a white background
+		
+		Description automatically generatedMixed-integer linear program:
+	⁃	X: integer variables
+	⁃	Y: continuous variables 
+	⁃	Solving these are more computationally demanding
+	⁃	Need improved algorithms 
+		A graph of a mathematical equation
+		
+		Description automatically generated
+		Most fundamental binary problem is the knapsack problemA white paper with black text
+		
+		Description automatically generated
+		Application:
+	⁃	Portfolio-optimization
+	⁃	Optimal packing of a container
+		A white paper with writing on it
+		
+		Description automatically generated
+		Lost sizing problem:
+A screenshot of a math problem
+
+Description automatically generated
+A screenshot of a math problem
+
+Description automatically generated
+		Enumeration of solutions:
+	⁃	If the feasible region is bounded, then the number of feasible integer solutions is finite
+	⁃	If we only have n binary variables the number of solutions is at most 2^n so you can’t go through every solution manually
+		Integer optimization only iterates through points that are potentially optimal
+		Rounding the optimal solution of the LP without integrality condition can lead to infeasible points
+		Even if the rounded point is feasible, its optimal value may be far from the real optimum
+		A diagram of a triangle and a triangle
+		
+		Description automatically generated
+A drawing of a diagram
+
+Description automatically generated
+		For specific problems it’s possible to ignore integrality condition if extreme points of the feasible region (without integrality condition) are all integer solutions
+		Can use simplex method to find the optimal integer solution 
+		To find out this case:
+		A close up of text
+		
+		Description automatically generated
+	⁃	So take any block of the matrix, this submatrix should have det 0,-1,or 1
+		E.g.: 
+		A math equations and numbers
+		
+		Description automatically generated
+	⁃	Must do that for every subset of row 
+		IP where constraints are given by totally unimodular matrices:
+A white paper with black text
+
+Description automatically generated
+	⁃	if A is totally unimodular we can find an OS for the problem where x has to be integer, by solving  the problem without integrality condition by simplex method 
+		network flow problem:
+		
+		proof: 
+	⁃	min cost network flow
+	⁃	A math equation with black text
+	⁃	
+	⁃	Description automatically generated with medium confidence * A is node-arc incidence matrix
+	⁃	each column of A has one entry 1, one -1, and the rest 0
+	⁃	sum of subsets of rows R can only have entries 0,1, or -1 so its unimodular
+	⁃	b and u are integer, so it has an integer optimal solution 
+		can model cases in which not all constraints are satisfied using Big-M constraints and binary variables 
+		achieved by adding binary variable y which activates a constraint and deactivates another 
+		assume we want to model: 
+		
+		A math equations with numbers
+		
+		Description automatically generated with medium confidenceA close-up of some words
+		
+		Description automatically generated
+
+	⁃	Taking M large enough, the constraint won’t cut off any of the feasible solutions, so you can remove it from the problem (deactivated)
+	⁃	M is large enough value such that the RHS b1+M is no restriction for x-variables 
+Lecture 12
+		Branch & bound method is used to solve mixed-integer programming problems 
+		A diagram of value and value
+		
+		Description automatically generatedHow it works:
+	⁃	Iteratively decompose the integer subproblems into smaller subproblems
+	⁃	Instead of solving integer subproblems, find an upper and lower bound of the problem
+	⁃	Upper and lower bound provide an optimality gap
+	⁃	Bounds can be used to verify many subproblems do not contain optimal solution hence don’t have to be solved
+	⁃	Know optimal value when UB = LB
+		Removing integrality conditions from mixed integer programs (hard to solve) is called LP relaxation (easier problem solved using simplex method)
+		A white background with black text
+		
+		Description automatically generated
+		A white paper with black text
+		
+		Description automatically generated
+	⁃	True because each FS for IP is also feasible for LP relaxation, so optimal value of LP must be at least as good as OV of IP
+	⁃	LP can’t have a worse OV than IP since you have more solutions in LP 
+
+		A white paper with black text
+		
+		Description automatically generated
+
+		To obtain upper bound for IP solve LP relaxation via simplex method
+	⁃	Doesn’t always give us the true optimal value
+		To obtain lower bound find an arbitrary FS of IP
+		A close-up of a white board
+		
+		Description automatically generated
+		If it was minimization: FS gives upper bound and LP relaxation the lower bound 
+		A close-up of a diagram
+		
+		Description automatically generated
+		
+		FS can be found by fast heuristic methods 
+		If a dual bound D and primal bound P is known:
+A math equation with black text
+
+Description automatically generated
+
+		Branch & bound method:
+	⁃	Start by solving LP relaxation of original problem 
+	⁃	If all x entries of OS are integers, then this is the OS of the integer problem IP
+	⁃	Otherwise at least one of the entries is fractional: xj=f
+	⁃	OV of LP relaxation is saved as UP
+	⁃	Split in 2 subproblems 
+	⁃	A white rectangular object with black text
+	⁃	
+	⁃	Description automatically generated
+		No solution feasible for LP1 is also feasible for LP2, vice versa
+		Old optimal solution for LP-relaxation is not feasible anymore of LP1 and LP2 (xj=f becomes xj<=f and xj>=f)
+		But each integer solution of the original problem is either feasible for LP1 or LP2 (don’t lose any integer solution
+A diagram of a triangle with blue and orange dots
+
+Description automatically generated with medium confidence -> A diagram of a triangle with blue and orange dots
+
+Description automatically generated with medium confidence
+		Can now solve LP1 and LP2 again by simplex method 
+		Need a stopping criterion to know if you continue branching
+		For each subproblem L1 and L2, check cases:
+	⁃	Subproblem is infeasible: 
+	o	remove the subproblem since it doesn’t contain any solution for the original problem 
+	o	prune by infeasibility
+	⁃	Optimal solution of the subproblem has only integer x-values:
+	o	OS is feasible for integer version of subproblem
+	o	If the OV is better than he best known primal bound, save the solution and update the primal bound 
+	o	Remove: Prune by integrality
+	⁃	OS of subproblem is not integer feasible and OV is worse than primal bound (LB)
+	o	All feasible solutions of the subproblem (hence all feasible integer solutions) must have OV worse than best known OV we already have
+	o	Subproblem contains no better solution than we already have
+	o	Remove: prune by bound
+	⁃	OS of subproblem is not integer feasible but its OV is better than best primal bound
+	o	Subproblem could contain feasible integer solutions which are better than best we know right now
+	o	Choose one x-entry of the OS which is not an integer, xk=v
+	o	Split subproblem into 2 new subproblems and remove old subproblem 
+A math equations and formulas
+
+Description automatically generated with medium confidence
+	⁃	Continue process till either opt-gap =0 or no subproblem left
+		A diagram of mathematical equations
+		
+		Description automatically generated
+
+		The OV of a subproblem only provides a dual bound for the specific subproblem, but not for the original problem.
+		Hence the dual bound (upper bound for maximization problems) is never updated during the branch & bound process
+		A white background with black text
+		
+		Description automatically generated
+		Consequently, if we know the upper bounds of all subproblems of one level of the branch & bound tree, then we can update the global upper bound.
+		Only use values that across nodes that are currently active
+	⁃	IOW, to update the lower bound, find the lowest value across the lower bounds in that level and update it by replacing the lowest value from the previous level 
+	⁃	A diagram of a tree
+	⁃	
+	⁃	Description automatically generated
+	⁃	For example above, LB after processing node 0 would be 25, in the second level LB would still be 25 for node 1 as no all nodes in that level are processed. For node 2, all nodes are processed so take min{27 (n1), 26(n2)}. So updated lower bound will be 26 for node 2.
+		However, it depends on the order in which the subproblems are processed if this case will ever happen
+		A diagram of a triangle with red lines and black text
+		
+		Description automatically generated with medium confidence
+Lecture 13
+		Revision of branch and bound
+		A diagram of a complex triangle
+		
+		Description automatically generated with medium confidence
+		In branch and bound usually the dual bound is determined in the root of the node and never updated afterwords 
+		So to increase the probability to prune by bound, get a good dual bound in the root node (for max: small UB)
+		The idea in the branch & cut method is to improve the dual bound obtained by the LP relaxation by strengthening the LP formulation by adding more constraints.
+
+		A valid inequality for a (mixed-) integer program is an inequality
+		A graph of a problem
+		
+		Description automatically generated
+		A graph of a problem
+		
+		Description automatically generatedA close-up of a math problem
+		
+		Description automatically generatedA close-up of a math problem
+		
+		Description automatically generated
+		The optimal value remains the same but linear relaxation differs
+
+		Cutting planes:
+	⁃	Adding valid constraints improve the value of the LP relaxation by reducing the size of the feasible region
+	⁃	A math equations and formulas
+	⁃	
+	⁃	Description automatically generated
+	⁃	does not cut of any feasible point of the (mixed-) integer problem, but cuts off the current optimal solution of the LP relaxation
+
+		cutting plane algorithm:
+	⁃	strengthen LP relaxation of a (mixed-) integer problem
+	⁃	first start by solving a linear problem
+	⁃	algorithm will cut off the current optimal point but won’t cut off any integer points
+	⁃	will continue until optimal solution of LP relaxation is integer
+		Branch & cut is a combination of the branch & bound method and a cutting plane algorithm 
+		Branch & cut doesn’t do this whole cutting plane algorithm it just adds some cuts -  you decide how much – which improves dual bound
+		Variant 1: strengthens LP relaxation of the original problem in the root node by adding cutting planes to the original problem and start branch & bound method for this new formulation
+	⁃	Advantage: good dual bound directly from beginning
+	⁃	Drawback: no improvement in later nodes
+		Variant 2: improve in each of the branch & bound nodes the LP relaxation of the subproblems by adding cutting planes
+	⁃	Advantage: good bounds and hopefully integer solutions in each of the nodes
+	⁃	Disadvantage: longer computation time in each node
+	⁃	The cutting nodes are only for a specific node and have to be inherited to the child nodes in the tree
+		Tighten variable bounds
+	⁃	Provide tighter bounds for the variables
+	⁃	Assume UB & LB are known 
+	⁃	A math equations on a white background
+	⁃	
+	⁃	Description automatically generated
+	⁃	If xi is an integer variable, you can round down 
+		Gamory cuts
+	⁃	A white background with black text
+	⁃	
+	⁃	Description automatically generated
+	⁃	Calculate an optimal solutions x* of the LP relaxation by simplex method and let B be the optimal basis
+	⁃	If x* is integer, then x* is optimal for the IP
+	⁃	Otherwise, since all non basic variables are 0 there exists one basic vriable which is non-integer xh*=bh (fractional)
+	⁃	From the final simplex tableau, we obtain a solution which is true for all FS A black and white symbol
+	⁃	
+	⁃	Description automatically generatedA close-up of a graph
+	⁃	
+	⁃	Description automatically generated
+	⁃	A close up of a logo
+	⁃	
+	⁃	Description automatically generated
+	⁃	^ not valid for the optimal solution since 
+	⁃	But true for all feasible integer solutions since all FIS also fulfilled the equality from the simplex tableau
+	⁃	A black and white symbol
+	⁃	
+	⁃	Description automatically generated -> all IS are feasible 
+	⁃	Since all integer feasible variables in our problem have to be non-negative:
+	⁃	A math equation with black text
+	⁃	
+	⁃	Description automatically generated with medium confidence
+	⁃	so this inequality cuts the OP but all integer solutions are still feasible, i.e. it is a cutting plane
+	⁃	Subtracting a feasible inequality by other results in a feasible inequality 
+	⁃	A black text on a white background
+	⁃	
+	⁃	Description automatically generatedA black text on a white background
+	⁃	
+	⁃	Description automatically generated
+	⁃	this is called gamory cut
+	⁃	We can add this cutting plane to our simplex tableau and add a slack variable to obtain equality constraint 
+	⁃	Note that the derived cut can contain slack variables. However, using the starting-tableau we obtain an equality for each slack variable, which only contains original variables
+	⁃	Replace all slack-variables by the corresponding equality to derive a cut in the original variables
+Example in lecture: if one of the variables is integer doesn’t make sense to do gamory cut
+A white board with math equations
+
+Description automatically generated
