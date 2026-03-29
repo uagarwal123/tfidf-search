@@ -59,7 +59,7 @@ def tokenize(text: str):
     filtered = ' '.join(pattern.findall(text))
 
     doc = nlp(filtered)
-    tokens = [token.lemma_.lower() for token in doc if not token.is_stop and not token.is_punct and len(token.lemma_)>2]
+    tokens = [token.lemma_.lower() for token in doc if not token.is_stop]
 
     return tokens
 
