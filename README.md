@@ -7,5 +7,5 @@ Since retrieving what course a query belongs to is not very useful, I artificall
 
 Lastly I implemented the ability to interact with the system using the command line interface.
 
-Results are pretty accurate, it correctly identifies the relevant lecture most of the times. A possible way to evaluate the system would be to create an annotated dataset with queries and expected output, can then use this to calculate the hit rate.
+Results are pretty accurate, it correctly identifies the relevant lecture most of the times. A possible way to evaluate the system would be to create an annotated dataset with queries and expected output, can then use this to calculate metrics like Precision@K or Recall@k
 
