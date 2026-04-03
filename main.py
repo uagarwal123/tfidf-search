@@ -28,7 +28,6 @@ for filename in os.listdir(folder_path):
 
 def chunk_by_lecture(text: str, filename: str):
     chunks = re.split(r'(?=Lecture\s+\d+)', text, flags=re.IGNORECASE)
-    chunks = [c.strip() for c in chunks if c.strip()]
     
     chunk_texts = []
     chunk_names = []
